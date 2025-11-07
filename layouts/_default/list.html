@@ -1,0 +1,48 @@
+{{ define "main" }}
+  
+  {{ $pages := .Pages }}
+  {{ if eq (len $pages) 1 }}
+    <!-- If there is exactly one page, redirect the browser to that page immediately -->
+    {{ range $pages }}
+      <meta http-equiv="refresh" content="0; url={{ .RelPermalink }}">
+      <script>window.location.replace("{{ .RelPermalink }}");</script>
+      <h1>Redirecting...</h1>
+      <p>There is only one entry here. You are being redirected to: <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+    {{ end }}
+
+  {{ else }}
+    <!-- If there are zero or more than one pages, display the standard list layout -->
+
+    <article>
+      <!-- Display the section title and content from content/blog/_index.md -->
+      <h1 id= "pagetitle" class= "page-title">{{ .Title }}</h1>
+      {{ .Content }}
+
+      <!-- Start listing the individual posts (child pages of this section) -->
+      <ul class="post-list">
+        <!-- .Pages automatically filters for child pages in the current list context -->
+        {{ range $pages }}
+          <li class="post-item">
+            <h2>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <div class="post-meta">
+              {{ .Date.Format "January 2, 2006" }}
+            </div>
+            <!-- Optional: Display a summary or excerpt -->
+            <div class="post-summary">
+              {{ .Summary }}
+            </div>
+            {{ if .Truncated }}
+              <a href="{{ .RelPermalink }}">Read more...</a>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+      <!-- End listing posts -->
+    </article>
+
+  {{ end }}
+
+{{ end }}
+

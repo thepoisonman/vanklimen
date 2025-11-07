@@ -1,0 +1,31 @@
+{{/* layouts/partials/header.html */}}
+
+<header class="site-header">
+    <div class="logo-title-container">
+        <!-- Site Logo -->
+        <a href="{{ .Site.BaseURL }}" class="site-logo">
+            {{ partial "picture.html" (dict 
+                "path" "images/logo.png" 
+                "alt" "A description of the image" 
+                "class" "hero-image" 
+                "loading" "eager" 
+                "context" . 
+                ) }}
+        </a>
+
+        <!-- ALWAYS Display the Site Title -->
+        <div id= "site-title-text" class="site-title-text">
+            <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+    </div>
+
+    <!-- This is the hamburger button that will be visible on mobile -->
+    <button id="menu-toggle" aria-label="Open Menu" class="menu-toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <!-- The menu partial remains separate -->
+    {{ partial "nav.html" . }}
+</header>

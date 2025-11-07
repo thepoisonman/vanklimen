@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  
+  <!-- The head partial goes here, inside the html tag, outside the body tag -->
+  {{ partial "head.html" . }} 
+
+  <body>
+    {{ partial "header.html" . }} 
+    <div class="container">
+      <main id="main">
+       {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+
+    <!-- The script MUST be placed just before the closing </body> tag -->
+    <!-- This ensures all HTML elements (header, nav, button) have loaded first -->
+    <script>
+        const menuToggleButton = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        // Check if elements exist before adding an event listener
+        if (menuToggleButton && mainNav) {
+            menuToggleButton.addEventListener('click', () => {
+                // Toggles the 'active' class on the navigation menu
+                mainNav.classList.toggle('active');
+                // Optional: Accessibility enhancement
+                const isExpanded = menuToggleButton.getAttribute('aria-expanded') === 'true' || false;
+                menuToggleButton.setAttribute('aria-expanded', !isExpanded);
+            });
+        }
+    </script>
+  </body>
+</html>

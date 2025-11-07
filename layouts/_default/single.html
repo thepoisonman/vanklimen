@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+<h1 id= "pagetitle" class= "page-title">{{ .Title }}</h1>
+{{ partial "date-and-tags.html" . }}
+<br><br>
+{{ .Content }}
+{{ end }}

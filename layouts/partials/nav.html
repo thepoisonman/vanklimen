@@ -1,0 +1,11 @@
+{{/* layouts/partials/nav.html */}}
+
+<nav id="main-nav" class="main-nav navigation">
+  <ul class="menu-list">
+    {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>

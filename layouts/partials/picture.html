@@ -1,0 +1,46 @@
+<!-- layouts/partials/picture.html -->
+{{- $path := .path -}}
+{{- $alt := .alt | default "" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $class := .class | default "" -}}
+{{- $context := .context -}}
+
+{{- with $context.Page.Resources.GetMatch $path | default (resources.Get $path) -}}
+  {{- $img := . -}}
+
+  {{/* Define target widths and formats */}}
+  {{- $widths := slice 400 800 1200 1600 -}}
+  {{- $formats := slice "webp" $img.Format -}}
+
+  {{/* Generate optimized images and collect their sources */}}
+  {{- $srcsets := dict -}}
+  {{- range $fmt := $formats -}}
+    {{- $srcset := "" -}}
+    {{- range $width := $widths -}}
+      {{- if ge $img.Width $width -}}
+        {{- $processed := $img.Resize (printf "%dx%s" $width $fmt) -}}
+        {{- $srcset = printf "%s%s %dw, " $srcset $processed.RelPermalink $processed.Width -}}
+      {{- end -}}
+    {{- end -}}
+    {{/* Use strings.TrimSuffix namespace */}}
+    {{- $srcsets = merge $srcsets (dict $fmt (strings.TrimSuffix ", " $srcset)) -}}
+  {{- end -}}
+
+  {{/* Find a suitable fallback source */}}
+  {{- $fallback := $img.Fill "800x450" -}}
+
+  {{/* Output the <picture> element */}}
+  <picture>
+    {{- range $fmt := $formats -}}
+      {{/* Use dict.Get namespace */}}
+      {{- if dict.Get $srcsets $fmt -}}
+        <source srcset="{{ dict.Get $srcsets $fmt }}" type="image/{{ $fmt }}">
+      {{- end -}}
+    {{- end -}}
+    <img src="{{ $fallback.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" loading="{{ $loading }}" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}">
+  </picture>
+{{- else -}}
+  {{/* Handle case where image is not found without using 'warn' */}}
+  <!-- WARNING: Image not found at path: {{ $path }} -->
+  <img src="{{ $path | relURL }}" alt="{{ $alt }}" class="{{ $class }}" loading="{{ $loading }}">
+{{- end -}}

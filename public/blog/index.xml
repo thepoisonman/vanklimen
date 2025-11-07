@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Posts on Van Klimen</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog Posts on Van Klimen</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>That It Will.never Come Again by Emily Dickinson</title>
+      <link>http://localhost:1313/that-it-will.never-come-again-by-emily-dickinson/</link>
+      <pubDate>Mon, 03 Nov 2025 12:44:55 -0300</pubDate>
+      <guid>http://localhost:1313/that-it-will.never-come-again-by-emily-dickinson/</guid>
+      <description>&lt;div class=&#34;block-box&#34;&gt;&#xA;    &lt;p&gt;That it will never come again&#xA;Is what makes life so sweet.&#xA;Believing what we don&amp;rsquo;t believe&#xA;Does not exhilarate.&lt;/p&gt;&#xA;&lt;p&gt;That if it be, it be at best&#xA;An ablative estate &amp;ndash;&#xA;This instigates an appetite&#xA;Precisely opposite.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Van Klimen</title>
+      <link>http://localhost:1313/vanklimen/</link>
+      <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
+      <guid>http://localhost:1313/vanklimen/</guid>
+      <description>&lt;div class=&#34;block-box&#34;&gt;&#xA;    &lt;p&gt;If you can keep your head when all about you&#xA;Are losing theirs and blaming it on you,&#xA;If you can trust yourself when all men doubt you,&#xA;But make allowance for their doubting too;&#xA;If you can wait and not be tired by waiting,&#xA;Or being lied about, don&amp;rsquo;t deal in lies,&#xA;Or being hated, don&amp;rsquo;t give way to hating,&#xA;And yet don&amp;rsquo;t look too good, nor talk too wise:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trees by Joyce Kilmer</title>
+      <link>http://localhost:1313/trees-by-joyce-kilmer/</link>
+      <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
+      <guid>http://localhost:1313/trees-by-joyce-kilmer/</guid>
+      <description>&lt;div class=&#34;block-box&#34;&gt;&#xA;    &lt;p&gt;I think that I shall never see&#xA;A poem lovely as a tree.&lt;/p&gt;&#xA;&lt;p&gt;A tree whose hungry mouth is prest&#xA;Against the earth&amp;rsquo;s sweet flowing breast;&lt;/p&gt;&#xA;&lt;p&gt;A tree that looks at God all day,&#xA;And lifts her leafy arms to pray;&lt;/p&gt;&#xA;&lt;p&gt;A tree that may in Summer wear&#xA;A nest of robins in her hair;&lt;/p&gt;&#xA;&lt;p&gt;Upon whose bosom snow has lain;&#xA;Who intimately lives with rain.&lt;/p&gt;&#xA;&lt;p&gt;Poems are made by fools like me,&#xA;But only God can make a tree.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
