@@ -22,6 +22,8 @@ html {
   text-shadow: 0.125rem 0.125rem black; /* Converted from 2px */
   font-size: 2.25rem; /* Converted from 36px */
   text-transform: uppercase;
+  width: 100%;
+  font-family: "Ubuntu";
 }
 
 
@@ -82,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Base Styles for all screens (Desktop First) --- */
 .site-header {
   display: flex;
+  width:100%;
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 1.25rem; /* Converted from 20px */
@@ -173,6 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); /* Converted from 3px 3px 5px */
     text-transform: initial;
     text-shadow: none;
+    width: 100%;
 }
 
 
@@ -330,6 +334,9 @@ p {
     text-shadow: none;
 }
 
+.site-title-text {
+font-family: "Goldman";
+}
 
 .pagetitle {
     line-height: 0.1em;
@@ -363,4 +370,72 @@ p {
 .texto ul {
     list-style-type: disc; 
     margin-left: 1.5em; /* Add some indentation so the bullets are visible */
+}
+
+/* --- Goldman Font Definitions --- */
+@font-face {
+    font-family: 'Goldman';
+    src: url('/fonts/Goldman-Regular.ttf') format('truetype'); /* changed format to truetype */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldman';
+    src: url('/fonts/Goldman-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Ubuntu Font Definitions --- */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- Application of Fonts --- */
+
+body, p {
+    font-family: 'Ubuntu', sans-serif;
+    /* Use a fallback font like 'sans-serif' in case the custom font fails to load */
+    font-weight: 400; /* Set the default weight for the body */
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+    font-family: 'Goldman', Impact, sans-serif;
+    /* Headings usually use bold weight by default in HTML */
+    line-height: 3rem;
+    justify-self: center;
+    align-self: center;
+}
+
+/* This rule ensures that bold text in the body uses the defined 700 weight file */
+strong, b {
+    font-weight: 700;
+}
+
+/* This rule ensures that italic text in the body uses the defined italic file */
+em, i {
+    font-style: italic;
 }
