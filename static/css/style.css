@@ -1,5 +1,5 @@
 html {
-    font-size: 22px; 
+    font-size: 14px; 
 }
 
 .container {
@@ -68,14 +68,19 @@ body {
     height: auto;
 }
   main {
-    padding: 0.625rem; 
+    padding: 0.625rem;
+    flex-wrap: wrap;
   }
 
 }
 
 /* Apply a margin when scrolling to an anchor point, preventing overlap */
 h1, h2, h3, h4, h5, h6 {
-    scroll-margin-top: 10rem; 
+    scroll-margin-top: 10rem;
+    flex-wrap: nowrap;
+    margin-bottom: 0.5rem;
+    font-size: 3.3rem;
+    padding-left: 1.4rem;
 }
 
 
@@ -215,6 +220,7 @@ h1, h2, h3, h4, h5, h6 {
  
     body {
         padding-top: 3.125rem; 
+        width: 80%;
     }
     .site-logo{
     padding-right: 0; 
@@ -330,15 +336,18 @@ p {
 
 .pagetitle {
     line-height: 0.1em;
+    font-size: 1rem;
 }
+
 .subtitulo {
     text-shadow: 0.125rem 0.125rem black; /* Converted from 2px */
-    font-size: 2rem; /* Converted from 32px */
+    font-size: 1rem; /* Converted from 32px */
     color: inherit;
     background: none;
     border: none;
     box-shadow: none;
     padding-top: 0; /* Converted from 0px */
+
 }
 
 .texto {
