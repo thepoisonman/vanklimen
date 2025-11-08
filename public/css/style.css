@@ -1,26 +1,22 @@
 html {
-    font-size: 22px; /* Base font size for 'rem' calculations */
+    font-size: 22px; 
 }
 
 .container {
-  /* This prevents the container from getting too wide on large screens (e.g., stops at ~700px) */
-  max-width: 75rem; /* Converted from 700px */
-  /* This ensures it always takes 100% width on smaller screens (below 700px) */
+  max-width: 75rem; 
   width: 100%;
-  /* This centers the container horizontally within its parent */
   margin-left: auto;
   margin-right: auto;
-  /* Add some padding on the sides for small screens so content doesn't touch the edges */
-  padding-left: 0.9375rem; /* Converted from 15px */
-  padding-right: 0.9375rem; /* Converted from 15px */
+  padding-left: 0.9375rem; 
+  padding-right: 0.9375rem;
 }
 
 #main {
   margin-top: 1em;
-  margin-bottom: 0.125rem; /* Converted from 2px */
+  margin-bottom: 0.125rem; 
   color: white;
-  text-shadow: 0.125rem 0.125rem black; /* Converted from 2px */
-  font-size: 2.25rem; /* Converted from 36px */
+  text-shadow: 0.125rem 0.125rem black;
+  font-size: 2.25rem; 
   text-transform: uppercase;
   width: 100%;
   font-family: "Ubuntu";
@@ -28,14 +24,13 @@ html {
 
 
 img {
-  /* This rule is essential for responsive images */
+
   max-width: 100%; 
-  height: auto; /* Ensures images maintain their aspect ratio */
+  height: auto; 
 }
 
 .hero-image {
-    border-radius: 0.625rem; /* Converted from 10px */
-    /* Optional: Ensures corners are rounded correctly if the image extends past the box */
+    border-radius: 0.625rem;
     display: block; 
     width: 100%;
     height: auto;
@@ -45,9 +40,9 @@ img {
 body {
     background-color: rgb(76, 76, 158);
     line-height: 1.6;
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 
@@ -56,9 +51,9 @@ body {
 }
 
 
-@media (max-width: 30rem) { /* Converted from 480px */
+@media (max-width: 30rem) { 
   body {
-    font-size: 0.75rem; /* Converted from 12px */
+    font-size: 0.75rem; 
   }
 
 .textimage {
@@ -66,23 +61,21 @@ body {
 }
 
 .hero {
-    border-radius: 6.25rem; /* Converted from 100px */
+    border-radius: 6.25rem; 
     /* Optional: Ensures corners are rounded correctly if the image extends past the box */
     display: flex; 
     width: 100%;
     height: auto;
 }
-
-  /* Example: Even tighter padding for main content on very small screens */
   main {
-    padding: 0.625rem; /* Converted from 10px */
+    padding: 0.625rem; 
   }
 
 }
 
 /* Apply a margin when scrolling to an anchor point, preventing overlap */
 h1, h2, h3, h4, h5, h6 {
-    scroll-margin-top: 10rem; /* Converted from 80px */
+    scroll-margin-top: 10rem; 
 }
 
 
@@ -107,10 +100,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .site-logo {
-    padding-left: 7.5rem;
+    padding-left: 1.5rem;
 }
 .site-logo img {
-    height: 5rem; /* Converted from 80px *    width: 200%    margin-right: 2rem; /* Converted from 15px */
+    height: 5rem; 
 }
 
 .main-nav {
@@ -123,19 +116,19 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     justify-content: center;
-    font-size: 1.25rem; /* Converted from 20px */
+    font-size: 1.25rem; 
     text-transform: uppercase;
-    gap: 1.25rem; /* Converted from 20px */
+    gap: 1.25rem; 
     flex-wrap: wrap;
 }
 
 .menu-list li a {
-    padding: 0.625rem 0.9375rem; /* Converted from 10px 15px */
+    padding: 0.625rem 0.9375rem; 
     color: white;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
-    box-shadow: 0.0625rem 0.0625rem 0.03125rem 0.125rem greenyellow; /* Converted from 1px 1px 0.5px 2px */
+    box-shadow: 0.0625rem 0.0625rem 0.03125rem 0.125rem greenyellow;
     background-color: darkred;
 }
 
@@ -149,8 +142,8 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     cursor: pointer;
     padding: 0;
-    width: 2.5rem; /* Converted from 40px */
-    height: 1.875rem; /* Converted from 30px */
+    width: 2.5rem;
+    height: 1.875rem;
     position: relative;
     z-index: 1000;
 }
@@ -159,11 +152,11 @@ h1, h2, h3, h4, h5, h6 {
 /* --- the lines of the menu --- */
 .bar {
     display: block;
-    width: 3.125rem; /* Converted from 50px */
-    height: 0.3125rem; /* Converted from 5px */
+    width: 3.125rem; 
+    height: 0.3125rem; 
     background-color: white;
-    border-radius: 0.3125rem; /* Converted from 5px */
-    margin: 0.3125rem auto; /* Converted from 5px */
+    border-radius: 0.3125rem; 
+    margin: 0.3125rem auto;
     transition: 0.3s;
 }
 
@@ -172,10 +165,10 @@ h1, h2, h3, h4, h5, h6 {
 .block-box {
     color: black;
     background-color: skyblue;
-    padding: 0.625rem; /* Converted from 10px */
-    border: 0.125rem solid black; /* Converted from 2px */
-    border-radius: 0.5rem; /* Converted from 8px */
-    box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); /* Converted from 3px 3px 5px */
+    padding: 0.625rem; 
+    border: 0.125rem solid black; 
+    border-radius: 0.5rem; 
+    box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); 
     text-transform: initial;
     text-shadow: none;
     width: 100%;
@@ -183,15 +176,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* --- Media Query for Mobile (less than ~768px wide) --- */
-@media (max-width: 48rem) { /* Converted from 768px */
-
+@media (max-width: 48rem) { 
   body {
-    font-size: 0.875rem; /* Converted from 14px */
+    font-size: 0.875rem; 
   }
 
-  /* Example: Adjusting padding for main content areas on small screens */
+  /* Adjusting padding for main content areas on small screens */
   main {
-    padding: 0.625rem; /* Converted from 10px */
+    padding: 0.625rem; 
   }
 
 .site-header {
@@ -203,9 +195,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     z-index: 1000; /* Ensure the header is always on top */
-    padding: 0.625rem 0.625rem; /* Converted from 10px */
-    background-color: #c01676; /* Ensure the header has a background */
-    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.2); /* Converted from 0 2px 5px */
+    padding: 0.625rem 0.625rem; 
+    background-color: #c01676; 
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.2); 
 }
 
     .menu-toggle-button {
@@ -222,10 +214,10 @@ h1, h2, h3, h4, h5, h6 {
     }
  
     body {
-        padding-top: 3.125rem; /* Converted from 50px */
+        padding-top: 3.125rem; 
     }
     .site-logo{
-    padding-right: 0; /* Converted from 0px */
+    padding-right: 0; 
     justify-self: right;
     align-self: center;
     }
@@ -237,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     background-color: #c01676;
     z-index: 999; /* Ensure the menu is above the page content but below the header */
-    border-radius: 0 0 0.625rem 0.625rem; /* Converted from 10px */
+    border-radius: 0 0 0.625rem 0.625rem; 
     /* You can set a max-height and overflow-y: auto here if the menu links are long */
     }
 
@@ -298,9 +290,9 @@ time {
 
 /*style for tags*/
 .tag-btn {
-  font-size: 1rem; /* Example size for tags */
+  font-size: 1rem;
   background-color: silver;
-  border-radius: 0.125rem; /* Converted from 2px */
+  border-radius: 0.125rem;
   color: black;
   text-shadow: none;
 }
@@ -308,7 +300,7 @@ time {
 
 .post-list {
   list-style-type: none;
-  font-size: 1.25rem; /* Converted from 20px */
+  font-size: 1.25rem; 
   padding-left: 0; /* Optional, depending on your layout */
 }
 
@@ -318,17 +310,17 @@ time {
 
 .post-meta {
     color: white;
-    padding-left: 0.625rem; /* Converted from 10px */
-    font-size: 1.25rem; /* Converted from 20px */
+    padding-left: 0.625rem;
+    font-size: 1.25rem;
     background-color: blue;
-    border-radius: 0.625rem; /* Converted from 10px */
-    box-shadow: 0.03125rem 0.03125rem 0.625rem black; /* Converted from 0.5px 0.5px 10px */
+    border-radius: 0.625rem;
+    box-shadow: 0.03125rem 0.03125rem 0.625rem black;
 }
 
 /* style for links */
 a {
-            color: white; /* Example: blue */
-            text-decoration: none; /* Optional: remove underline */
+            color: white; 
+            text-decoration: none;
         }
 
 p {
