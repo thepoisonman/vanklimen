@@ -113,12 +113,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 5rem; /* Converted from 80px *    width: 200%    margin-right: 2rem; /* Converted from 15px */
 }
 
-.site-title-text a {
-    color: white;
-    text-shadow: 0.125rem 0.125rem black; /* Converted from 2px */
-    text-transform: uppercase;
-}
-
 .main-nav {
     background: none;
 }
@@ -161,9 +155,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 
-.site-title-text{
-    font-size: 3.125rem; /* Converted from 50px */
-}
 
 /* --- the lines of the menu --- */
 .bar {
@@ -343,10 +334,6 @@ a {
 p {
     color: black;
     text-shadow: none;
-}
-
-.site-title-text {
-    font-family: "Goldman";
 }
 
 .pagetitle {
