@@ -174,6 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-header {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -187,20 +188,25 @@ h1, h2, h3, h4, h5, h6 {
     .menu-toggle-button {
         display: block;
         order: 2;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
     }
 
     .logo-title-container {
         order: 1;
     }
  
-body {
+    body {
         padding-top: 50px; /* Adjust this value to be equal to your mobile header's total height */
     }
-.site-logo{
+    .site-logo{
     padding-right: 0px;
     justify-self: right;
-}
-.main-nav {
+    align-self: center;
+    }
+    .main-nav {
     display: none;
     position: absolute; /* Relative to the nearest positioned ancestor (in this case, the header) */
     top: 100%; /* Positions the menu exactly 100% of the header's height from the top */
@@ -210,7 +216,7 @@ body {
     z-index: 999; /* Ensure the menu is above the page content but below the header */
     border-radius: 0 0 10px 10px;
     /* You can set a max-height and overflow-y: auto here if the menu links are long */
-}
+    }
 
     .main-nav.active {
         display: block;
@@ -255,6 +261,7 @@ body {
         padding-right: 0px;
         font-size: 40px;
         justify-self: center;
+        align-self: center;
     }
 }
 
