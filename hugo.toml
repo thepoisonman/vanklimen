@@ -7,15 +7,6 @@ title = 'Van Klimen'
   blog = "/:contentbasename/"
   acerca = "/:contentbasename/"
 
-[menu]
-  [[menu.main]]
-    name = "Inicio"
-    # Change 'url' to 'pageRef'
-    pageRef = "/" 
-    weight = 1
-    identifier = "home"
-
-
 sectionPagesMenu = 'main'
 
 [taxonomies]

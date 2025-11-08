@@ -4,5 +4,5 @@ draft: false
 menus:
   main:
     name: "Mi versión"
-    weight: 2
+    weight: 3
 ---
