@@ -281,9 +281,6 @@ h1, h2, h3, h4, h5, h6 {
         align-self: center;
     }
 
-    .block-box {
-        box-sizing: 2em;
-    }
 }
 
 
@@ -354,8 +351,6 @@ p {
     border: 0.125rem solid black; /* Converted from 2px */
     border-radius: 0.5rem; /* Converted from 8px */
     box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); /* Converted from 3px 3px 5px */
-    box-decoration-break: clone; 
-    -webkit-box-decoration-break: clone;
     font-size: 1.5rem; /* Converted from 24px */
     text-transform: initial;
     text-shadow: none;
