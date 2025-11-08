@@ -9,7 +9,7 @@ title = 'Van Klimen'
 
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "Inicio"
     # Change 'url' to 'pageRef'
     pageRef = "/" 
     weight = 1

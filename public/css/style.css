@@ -51,6 +51,11 @@ body {
 }
 
 
+.logo-title-container {
+    flex-wrap: wrap;
+}
+
+
 @media (max-width: 30rem) { /* Converted from 480px */
   body {
     font-size: 0.75rem; /* Converted from 12px */
@@ -77,7 +82,7 @@ body {
 
 /* Apply a margin when scrolling to an anchor point, preventing overlap */
 h1, h2, h3, h4, h5, h6 {
-    scroll-margin-top: 5rem; /* Converted from 80px */
+    scroll-margin-top: 10rem; /* Converted from 80px */
 }
 
 
@@ -99,6 +104,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+
+.site-logo {
+    padding-left: 7.5rem;
+}
 .site-logo img {
     height: 5rem; /* Converted from 80px */
     width: auto;
@@ -124,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.25rem; /* Converted from 20px */
     text-transform: uppercase;
     gap: 1.25rem; /* Converted from 20px */
+    flex-wrap: wrap;
 }
 
 .menu-list li a {
@@ -166,6 +176,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0.3125rem auto; /* Converted from 5px */
     transition: 0.3s;
 }
+
+
 
 .block-box {
     color: black;
@@ -335,7 +347,7 @@ p {
 }
 
 .site-title-text {
-font-family: "Goldman";
+    font-family: "Goldman";
 }
 
 .pagetitle {
