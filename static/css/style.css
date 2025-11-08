@@ -306,12 +306,13 @@ time {
 
 .post-list {
   list-style-type: none;
-  font-size: 1.25rem; 
+  font-size: 1rem; 
   padding-left: 0; /* Optional, depending on your layout */
 }
 
 .post-item {
     color: black;
+    font-size: 1rem;
 }
 
 .post-meta {
@@ -339,6 +340,11 @@ p {
     font-size: 1rem;
 }
 
+.tit-list {
+    font-size: 2rem;
+    line-height: 0.5em;
+    margin-bottom: 5rem;
+}
 .subtitulo {
     text-shadow: 0.125rem 0.125rem black; /* Converted from 2px */
     font-size: 1.5rem; /* Converted from 32px */
