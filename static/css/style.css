@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo-title-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -109,9 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 7.5rem;
 }
 .site-logo img {
-    height: 5rem; /* Converted from 80px */
-    width: auto;
-    margin-right: 0.9375rem; /* Converted from 15px */
+    height: 5rem; /* Converted from 80px *    width: 200%    margin-right: 2rem; /* Converted from 15px */
 }
 
 .site-title-text a {
