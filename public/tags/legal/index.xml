@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Legal on Van Klimen</title>
+    <link>http://localhost:1313/tags/legal/</link>
+    <description>Recent content in Legal on Van Klimen</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jan 2019 20:28:42 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/legal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Licencia</title>
+      <link>http://localhost:1313/manifiesto/lic/</link>
+      <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
+      <guid>http://localhost:1313/manifiesto/lic/</guid>
+      <description>&lt;div class=&#34;block-box&#34;&gt;&#xA;    Licencia de Uso del Manual Algorítmico para Artistas (CC BY-NC-SA 4.0)&#xA;Todo el contenido de este sitio web, incluyendo el manifiesto, los textos, el concepto de la identidad de &amp;ldquo;Van Klimen&amp;rdquo;, y las pistas de audio descargables, está sujeto a la licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.&#xA;En resumen, esto significa que eres libre de:&#xA;Compartir: Copiar, distribuir y transmitir el trabajo.&#xA;Remezclar/Adaptar: Crear obras derivadas, remezclas y tus propias versiones del algoritmo.&#xA;Bajo las siguientes condiciones:&#xA;Atribución: Debes dar crédito de forma adecuada al autor original (Iván Melink / Van Klimen), proporcionar un enlace a la licencia y especificar si se han realizado cambios.&#xA;No Comercial: No puedes utilizar este material con fines comerciales (es decir, no puedes vender mi música o tu versión de mi música).&#xA;Compartir Igual: Si remezclas, transformas o construyes sobre el material, debes distribuir tus contribuciones bajo la misma licencia que la original.&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
