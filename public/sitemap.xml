@@ -25,34 +25,7 @@
     <loc>http://localhost:1313/biblioteca/vanklimen/</loc>
     <lastmod>2025-11-03T12:04:25-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/acerca/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/atribuciones/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/miversion/discos/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/info/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/legal/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/manifiesto/lic/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/licencia/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/manifiesto/manifiesto/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/manifiesto/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/manifiesto/</loc>
     <lastmod>2019-01-13T20:28:42-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/trees/</loc>
@@ -61,10 +34,9 @@
     <loc>http://localhost:1313/biblioteca/trees-by-joyce-kilmer/</loc>
     <lastmod>2019-01-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/van-klimen/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/miversion/</loc>
     <lastmod>2019-01-13T20:28:42-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/manifiesto/</loc>
   </url>
 </urlset>

@@ -324,6 +324,7 @@ time {
     box-shadow: 0.03125rem 0.03125rem 0.625rem black;
 }
 
+
 /* style for links */
 a {
             color: white; 
@@ -335,9 +336,10 @@ p {
     text-shadow: none;
 }
 
-.pagetitle {
+.page-title {
     line-height: 0.1em;
-    font-size: 1rem;
+    font-size: 5rem;
+    padding-bottom: 2rem;
 }
 
 .tit-list {
@@ -355,6 +357,10 @@ p {
     padding-top: 0; /* Converted from 0px */
     line-height: 1.4rem;
 
+}
+
+hr {
+  opacity: 0;
 }
 
 .texto {
