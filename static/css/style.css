@@ -302,14 +302,14 @@ h1, h2, h3, h4, h5, h6 {
 
 time {
   font-size: 1.2rem;
-  background-color: blue;
+  background-color: var(--third-color);
   text-shadow: none;
 }
 
 /*style for tags*/
 .tag-btn {
   font-size: 1rem;
-  background-color: silver;
+  background-color: var(--third-color);
   border-radius: 0.125rem;
   color: black;
   text-shadow: none;
@@ -391,7 +391,7 @@ hr {
 
 .texto ul {
     list-style-type: disc; 
-    margin-left: 1.5em; /* Add some indentation so the bullets are visible */
+    margin-left: 1.5em; 
 }
 
 /* --- Goldman Font Definitions --- */
