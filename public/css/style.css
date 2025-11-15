@@ -346,6 +346,7 @@ a {
 p {
     color: var(--text-color-dark);
     text-shadow: none;
+    text-align: justify;
 }
 
 .page-title {
@@ -377,18 +378,15 @@ hr {
 
 .texto {
     color: var(--text-color-dark);
-    background-color: skyblue; /* Sets the background color of the box */
-    padding: 0.625rem; /* Converted from 10px */
-    border: 0.125rem solid black; /* Converted from 2px */
-    border-radius: 0.5rem; /* Converted from 8px */
-    box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); /* Converted from 3px 3px 5px */
-    font-size: 1.5rem; /* Converted from 24px */
+    background-color: var(--box-color);
+    padding: 0.625rem; 
+    border: 0.125rem solid black; 
+    border-radius: 0.5rem; 
+    box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); 
+    font-size: 1.5rem; 
     text-transform: initial;
     text-shadow: none;
-}
-
-#disecciontexto {
-  text-shadow: none;
+    text-align: justify;
 }
 
 .texto ul {
@@ -399,7 +397,7 @@ hr {
 /* --- Goldman Font Definitions --- */
 @font-face {
     font-family: 'Goldman';
-    src: url('/fonts/Goldman-Regular.ttf') format('truetype'); /* changed format to truetype */
+    src: url('/fonts/Goldman-Regular.ttf') format('truetype'); 
     font-weight: 400;
     font-style: normal;
     font-display: swap;
