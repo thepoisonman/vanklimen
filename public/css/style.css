@@ -4,7 +4,8 @@
     --third-color: color-mix(in srgb, color-mix(in srgb, var(--primary-color) 40%, var(--secondary-color) 30%), white 37.3%);
     --background-color: #7575dd;
     --text-color-dark: black ;
-    --text-color-light: white;
+    --text-color-titles: white;
+    --text-color-light: silver;
     --text-color-hover: color-mix(in srgb, var(--secondary-color) 60%, transparent 30%);
     --box-color: color-mix(in srgb, var(--background-color) 70%, white 80%)
 }
@@ -20,6 +21,7 @@ html {
   margin-right: auto;
   padding-left: 0.9375rem; 
   padding-right: 0.9375rem;
+  display: flex;
 }
 
 #main {
@@ -68,7 +70,7 @@ body {
   }
 
 .textimage {
-  display:flex;
+  display: flex;
 }
 
 .hero {
@@ -86,12 +88,15 @@ body {
 }
 
 /* Apply a margin when scrolling to an anchor point, preventing overlap */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav {
+    color: var(--text-color-titles);
     scroll-margin-top: 10rem;
     flex-wrap: nowrap;
     margin-bottom: 0.5rem;
-    font-size: 3.3rem;
-    padding-left: 1.4rem;
+    font-size: 4.3rem;
+    font-family: 'Goldman', Impact, sans-serif;
+    line-height: 3rem;
+    text-wrap: balance;
 }
 
 
@@ -127,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu-list {
+    color: var(--text-color-titles);
     list-style: none;
     display: flex;
     margin: 0;
@@ -140,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-list li a {
     padding: 0.625rem 0.9375rem; 
-    color: var(--text-color-light);
+    color: var(--text-color-titles);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
@@ -180,12 +186,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .block-box {
-    color: black;
-    background-color: var(--box-color);
-    padding: 0.625rem; 
-    border: 0.125rem solid black; 
-    border-radius: 0.5rem; 
-    box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); 
+    color: var(--text-color-light);
+    padding: 0.625rem;  
     text-transform: initial;
     text-shadow: none;
     width: 100%;
@@ -253,6 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .main-nav.active {
         display: block;
+        color: var(--text-color-titles);
         background-color: var(--primary-color);
         opacity: 90%;
         box-shadow: 0.125rem 0.125rem 0.625rem; /* Converted from 2px 2px 10px */
@@ -261,6 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Style the list of links */
     .menu-list {
+        color: var(--text-color-titles);
         flex-direction: column;
         justify-content: flex-start;
         padding: 0;
@@ -296,11 +300,10 @@ h1, h2, h3, h4, h5, h6 {
         justify-self: center;
         align-self: center;
     }
-
 }
 
-
 time {
+  color: var(--text-color-titles);
   font-size: 1.2rem;
   background-color: var(--secondary-color);
   text-shadow: none;
@@ -311,6 +314,7 @@ time {
 
 /*style for tags*/
 .tag-btn {
+  color: var(--text-color-titles);
   font-size: 1rem;
   background-color: var(--box-color);
   border-radius: 0.125rem;
@@ -324,13 +328,14 @@ time {
 
 
 .post-list {
+  color: var(--text-color-titles);
   list-style-type: none;
   font-size: 1rem; 
   padding-left: 0; /* Optional, depending on your layout */
 }
 
 .post-item {
-    color: black;
+    color: var(--text-color-titles);
     font-size: 1rem;
 }
 
@@ -351,15 +356,17 @@ a {
     }
 
 p {
-    color: var(--text-color-dark);
+    color: var(--text-color-light);
     text-shadow: none;
     text-align: justify;
 }
 
 .page-title {
+    color: var(--text-color-titles);
     line-height: 0.1em;
-    font-size: 5rem;
+    font-size: 4.3rem;
     padding-bottom: 2rem;
+    line-height: 3rem;
 }
 
 .tit-list {
@@ -370,12 +377,13 @@ p {
 .subtitulo {
     text-shadow: 0.125rem 0.125rem black; /* Converted from 2px */
     font-size: 1.5rem; /* Converted from 32px */
-    color: inherit;
+    color: var(--text-color-titles);
     background: none;
     border: none;
     box-shadow: none;
     padding-top: 0; /* Converted from 0px */
     line-height: 1.4rem;
+    padding: 2rem 2rem;
 
 }
 
@@ -384,21 +392,19 @@ hr {
 }
 
 .texto {
-    color: var(--text-color-dark);
-    background-color: var(--box-color);
-    padding: 0.625rem; 
-    border: 0.125rem solid black; 
-    border-radius: 0.5rem; 
-    box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3); 
+    color: var(--text-color-light);
+    padding: 0.625rem;  
     font-size: 1.5rem; 
     text-transform: initial;
     text-shadow: none;
     text-align: justify;
+    padding: 2rem;
 }
 
 .texto ul {
     list-style-type: disc; 
-    margin-left: 1.5em; 
+    margin-left: 1em;
+    padding-right: 2rem; 
 }
 
 /* --- Goldman Font Definitions --- */
@@ -451,13 +457,6 @@ body, p {
     font-weight: 400; /* Set the default weight for the body */
 }
 
-h1, h2, h3, h4, h5, h6, nav {
-    font-family: 'Goldman', Impact, sans-serif;
-    /* Headings usually use bold weight by default in HTML */
-    line-height: 3rem;
-    justify-self: center;
-    align-self: center;
-}
 
 /* This rule ensures that bold text in the body uses the defined 700 weight file */
 strong, b {
