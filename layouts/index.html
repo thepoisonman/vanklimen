@@ -1,14 +1,9 @@
 {{ define "main" }}
-
-<div id="ti" class="textimage"></div>
-<div id="home" class="home text-center">
-  <h1>{{ .Site.Title }}</h1>
-  <h2 class="subtitulo">{{ .Site.Params.homeText | markdownify }}</h2>
-</div>
+  
 
 <div id="hero" class="hero">
   {{ partial "picture.html" (dict 
-  "path" "images/hero.jpg" 
+  "path" "images/Manual-algo.jpg" 
   "alt" "A description of the image" 
   "class" "hero-image" 
   "loading" "eager" 
