@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on Van Klimen</title>
-    <link>https://example.org/tags/life/</link>
+    <link>http://localhost:1313/tags/life/</link>
     <description>Recent content in Life on Van Klimen</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Nov 2025 12:04:25 -0300</lastBuildDate>
-    <atom:link href="https://example.org/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Van Klimen</title>
-      <link>https://example.org/biblioteca/vanklimen/</link>
+      <link>http://localhost:1313/biblioteca/vanklimen/</link>
       <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
-      <guid>https://example.org/biblioteca/vanklimen/</guid>
+      <guid>http://localhost:1313/biblioteca/vanklimen/</guid>
       <description>&lt;p&gt;If you can keep your head when all about you&#xA;Are losing theirs and blaming it on you,&#xA;If you can trust yourself when all men doubt you,&#xA;But make allowance for their doubting too;&#xA;If you can wait and not be tired by waiting,&#xA;Or being lied about, don&amp;rsquo;t deal in lies,&#xA;Or being hated, don&amp;rsquo;t give way to hating,&#xA;And yet don&amp;rsquo;t look too good, nor talk too wise:&lt;/p&gt;</description>
     </item>
   </channel>
