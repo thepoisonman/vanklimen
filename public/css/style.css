@@ -192,12 +192,6 @@ p {
     font-family: 'IBM Plex Mono', monospace;
 }
 
-.tit-list {
-    font-size: 2rem;
-    line-height: 0.5em;
-    margin-bottom: 5rem;
-}
-
 .subtitulo, h3 {
     font-size: 4rem; /* Converted from 32px */
     color: var(--text-color-titles);
@@ -239,25 +233,13 @@ hr {
 }
 /* list section */
 
-time {
-  color: var(--text-color-titles);
-  font-size: 1.2rem;
-  background-color: var(--secondary-color);
-  text-shadow: none;
-  border-radius: 0.5rem;
-  border-style: groove;
-  padding: 0.5rem 1rem;
-}
-
-.tag-btn {
-  color: var(--text-color-dark);
-  font-size: 1rem;
-  border-radius: 0.125rem;
-  text-shadow: none;
-  border-style: groove;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  opacity: 100%;
+.tit-list {
+    color: var(--text-color-titles);
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 0.5em;
+    margin-bottom: 5rem;
+    font-family: 'IBM Plex Mono';
 }
 
 .post-list {
@@ -268,14 +250,19 @@ time {
 }
 
 .post-item {
-    color: var(--text-color-titles);
+    color: var(--text-color-dark);
     font-size: 1rem;
 }
 
 .post-meta {
-    color: var(--text-color-titles);
+    color: var(--text-color-light);
     padding-left: 0.625rem;
     font-size: 1.4em;
+}
+
+.post-link {
+    color: var(--text-color-light);
+    font-family: 'Work Sans';
 }
 
 /* --- Media Query for Mobile (less than ~768px wide) --- */

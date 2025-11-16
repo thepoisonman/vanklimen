@@ -1,5 +1,5 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
+languageCode = 'es'
 title = 'Van Klimen'
 
 
@@ -13,7 +13,7 @@ sectionPagesMenu = 'main'
   tag = "tags"
 
 [params]
-  dateFormat = "Jan 2, 2006"
+  dateFormat = "02/01"
   homeText = "Manual Algorítmico para Artistas"
 
 [markup]

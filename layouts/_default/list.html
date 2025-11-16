@@ -25,15 +25,12 @@
             <h2>
               <a id="tit-list" class= "tit-list" href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h2>
-            <div class="post-meta">
-              {{ .Date.Format "January 2, 2006" }}
-            </div>
             <!-- Optional: Display a summary or excerpt -->
             <div class="post-summary">
               {{ .Summary }}
             </div>
             {{ if .Truncated }}
-              <a href="{{ .RelPermalink }}">Read more...</a>
+             <a class="post-link" href="{{ .RelPermalink }}">Ver más...</a>
             {{ end }}
           </li>
         {{ end }}
