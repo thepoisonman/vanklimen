@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ $data := $.Site.Data.homepage }}
 
 <div id="ti" class="textimage"></div>
 <div id="home" class="home text-center">
@@ -18,18 +17,14 @@
 </div>
 
 <div id="intro" class="intro text-center">
-  {{/* Usamos los datos del JSON */}}
-  <h1 id="introtitulo" class="subtitulo">{{ $data.introTitle }}</h1>
-  
-  {{/* Aplicamos markdownify al texto del JSON */}}
-  <p id="copete" class="texto">{{ $data.introText | markdownify }}</p> 
-  
-  <h1 id="disecciontitulo" class="subtitulo">{{ $data.disecctionTitle }}</h1>
-  
+  <h1 id="introtitulo" class="subtitulo">{{ .Params.introTitle }}</h1>
+
   <div id="disecciontexto" class="texto">
-    {{/* Aplicamos markdownify al texto de la disección del JSON */}}
-    {{ $data.dissectionText | markdownify }}
+    {{ .Content }}
   </div>
+
+  <h1 id="disecciontitulo" class="subtitulo">{{ .Params.disecctionTitle }}</h1>
+
 </div>
 
 {{ end }}

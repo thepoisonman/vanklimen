@@ -1,10 +1,11 @@
 :root { 
-    --primary-color: #e93131;;
+    --primary-color: #020001;
     --secondary-color: #042bd4;
-    --third-color: color-mix(in srgb, color-mix(in srgb, var(--primary-color) 40%, var(--secondary-color) 90%), white 37.3%);
-    --background-color: color-mix(in srgb, var(--secondary-color) 100%, white 70%);
+    --third-color: #e93131;
+    --background-color: #020001;
     --text-color-dark: white ; 
     --text-color-titles: color-mix(in srgb, var(--text-color-light) 100%, white 20% );
+    --text-color-accent: #eb73AF;
     --text-color-light: #88ff55;
     --text-color-hover: color-mix(in srgb, var(--secondary-color) 60%, transparent 30%);
 }
@@ -60,7 +61,7 @@ body {
 .logo-title-container {
     flex-wrap: wrap;
 }
-
+ 
 /* --- Base Styles for all screens (Desktop First) --- */
 
 /* Apply a margin when scrolling to an anchor point, preventing overlap */
@@ -76,6 +77,7 @@ h1, h2, h3, h4, h5, h6, nav {
     text-wrap: balance;
     font-weight: 700;
     
+    
 }
 
 h1 {
@@ -90,10 +92,10 @@ h1 {
   width:100%;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.25rem; /* Converted from 20px */
+  padding: 0.25rem 0.25rem; /* Converted from 20px */
   background-color: var(--primary-color);
   border-radius: 0; /* Converted from 0px */
-  box-shadow: 0.125rem 0.125rem 0.625rem black; /* Converted from 2px 2px 10px */
+  box-shadow: 0.125rem 0.125rem 0.125rem white; /* Converted from 2px 2px 10px */
   font-size: 1.875rem; /* Converted from 30px */
 }
 
@@ -104,15 +106,15 @@ h1 {
 }
 
 
-.site-logo {
-    padding-left: 1.5rem;
-}
+
 .site-logo img {
-    height: 5rem; 
+    height: 3rem; 
+    padding: 0.625rem 0.9375rem; 
 }
 
 .main-nav {
     background: none;
+    border-color: white;
 }
 
 .menu-list {
@@ -130,16 +132,15 @@ h1 {
 
 .menu-list li a {
     padding: 0.625rem 0.9375rem; 
-    color: var(--text-color-titles);
+    color: var(--text-color-dark);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
-    background-color: var(--third-color);
     font-family: 'IBM Plex Mono', monospace;
 }
 
 .menu-list li a:hover {
-    color: var(--text-color-hover);
+    color: var(--third-color);
 }
 
 .menu-toggle-button {
@@ -148,21 +149,21 @@ h1 {
     border: none;
     cursor: pointer;
     padding: 0;
-    width: 2.5rem;
-    height: 1.875rem;
+    width: 1.4rem;
+    height: 2rem;
     position: relative;
     z-index: 1000;
 }
 
 
-/* --- the lines of the menu --- */
+/* --- the lines just the visualization of the menu --- */
 .bar {
     display: block;
-    width: 3.125rem; 
-    height: 0.3125rem; 
+    width: 4.45rem; 
+    height: 0.24rem; 
     background-color: white;
     border-radius: 0.3125rem; 
-    margin: 0.3125rem auto;
+    margin: 0.5rem auto;
     transition: 0.3s;
 }
 
@@ -197,14 +198,14 @@ p {
     margin-bottom: 5rem;
 }
 
-.subtitulo {
-    font-size: 3rem; /* Converted from 32px */
+.subtitulo, h3 {
+    font-size: 4rem; /* Converted from 32px */
     color: var(--text-color-titles);
     background: none;
     border: none;
     box-shadow: none;
     padding-top: 0; /* Converted from 0px */
-    line-height: 3rem;
+    line-height: 4rem;
     padding: 0rem 0rem;
     text-transform: uppercase;
     font-family: 'IBM Plex Mono', monospace;
@@ -215,10 +216,14 @@ hr {
   opacity: 0;
 }
 
+.strong {
+    color: var(--text-color-accent);
+}
+
 .texto {
     color: var(--text-color-dark);
     padding: 0.625rem;  
-    font-size: 1.5rem; 
+    font-size: 2rem; 
     text-shadow: none;
     text-align: justify;
     padding: 0.1rem;
@@ -227,7 +232,7 @@ hr {
 
 .texto ul {
     font-family: 'IBM Plex Mono';
-    font-size: 1.5rem;
+    font-size: 2rem;
     list-style-type: disc; 
     margin-left: 1em;
     padding-right: 2rem; 
@@ -245,16 +250,14 @@ time {
 }
 
 .tag-btn {
-  color: var(--text-color-titles);
-  font-size: 1rem;
-  background-color: var(--box-color);
-  border-radius: 0.125rem;
   color: var(--text-color-dark);
+  font-size: 1rem;
+  border-radius: 0.125rem;
   text-shadow: none;
   border-style: groove;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  opacity: 50%;
+  opacity: 100%;
 }
 
 .post-list {
@@ -270,7 +273,7 @@ time {
 }
 
 .post-meta {
-    color: white;
+    color: var(--text-color-titles);
     padding-left: 0.625rem;
     font-size: 1.4em;
 }
@@ -279,7 +282,7 @@ time {
 @media (max-width: 768px) { 
 
   html { 
-    font-size: 14px;
+    font-size: 12px;
 
     }
   body {
@@ -291,41 +294,50 @@ time {
     padding: 0.625rem; 
   }
 
-.site-header {
+    .site-header {
+
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center ;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000; /* Ensure the header is always on top */
-    padding: 0.625rem 0.625rem; 
+    padding: 0.125rem 0.125rem; 
     background-color: var(--primary-color); 
-    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.2); 
+    box-shadow: 0 0.0325rem 0.0025rem white;
 }
 
     .menu-toggle-button {
         display: block;
         order: 2;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
+        margin: 0rem;
+        height: 3rem;
+        width: 5rem;
     }
+
 
     .logo-title-container {
         order: 1;
+        padding-top: 0.5rem;
     }
  
     body {
-        padding-top: 3.125rem; 
+        padding-top: 2.25rem; 
         width: 80%;
+        scroll-margin-top: 10rem;
     }
+
     .site-logo{
+    display: block;
     padding-right: 0; 
-    justify-self: right;
+    justify-self:center;
     align-self: center;
+    }
+    .site-logo img{
+        height: 2.9rem;
+        padding-top: 1rem;
     }
     .main-nav {
     display: none;
@@ -334,8 +346,8 @@ time {
     left: 0;
     width: 100%;
     background-color: var(--primary-color);
-    z-index: 999; /* Ensure the menu is above the page content but below the header */
-    border-radius: 0 0 0.625rem 0.625rem; 
+    z-index: 9999; /* Ensure the menu is above the page content but below the header */
+    justify-content: space-evenly;
     /* You can set a max-height and overflow-y: auto here if the menu links are long */
     }
 
@@ -384,6 +396,10 @@ time {
         padding-right: 0; 
         font-size: 2.5rem; 
         justify-self: center;
+        align-self: center;
+    }
+
+    .bar {
         align-self: center;
     }
 }

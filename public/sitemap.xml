@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-03T12:44:55-03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/biblioteca/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/vk_opensource/</loc>
   </url><url>
     <loc>http://localhost:1313/biblioteca/that-it-will.never-come-again-by-emily-dickinson/</loc>
-    <lastmod>2025-11-03T12:44:55-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/life/</loc>
