@@ -7,7 +7,6 @@
     --text-color-titles: color-mix(in srgb, var(--text-color-light) 100%, white 20% );
     --text-color-light: #88ff55;
     --text-color-hover: color-mix(in srgb, var(--secondary-color) 60%, transparent 30%);
-    --box-color: color-mix(in srgb, var(--background-color) 70%, white 80%)
 }
 
 html {
@@ -30,7 +29,7 @@ html {
   color: var(--text-color-dark);
   font-size: 2.25rem; 
   width: 100%;
-  font-family: "Ubuntu";
+  font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -49,7 +48,7 @@ img {
 
 
 body {
-    font-family: 'Inter', 'Work Sans', sans-serif; /* Fallback included */
+    font-family: 'Work Sans', sans-serif; /* Fallback included */
     background-color: var(--background-color);
     line-height: 1.6;
     margin: 0; 
@@ -135,9 +134,8 @@ h1 {
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
-    box-shadow: 0.0625rem 0.0625rem 0.03125rem 0.125rem black;
-    border-radius: 5px;
     background-color: var(--third-color);
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .menu-list li a:hover {
@@ -178,8 +176,9 @@ p {
     text-shadow: none;
     text-align: justify;
     font-size: 2rem; 
-    font-family: 'IBM Plex Mono';
+    font-family: 'Work Sans';
     font-weight: 400;
+    font-style: regular;
 }
 
 .page-title {
@@ -189,7 +188,6 @@ p {
     padding-bottom: 0.5rem;
     line-height: 3rem;
     text-transform: uppercase;
-    text-shadow: 0.125rem 0.125rem black;
     font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -221,11 +219,10 @@ hr {
     color: var(--text-color-dark);
     padding: 0.625rem;  
     font-size: 1.5rem; 
-    text-transform: initial;
     text-shadow: none;
     text-align: justify;
     padding: 0.1rem;
-    font-family: 'IBM Plex Mono';
+    font-family: 'Work Sans';
 }
 
 .texto ul {
@@ -394,98 +391,98 @@ time {
 /* --- IBM Plex Mono Fonts --- */
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-Bold.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-Bold.ttf') format('truetype');
   font-weight: 700; /* Bold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-BoldItalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-ExtraLight.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-ExtraLight.ttf') format('truetype');
   font-weight: 200; /* Extra Light */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-ExtraLightItalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-Italic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-Italic.ttf') format('truetype');
   font-weight: 400; /* Regular */
   font-style: italic;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-Light.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-Light.ttf') format('truetype');
   font-weight: 300; /* Light */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-LightItalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-Medium.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-Medium.ttf') format('truetype');
   font-weight: 500; /* Medium */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-MediumItalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-Regular.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-Regular.ttf') format('truetype');
   font-weight: 400; /* Regular */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-SemiBold.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-SemiBold.ttf') format('truetype');
   font-weight: 600; /* Semi Bold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-SemiBoldItalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-Thin.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-Thin.ttf') format('truetype');
   font-weight: 100; /* Thin */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('fonts/IBMPlexMono-ThinItalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexMono-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
 }
@@ -494,7 +491,7 @@ time {
 /* --- Work Sans Fonts --- */
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-Black.ttf') format('truetype');
+  src: url('/fonts/WorkSans-Black.ttf') format('truetype');
   font-weight: 900; /* Black */
   font-style: normal;
 }
@@ -508,112 +505,112 @@ time {
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-Bold.ttf') format('truetype');
+  src: url('/fonts/WorkSans-Bold.ttf') format('truetype');
   font-weight: 700; /* Bold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-BoldItalic.ttf') format('truetype');
+  src: url('/fonts/WorkSans-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-ExtraBold.ttf') format('truetype');
+  src: url('/fonts/WorkSans-ExtraBold.ttf') format('truetype');
   font-weight: 800; /* Extra Bold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-ExtraBoldItalic.ttf') format('truetype');
+  src: url('/fonts/WorkSans-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-ExtraLight.ttf') format('truetype');
+  src: url('/fonts/WorkSans-ExtraLight.ttf') format('truetype');
   font-weight: 200; /* Extra Light */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-ExtraLightItalic.ttf') format('truetype');
+  src: url('/fonts/WorkSans-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-Italic.ttf') format('truetype');
+  src: url('/fonts/WorkSans-Italic.ttf') format('truetype');
   font-weight: 400; /* Regular */
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-Light.ttf') format('truetype');
+  src: url('/fonts/WorkSans-Light.ttf') format('truetype');
   font-weight: 300; /* Light */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-LightItalic.ttf') format('truetype');
+  src: url('/fonts/WorkSans-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-Medium.ttf') format('truetype');
+  src: url('/fonts/WorkSans-Medium.ttf') format('truetype');
   font-weight: 500; /* Medium */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-MediumItalic.ttf') format('truetype');
+  src: url('/fonts/WorkSans-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-Regular.ttf') format('truetype');
+  src: url('/fonts/WorkSans-Regular.ttf') format('truetype');
   font-weight: 400; /* Regular */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-SemiBold.ttf') format('truetype');
+  src: url('/fonts/WorkSans-SemiBold.ttf') format('truetype');
   font-weight: 600; /* Semi Bold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-SemiBoldItalic.ttf') format('truetype');
+  src: url('/fonts/WorkSans-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-Thin.ttf') format('truetype');
+  src: url('/fonts/WorkSans-Thin.ttf') format('truetype');
   font-weight: 100; /* Thin */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('fonts/WorkSans-ThinItalic.ttf') format('truetype');
+  src: url('/fonts/WorkSans-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
 }
