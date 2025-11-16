@@ -399,6 +399,13 @@ time {
         align-self: center;
     }
 
+    .hero {
+        padding-top: 2rem;
+        width: 120%;
+        height: auto;
+    
+    }
+
     .bar {
         align-self: center;
     }
@@ -635,6 +642,7 @@ time {
 /* This rule ensures that bold text in the body uses the defined 700 weight file */
 strong, b {
     font-weight: 700;
+    color: var(--text-color-accent);
 }
 
 /* This rule ensures that italic text in the body uses the defined italic file */
