@@ -6,9 +6,6 @@ menus:
     name: "Manifiesto"
     weight: 2
 ---
-
-{{% box %}} 
-
 Mi nombre es Iván, y me cansé de “Van Klimen”. Lo entrego.
 
 “Van Klimen” es un personaje que creé alrededor de 2018, cuando empecé a experimentar con música en mi computadora. Surgió como un ente que suplía la falta de otros músicos que me acompañaran. Nada nuevo bajo el sol: es algo que muchos artistas vienen haciendo hace tiempo en sus home studios, y la irrupción de la pandemia no hizo más que acelerar ese proceso —aceleró muchas cosas, en realidad—.
@@ -39,13 +36,11 @@ Van Klimen será un manual abierto en la red, esperando que de él florezcan otr
 
 Iván Melink
 
-{{% /box %}} 
 
 -----
 -----
 
 
-{{% box %}} 
 **Licencia de Uso del Manual Algorítmico para Artistas (CC BY-NC-SA 4.0)**
 
 Todo el contenido de este sitio web, incluyendo el manifiesto, los textos, el concepto de la identidad de "Van Klimen", y las pistas de audio descargables, está sujeto a la licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
@@ -59,5 +54,4 @@ Bajo las siguientes condiciones:
 * Atribución: Debes dar crédito de forma adecuada al autor original (Iván Melink / Van Klimen), proporcionar un enlace a la licencia y especificar si se han realizado cambios.
 * No Comercial: No puedes utilizar este material con fines comerciales (es decir, no puedes vender mi música o tu versión de mi música).
 * Compartir Igual: Si remezclas, transformas o construyes sobre el material, debes distribuir tus contribuciones bajo la misma licencia que la original.
-{{% /box %}} 
 

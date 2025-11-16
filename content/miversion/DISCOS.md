@@ -4,7 +4,7 @@ date: 2019-01-13T20:28:42-06:00
 tags: ["poetry", "trees"]
 draft: false
 ---
-{{% box %}} 
+
 I think that I shall never see
 A poem lovely as a tree.
 
@@ -22,4 +22,3 @@ Who intimately lives with rain.
 
 Poems are made by fools like me,
 But only God can make a tree.
-{{% /box %}} 

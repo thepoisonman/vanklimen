@@ -1,17 +1,17 @@
 :root { 
     --primary-color: #eb1736;
-    --secondary-color: #5252d4;
-    --third-color: color-mix(in srgb, color-mix(in srgb, var(--primary-color) 40%, var(--secondary-color) 30%), white 37.3%);
-    --background-color: #7575dd;
-    --text-color-dark: black ;
+    --secondary-color: #042bd4;
+    --third-color: color-mix(in srgb, color-mix(in srgb, var(--primary-color) 40%, var(--secondary-color) 90%), white 37.3%);
+    --background-color: color-mix(in srgb, var(--secondary-color) 70%, white 70%);
+    --text-color-dark: #020001 ;
     --text-color-titles: white;
-    --text-color-light: silver;
+    --text-color-light: #a9b6d3;
     --text-color-hover: color-mix(in srgb, var(--secondary-color) 60%, transparent 30%);
     --box-color: color-mix(in srgb, var(--background-color) 70%, white 80%)
 }
 
 html {
-    font-size: 14px; 
+    font-size: 16px; 
 }
 
 .container {
@@ -27,10 +27,8 @@ html {
 #main {
   margin-top: 1em;
   margin-bottom: 0.125rem; 
-  color: var(--text-color-light);
-  text-shadow: 0.125rem 0.125rem black;
+  color: var(--text-color-dark);
   font-size: 2.25rem; 
-  text-transform: uppercase;
   width: 100%;
   font-family: "Ubuntu";
 }
@@ -63,29 +61,7 @@ body {
     flex-wrap: wrap;
 }
 
-
-@media (max-width: 30rem) { 
-  body {
-    font-size: 0.75rem; 
-  }
-
-.textimage {
-  display: flex;
-}
-
-.hero {
-    border-radius: 6.25rem; 
-    /* Optional: Ensures corners are rounded correctly if the image extends past the box */
-    display: flex; 
-    width: 100%;
-    height: auto;
-}
-  main {
-    padding: 0.625rem;
-    flex-wrap: wrap;
-  }
-
-}
+/* --- Base Styles for all screens (Desktop First) --- */
 
 /* Apply a margin when scrolling to an anchor point, preventing overlap */
 h1, h2, h3, h4, h5, h6, nav {
@@ -93,14 +69,18 @@ h1, h2, h3, h4, h5, h6, nav {
     scroll-margin-top: 10rem;
     flex-wrap: nowrap;
     margin-bottom: 0.5rem;
-    font-size: 4.3rem;
+    font-size: 6rem;
     font-family: 'Goldman', Impact, sans-serif;
-    line-height: 3rem;
+    line-height: 4rem;
     text-wrap: balance;
+    text-shadow: 0.125rem 0.125rem black;
+    
 }
 
+h1 {
+    text-transform: uppercase;
+}
 
-/* --- Base Styles for all screens (Desktop First) --- */
 .site-header {
   display: flex;
   width:100%;
@@ -111,6 +91,7 @@ h1, h2, h3, h4, h5, h6, nav {
   border-radius: 0; /* Converted from 0px */
   box-shadow: 0.125rem 0.125rem 0.625rem black; /* Converted from 2px 2px 10px */
   font-size: 1.875rem; /* Converted from 30px */
+  text-shadow: 
 }
 
 .logo-title-container {
@@ -183,19 +164,119 @@ h1, h2, h3, h4, h5, h6, nav {
     transition: 0.3s;
 }
 
+a {
+    color: white; 
+    text-decoration: none;
+    }
 
-
-.block-box {
-    color: var(--text-color-light);
-    padding: 0.625rem;  
-    text-transform: initial;
+p {
+    color: var(--text-color-black);
     text-shadow: none;
-    width: 100%;
+    text-align: justify;
+    font-size: 2rem;
+    font-family: "Ubuntu";
 }
 
+.page-title {
+    color: var(--text-color-titles);
+    align-self: center;
+    font-size: 4rem;
+    padding-bottom: 0.5rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-shadow: 0.125rem 0.125rem black;
+}
+
+.tit-list {
+    font-size: 2rem;
+    line-height: 0.5em;
+    margin-bottom: 5rem;
+}
+
+.subtitulo {
+    text-shadow: 0.125rem 0.125rem black; 
+    font-size: 3rem; /* Converted from 32px */
+    color: var(--text-color-titles);
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding-top: 0; /* Converted from 0px */
+    line-height: 3rem;
+    padding: 0rem 0rem;
+    text-transform: uppercase;
+
+}
+
+hr {
+  opacity: 0;
+}
+
+.texto {
+    color: var(--text-color-dark);
+    padding: 0.625rem;  
+    font-size: 1.5rem; 
+    text-transform: initial;
+    text-shadow: none;
+    text-align: justify;
+    padding: 0.1rem;
+}
+
+.texto ul {
+    font-size: 1.5rem;
+    list-style-type: disc; 
+    margin-left: 1em;
+    padding-right: 2rem; 
+}
+/* list section */
+
+time {
+  color: var(--text-color-titles);
+  font-size: 1.2rem;
+  background-color: var(--secondary-color);
+  text-shadow: none;
+  border-radius: 0.5rem;
+  border-style: groove;
+  padding: 0.5rem 1rem;
+}
+
+.tag-btn {
+  color: var(--text-color-titles);
+  font-size: 1rem;
+  background-color: var(--box-color);
+  border-radius: 0.125rem;
+  color: var(--text-color-dark);
+  text-shadow: none;
+  border-style: groove;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  opacity: 50%;
+}
+
+.post-list {
+  color: var(--text-color-titles);
+  list-style-type: none;
+  font-size: 1rem; 
+  padding-left: 0; /* Optional, depending on your layout */
+}
+
+.post-item {
+    color: var(--text-color-titles);
+    font-size: 1rem;
+}
+
+.post-meta {
+    color: white;
+    padding-left: 0.625rem;
+    font-size: 1.4em;
+}
 
 /* --- Media Query for Mobile (less than ~768px wide) --- */
-@media (max-width: 48rem) { 
+@media (max-width: 768px) { 
+
+  html { 
+    font-size: 14px;
+
+    }
   body {
     font-size: 0.875rem; 
   }
@@ -295,116 +376,11 @@ h1, h2, h3, h4, h5, h6, nav {
     }
 
     .site-title-text {
-        padding-right: 0; /* Converted from 0px */
-        font-size: 2.5rem; /* Converted from 40px */
+        padding-right: 0; 
+        font-size: 2.5rem; 
         justify-self: center;
         align-self: center;
     }
-}
-
-time {
-  color: var(--text-color-titles);
-  font-size: 1.2rem;
-  background-color: var(--secondary-color);
-  text-shadow: none;
-  border-radius: 0.5rem;
-  border-style: groove;
-  padding: 0.5rem 1rem;
-}
-
-/*style for tags*/
-.tag-btn {
-  color: var(--text-color-titles);
-  font-size: 1rem;
-  background-color: var(--box-color);
-  border-radius: 0.125rem;
-  color: var(--text-color-dark);
-  text-shadow: none;
-  border-style: groove;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  opacity: 50%;
-}
-
-
-.post-list {
-  color: var(--text-color-titles);
-  list-style-type: none;
-  font-size: 1rem; 
-  padding-left: 0; /* Optional, depending on your layout */
-}
-
-.post-item {
-    color: var(--text-color-titles);
-    font-size: 1rem;
-}
-
-.post-meta {
-    color: white;
-    padding-left: 0.625rem;
-    font-size: 1.25rem;
-    background-color: var(--secondary-color);
-    border-radius: 0.625rem;
-    box-shadow: 0.03125rem 0.03125rem 0.625rem black;
-}
-
-
-/* style for links */
-a {
-    color: white; 
-    text-decoration: none;
-    }
-
-p {
-    color: var(--text-color-light);
-    text-shadow: none;
-    text-align: justify;
-}
-
-.page-title {
-    color: var(--text-color-titles);
-    line-height: 0.1em;
-    font-size: 4.3rem;
-    padding-bottom: 2rem;
-    line-height: 3rem;
-}
-
-.tit-list {
-    font-size: 2rem;
-    line-height: 0.5em;
-    margin-bottom: 5rem;
-}
-.subtitulo {
-    text-shadow: 0.125rem 0.125rem black; /* Converted from 2px */
-    font-size: 1.5rem; /* Converted from 32px */
-    color: var(--text-color-titles);
-    background: none;
-    border: none;
-    box-shadow: none;
-    padding-top: 0; /* Converted from 0px */
-    line-height: 1.4rem;
-    padding: 2rem 2rem;
-
-}
-
-hr {
-  opacity: 0;
-}
-
-.texto {
-    color: var(--text-color-light);
-    padding: 0.625rem;  
-    font-size: 1.5rem; 
-    text-transform: initial;
-    text-shadow: none;
-    text-align: justify;
-    padding: 2rem;
-}
-
-.texto ul {
-    list-style-type: disc; 
-    margin-left: 1em;
-    padding-right: 2rem; 
 }
 
 /* --- Goldman Font Definitions --- */

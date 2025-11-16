@@ -4,7 +4,7 @@ tags = ["poetry", "life"]
 draft = false
 title = "Van Klimen"
 +++
-{{% box %}} 
+
 If you can keep your head when all about you
 Are losing theirs and blaming it on you,
 If you can trust yourself when all men doubt you,
@@ -40,4 +40,3 @@ If you can fill the unforgiving minute
 With sixty seconds' worth of distance run,
 Yours is the Earth and everything that's in it,
 And—which is more—you'll be a Man, my son!
-{{% /box %}} 
