@@ -6,7 +6,7 @@ menus:
     name: "Manifiesto"
     weight: 2
 ---
-Mi nombre es Iván, y me cansé de “Van Klimen”. Lo entrego.
+Mi nombre es Iván y me cansé de “Van Klimen”. Lo entrego.
 
 “Van Klimen” es un personaje que creé alrededor de 2018, cuando empecé a experimentar con música en mi computadora. Surgió como un ente que suplía la falta de otros músicos que me acompañaran. Nada nuevo bajo el sol: es algo que muchos artistas vienen haciendo hace tiempo en sus home studios, y la irrupción de la pandemia no hizo más que acelerar ese proceso —aceleró muchas cosas, en realidad—.
 
