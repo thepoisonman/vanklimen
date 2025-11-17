@@ -29,5 +29,12 @@
       <guid>http://localhost:1313/biblioteca/trees-by-joyce-kilmer/</guid>
       <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Contacto</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

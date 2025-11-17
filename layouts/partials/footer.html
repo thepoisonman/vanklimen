@@ -1,0 +1,15 @@
+<footer class="site-footer">
+    <div class="container">
+        <!-- Site Title and Copyright -->
+        <p>
+            &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+        </p>
+        
+        <!-- Contact Link -->
+        <nav class="footer-links">
+            <!-- This uses the relref function to create a reliable internal link to your contact page -->
+            <a href="{{ relref . "/contact.md" }}">CONTACTO</a> 
+        </nav>
+    </div>
+</footer>
+
