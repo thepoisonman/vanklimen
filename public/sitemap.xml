@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/</loc>
+    <loc>https://example.org/biblioteca/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vk_opensource/</loc>
+    <loc>https://example.org/vk_opensource/</loc>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/that-it-will.never-come-again-by-emily-dickinson/</loc>
+    <loc>https://example.org/biblioteca/fracasos/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/life/</loc>
+    <loc>https://example.org/tags/life/</loc>
     <lastmod>2025-11-03T12:04:25-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/poetry/</loc>
+    <loc>https://example.org/tags/poetry/</loc>
     <lastmod>2025-11-03T12:04:25-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
     <lastmod>2025-11-03T12:04:25-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/vanklimen/</loc>
+    <loc>https://example.org/biblioteca/vanklimen/</loc>
     <lastmod>2025-11-03T12:04:25-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/discos/</loc>
+    <loc>https://example.org/miversion/discos/</loc>
+    <lastmod>2019-02-13T20:28:42-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/trees/</loc>
+    <lastmod>2019-02-13T20:28:42-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/miversion/</loc>
+    <lastmod>2019-02-13T20:28:42-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/biblioteca/trees-by-joyce-kilmer/</loc>
     <lastmod>2019-01-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/trees/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/biblioteca/trees-by-joyce-kilmer/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/miversion/</loc>
-    <lastmod>2019-01-13T20:28:42-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/manifiesto/</loc>
+    <loc>https://example.org/manifiesto/</loc>
   </url>
 </urlset>
