@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Van Klimen 1.0 on Van Klimen</title>
-    <link>https://example.org/miversion/</link>
+    <link>http://localhost:1313/miversion/</link>
     <description>Recent content in Van Klimen 1.0 on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Wed, 13 Feb 2019 20:28:42 -0600</lastBuildDate>
-    <atom:link href="https://example.org/miversion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/miversion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>discos</title>
-      <link>https://example.org/miversion/discos/</link>
+      <link>http://localhost:1313/miversion/discos/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/miversion/discos/</guid>
+      <guid>http://localhost:1313/miversion/discos/</guid>
       <description>&lt;p&gt;I think that I shall never see&#xA;A poem lovely as a tree.&lt;/p&gt;&#xA;&lt;p&gt;A tree whose hungry mouth is prest&#xA;Against the earth&amp;rsquo;s sweet flowing breast;&lt;/p&gt;&#xA;&lt;p&gt;A tree that looks at God all day,&#xA;And lifts her leafy arms to pray;&lt;/p&gt;&#xA;&lt;p&gt;A tree that may in Summer wear&#xA;A nest of robins in her hair;&lt;/p&gt;&#xA;&lt;p&gt;Upon whose bosom snow has lain;&#xA;Who intimately lives with rain.&lt;/p&gt;&#xA;&lt;p&gt;Poems are made by fools like me,&#xA;But only God can make a tree.&lt;/p&gt;</description>
     </item>
   </channel>

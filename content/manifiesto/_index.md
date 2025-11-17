@@ -41,7 +41,7 @@ Iván Melink
 -----
 
 
-**Licencia de Uso del Manual Algorítmico para Artistas (CC BY-NC-SA 4.0)**
+### Licencia de Uso del Manual Algorítmico para Artistas (CC BY-NC-SA 4.0) ###
 
 Todo el contenido de este sitio web, incluyendo el manifiesto, los textos, el concepto de la identidad de "Van Klimen", y las pistas de audio descargables, está sujeto a la licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
 
