@@ -41,17 +41,17 @@ Iván Melink
 -----
 
 
-### Licencia de Uso del Manual Algorítmico para Artistas (CC BY-NC-SA 4.0) ###
+### LICENCIA DE USO DEL MANUAL ALGORÍTMICO PARA ARTISTAS (CC BY-NC-SA 4.0) ###
 
 Todo el contenido de este sitio web, incluyendo el manifiesto, los textos, el concepto de la identidad de "Van Klimen", y las pistas de audio descargables, está sujeto a la licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
 
 En resumen, esto significa que eres libre de:
 
-* Compartir: Copiar, distribuir y transmitir el trabajo.
-* Remezclar/Adaptar: Crear obras derivadas, remezclas y tus propias versiones del algoritmo.
+* **Compartir:** Copiar, distribuir y transmitir el trabajo.
+* **Remezclar/Adaptar:** Crear obras derivadas, remezclas y tus propias versiones del algoritmo.
 
 Bajo las siguientes condiciones:
-* Atribución: Debes dar crédito de forma adecuada al autor original (Iván Melink / Van Klimen), proporcionar un enlace a la licencia y especificar si se han realizado cambios.
-* No Comercial: No puedes utilizar este material con fines comerciales (es decir, no puedes vender mi música o tu versión de mi música).
-* Compartir Igual: Si remezclas, transformas o construyes sobre el material, debes distribuir tus contribuciones bajo la misma licencia que la original.
+* **Atribución:** Debes dar crédito de forma adecuada al autor original (Iván Melink / Van Klimen), proporcionar un enlace a la licencia y especificar si se han realizado cambios.
+* **No Comercial:** No puedes utilizar este material con fines comerciales (es decir, no puedes vender mi música o tu versión de mi música).
+* **Compartir Igual:** Si remezclas, transformas o construyes sobre el material, debes distribuir tus contribuciones bajo la misma licencia que la original.
 

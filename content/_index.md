@@ -3,7 +3,7 @@ introTitle: '¡ERROR FATAL!'
 weight: 1
 ---
 
-Esto quiso ser el Manual Algorrítmico para Artistas de Van Klimen pero mientras la página cargaba ocurrió un error fatal...
+Esto quiso ser el Manual Algorítmico para Artistas de Van Klimen pero mientras la página cargaba ocurrió un error fatal...
 
 **¡EL CONTENIDO SE INICIARÁ DE FORMA FORZADA!**
 

@@ -25,13 +25,16 @@
     <loc>http://localhost:1313/biblioteca/vanklimen/</loc>
     <lastmod>2025-11-03T12:04:25-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/discos/</loc>
+    <loc>http://localhost:1313/miversion/</loc>
     <lastmod>2019-02-13T20:28:42-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/trees/</loc>
     <lastmod>2019-02-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/</loc>
+    <loc>http://localhost:1313/miversion/el_androide/</loc>
+    <lastmod>2019-02-13T20:28:42-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/miversion/el_trovador/</loc>
     <lastmod>2019-02-13T20:28:42-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/biblioteca/trees-by-joyce-kilmer/</loc>

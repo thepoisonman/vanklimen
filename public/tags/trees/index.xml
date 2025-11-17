@@ -9,11 +9,18 @@
     <lastBuildDate>Wed, 13 Feb 2019 20:28:42 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/trees/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>discos</title>
-      <link>http://localhost:1313/miversion/discos/</link>
+      <title>Van Klimen: El Androide</title>
+      <link>http://localhost:1313/miversion/el_androide/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
-      <guid>http://localhost:1313/miversion/discos/</guid>
-      <description>&lt;p&gt;I think that I shall never see&#xA;A poem lovely as a tree.&lt;/p&gt;&#xA;&lt;p&gt;A tree whose hungry mouth is prest&#xA;Against the earth&amp;rsquo;s sweet flowing breast;&lt;/p&gt;&#xA;&lt;p&gt;A tree that looks at God all day,&#xA;And lifts her leafy arms to pray;&lt;/p&gt;&#xA;&lt;p&gt;A tree that may in Summer wear&#xA;A nest of robins in her hair;&lt;/p&gt;&#xA;&lt;p&gt;Upon whose bosom snow has lain;&#xA;Who intimately lives with rain.&lt;/p&gt;&#xA;&lt;p&gt;Poems are made by fools like me,&#xA;But only God can make a tree.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/miversion/el_androide/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;EL ANDROIDE:&lt;/strong&gt; La versión digital. Casi no existe en la performance en la vida real (si es que eso tiene sentido&amp;hellip;). Música electrónica e hiperpop deformado.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Van Klimen: El Trovador</title>
+      <link>http://localhost:1313/miversion/el_trovador/</link>
+      <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
+      <guid>http://localhost:1313/miversion/el_trovador/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;EL TROVADOR:&lt;/strong&gt; Canciones en su forma primigenia: acompañado con la guitara, la tradición de las músicas tradicionales, la voz y la poesía. Nada más que eso.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trees by Joyce Kilmer</title>

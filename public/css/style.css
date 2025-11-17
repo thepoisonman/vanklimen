@@ -14,6 +14,10 @@ html {
     font-size: 16px; 
 }
 
+ul li{
+  list-style: none;
+}
+
 .container {
   max-width: 75rem; 
   width: 100%;
@@ -71,7 +75,7 @@ h1, h2, h3, h4, h5, h6, nav {
     scroll-margin-top: 10rem;
     flex-wrap: nowrap;
     margin-bottom: 0.5rem;
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: 'Goldman', Impact, sans-serif;
     line-height: 4rem;
     text-wrap: balance;
@@ -106,7 +110,6 @@ h1 {
 }
 
 
-
 .site-logo img {
     height: 3rem; 
     padding: 0.625rem 0.9375rem; 
@@ -115,11 +118,15 @@ h1 {
 .main-nav {
     background: none;
     border-color: white;
+    list-style: none;
+    list-style-type: none;
 }
+
 
 .menu-list {
     color: var(--text-color-titles);
     list-style: none;
+    list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
@@ -129,6 +136,8 @@ h1 {
     gap: 1.25rem; 
     flex-wrap: wrap;
 }
+
+
 
 .menu-list li a {
     padding: 0.625rem 0.9375rem; 
@@ -152,8 +161,9 @@ h1 {
     width: 1.4rem;
     height: 2rem;
     position: relative;
-    z-index: 1000;
+    index: 1000;
 }
+
 
 
 /* --- the lines just the visualization of the menu --- */
@@ -224,16 +234,12 @@ hr {
     font-family: 'Work Sans';
 }
 
-.texto ul {
-    font-family: 'IBM Plex Mono';
-    font-size: 2rem;
-    list-style-type: disc; 
-    margin-left: 1em;
-    padding-right: 2rem; 
-}
+
 /* list section */
 
 .tit-list {
+    list-style: none;
+    list-style-type: none;
     color: var(--text-color-titles);
     font-size: 3rem;
     text-transform: uppercase;
@@ -243,6 +249,8 @@ hr {
 }
 
 .post-list {
+  list-style: none;
+  list-style-type: none;
   color: var(--text-color-titles);
   list-style-type: none;
   font-size: 1rem; 
