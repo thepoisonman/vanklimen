@@ -10,6 +10,12 @@
     --text-color-hover: color-mix(in srgb, var(--secondary-color) 60%, transparent 30%);
 }
 
+html, body {
+    width: 100%;
+
+}
+
+
 html {
     font-size: 16px; 
 }
@@ -103,6 +109,16 @@ h1 {
   font-size: 1.875rem; 
 }
 
+footer {
+    width: 100%;
+    /* Add box-sizing to prevent padding from causing horizontal scrolling */
+    box-sizing: border-box; 
+}
+
+footer{
+   box-sizing: inherit;
+}
+
 .site-footer {
   display: flex;
   width: 100%;
@@ -110,15 +126,21 @@ h1 {
   justify-content: space-between;
   border-top:1px solid white;
   padding: 0rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: var(--primary-color);
   color: white;
+  margin: 0 auto;
+  box-sizing: inherit;
 }
 
+.footer-title{
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
 
 .footer-links {
   font-family: 'Work Sans';
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem 1rem;
   flex-wrap: wrap;
   margin: 0;
@@ -307,7 +329,7 @@ hr {
 
   /* Adjusting padding for main content areas on small screens */
   main {
-    padding: 0.625rem; 
+    padding: 0.625rem;
   }
 
     .site-header {
@@ -325,6 +347,15 @@ hr {
     box-shadow: 0 0.0325rem 0.0025rem white;
 }
 
+    .site-footer {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 105%;
+    padding: 0.125rem 0.125rem;
+    }
     .menu-toggle-button {
         display: block;
         order: 2;
@@ -341,7 +372,7 @@ hr {
  
     body {
         padding-top: 2.25rem; 
-        width: 80%;
+        width: 100%;
         scroll-margin-top: 10rem;
     }
 
@@ -417,7 +448,7 @@ hr {
 
     .hero {
         padding-top: 2rem;
-        width: 120%;
+        width: 100%;
         height: auto;
     
     }
