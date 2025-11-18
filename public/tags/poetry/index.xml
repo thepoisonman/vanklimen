@@ -9,11 +9,39 @@
     <lastBuildDate>Mon, 03 Nov 2025 12:04:25 -0300</lastBuildDate>
     <atom:link href="https://example.org/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Van Klimen</title>
+      <title>LDQT Bitácora</title>
       <link>https://example.org/biblioteca/vanklimen/</link>
       <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
       <guid>https://example.org/biblioteca/vanklimen/</guid>
-      <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hacer una explicación de Los días que transcurren&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LOS DÍAS QUE TRANSCURREN</title>
+      <link>https://example.org/miversion/el_androide/discos/ldqt/</link>
+      <pubDate>Sat, 01 Nov 2025 20:28:42 -0600</pubDate>
+      <guid>https://example.org/miversion/el_androide/discos/ldqt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SUEÑO ANDROIDE</title>
+      <link>https://example.org/miversion/el_androide/discos/sue%C3%B1o-androide/</link>
+      <pubDate>Mon, 28 Nov 2022 20:28:42 -0600</pubDate>
+      <guid>https://example.org/miversion/el_androide/discos/sue%C3%B1o-androide/</guid>
+      <description>&lt;iframe data-testid=&#34;embed-iframe&#34; style=&#34;border-radius:12px&#34; src=&#34;https://open.spotify.com/embed/album/6sS5vzJeE5tY0cNrdLL7QF?utm_source=generator&amp;theme=0&#34; width=&#34;100%&#34; height=&#34;352&#34; frameBorder=&#34;0&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>HIPERREAL</title>
+      <link>https://example.org/miversion/el_androide/discos/hiperreal/</link>
+      <pubDate>Thu, 13 Feb 2020 20:28:42 -0600</pubDate>
+      <guid>https://example.org/miversion/el_androide/discos/hiperreal/</guid>
+      <description>&lt;iframe data-testid=&#34;embed-iframe&#34; style=&#34;border-radius:12px&#34; src=&#34;https://open.spotify.com/embed/album/7J2MjRqKEXxtRqAhnCAhcT?utm_source=generator&amp;theme=0&#34; width=&#34;100%&#34; height=&#34;352&#34; frameBorder=&#34;0&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>DISCOS Y SINGLES</title>
+      <link>https://example.org/miversion/el_androide/discos/</link>
+      <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
+      <guid>https://example.org/miversion/el_androide/discos/</guid>
+      <description></description>
     </item>
     <item>
       <title>Van Klimen: El Androide</title>
@@ -30,10 +58,17 @@
       <description>&lt;p&gt;&lt;strong&gt;EL TROVADOR:&lt;/strong&gt; Canciones en su forma primigenia: acompañado con la guitara, la tradición de las músicas tradicionales, la voz y la poesía. Nada más que eso.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>VÍDEOS</title>
+      <link>https://example.org/miversion/el_androide/videos/</link>
+      <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
+      <guid>https://example.org/miversion/el_androide/videos/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Trees by Joyce Kilmer</title>
-      <link>https://example.org/biblioteca/trees-by-joyce-kilmer/</link>
+      <link>https://example.org/biblioteca/otro-texto/</link>
       <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/biblioteca/trees-by-joyce-kilmer/</guid>
+      <guid>https://example.org/biblioteca/otro-texto/</guid>
       <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
     </item>
   </channel>

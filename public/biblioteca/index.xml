@@ -9,24 +9,24 @@
     <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
     <atom:link href="https://example.org/biblioteca/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Instrucciones para lidiar con el fracaso</title>
+      <title>Instrucciones para lidiar con los fracasos -y los éxitos-</title>
       <link>https://example.org/biblioteca/fracasos/</link>
       <pubDate>Mon, 03 Nov 2025 12:44:55 -0300</pubDate>
       <guid>https://example.org/biblioteca/fracasos/</guid>
-      <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
+      <description>&lt;p&gt;En el límite de la autoayuda y el poema&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Van Klimen</title>
+      <title>LDQT Bitácora</title>
       <link>https://example.org/biblioteca/vanklimen/</link>
       <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
       <guid>https://example.org/biblioteca/vanklimen/</guid>
-      <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hacer una explicación de Los días que transcurren&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trees by Joyce Kilmer</title>
-      <link>https://example.org/biblioteca/trees-by-joyce-kilmer/</link>
+      <link>https://example.org/biblioteca/otro-texto/</link>
       <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/biblioteca/trees-by-joyce-kilmer/</guid>
+      <guid>https://example.org/biblioteca/otro-texto/</guid>
       <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
     </item>
   </channel>

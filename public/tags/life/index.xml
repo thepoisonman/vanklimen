@@ -9,11 +9,11 @@
     <lastBuildDate>Mon, 03 Nov 2025 12:04:25 -0300</lastBuildDate>
     <atom:link href="https://example.org/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Van Klimen</title>
+      <title>LDQT Bitácora</title>
       <link>https://example.org/biblioteca/vanklimen/</link>
       <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
       <guid>https://example.org/biblioteca/vanklimen/</guid>
-      <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hacer una explicación de Los días que transcurren&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

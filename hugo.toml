@@ -23,4 +23,5 @@ sectionPagesMenu = 'main'
       unsafe = true
     
 [markup.goldmark.parser.attribute]
-block = true
+  block = true
+  title = true
