@@ -14,7 +14,7 @@ draft: false
 Producido, mezclado, interpretado y masterizado por Van Klimen excepto en canciones indicadas.
 
 * **1** Los días que transcurren
-* **2** Alba - 
+* **2** Alba <br />
 Coproducido y mezclado TTOTTO. Saxofón por Hugo Gónzalez López.
 * **3** Catalina
 * **4** Tu diversión
