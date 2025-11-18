@@ -1,6 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'es'
 title = 'Van Klimen'
+subtitle = 'Manual Algorítmico para Artistas'
 
 
 [permalinks]

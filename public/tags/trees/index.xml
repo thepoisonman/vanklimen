@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trees on Van Klimen</title>
-    <link>http://localhost:1313/tags/trees/</link>
+    <link>https://example.org/tags/trees/</link>
     <description>Recent content in Trees on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Wed, 13 Feb 2019 20:28:42 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/trees/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/trees/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Van Klimen: El Androide</title>
-      <link>http://localhost:1313/miversion/el_androide/</link>
+      <link>https://example.org/miversion/el_androide/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
-      <guid>http://localhost:1313/miversion/el_androide/</guid>
+      <guid>https://example.org/miversion/el_androide/</guid>
       <description>&lt;p&gt;&lt;strong&gt;EL ANDROIDE:&lt;/strong&gt; La versión digital. Casi no existe en la performance en la vida real (si es que eso tiene sentido). Música electrónica e hiperpop deformado.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Van Klimen: El Trovador</title>
-      <link>http://localhost:1313/miversion/el_trovador/</link>
+      <link>https://example.org/miversion/el_trovador/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
-      <guid>http://localhost:1313/miversion/el_trovador/</guid>
+      <guid>https://example.org/miversion/el_trovador/</guid>
       <description>&lt;p&gt;&lt;strong&gt;EL TROVADOR:&lt;/strong&gt; Canciones en su forma primigenia: acompañado con la guitara, la tradición de las músicas tradicionales, la voz y la poesía. Nada más que eso.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trees by Joyce Kilmer</title>
-      <link>http://localhost:1313/biblioteca/trees-by-joyce-kilmer/</link>
+      <link>https://example.org/biblioteca/trees-by-joyce-kilmer/</link>
       <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
-      <guid>http://localhost:1313/biblioteca/trees-by-joyce-kilmer/</guid>
+      <guid>https://example.org/biblioteca/trees-by-joyce-kilmer/</guid>
       <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
     </item>
   </channel>

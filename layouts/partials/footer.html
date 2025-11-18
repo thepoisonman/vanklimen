@@ -1,10 +1,11 @@
 <footer>
     <div class="site-footer">
         <!-- Site Title and Copyright -->
+        <div id="footer-title" class="footer-title">
         <p>
-            &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+        {{ now.Format "2006" }} - "{{ .Site.Title }}" y "{{ .Site.Params.homeText }}"  están licenciados bajo la licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
         </p>
-        
+        </div>
         <!-- Contact Link -->
         <nav class="footer-links">
             <!-- This uses the relref function to create a reliable internal link to your contact page -->
