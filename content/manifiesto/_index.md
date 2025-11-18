@@ -6,35 +6,33 @@ menus:
     name: "Manifiesto"
     weight: 2
 ---
-Mi nombre es Iván y me cansé de “Van Klimen”. Lo entrego.
+Mi nombre es Iván. Construí un personaje y, con el tiempo, me cansé de él… o tal vez él se cansó de mí. Llegó el momento de entregar a Van Klimen.
 
-“Van Klimen” es un personaje que creé alrededor de 2018, cuando empecé a experimentar con música en mi computadora. Surgió como un ente que suplía la falta de otros músicos que me acompañaran. Nada nuevo bajo el sol: es algo que muchos artistas vienen haciendo hace tiempo en sus home studios, y la irrupción de la pandemia no hizo más que acelerar ese proceso —aceleró muchas cosas, en realidad—.
+“Van Klimen” nació alrededor de 2018, cuando empecé a experimentar con música en mi computadora. Surgió como un ente virtual que suplía la falta de otros músicos que me acompañaran. Nada novedoso: muchos artistas vienen haciendo lo mismo en sus home studios, y la pandemia no hizo más que acelerar ese proceso —aceleró muchas cosas, en realidad—.
 
-Con “Van Klimen” grabé dos EPs y varios singles que probablemente no tengan un género musical definido, pero que siempre giran en torno a la experimentación con la canción. En el camino hice shows: algunos intentando trasladar al formato banda todo lo vivido en el estudio; otros con pistas, apostando más a la performance, el humor y la parodia; y otros en formato acústico, forzando una presentación más limitada a mis recursos.
+Con Van Klimen grabé dos EPs y varios singles que difícilmente puedan encasillarse en un género, aunque siempre orbitan la experimentación con la canción. En el camino hice shows: algunos intentando llevar al formato banda aquello que había pasado en el estudio; otros con pistas, apostando a la performance, el humor y la parodia; y otros acústicos, forzándome a una presentación más limitada a mis recursos.
 
- Los dos primeros casos me llevaron a crear “Manual algorítmico para artistas”, un show paródico que hago desde 2021, donde una Inteligencia Artificial dicta —con muchas digresiones— lo que el artista “Van Klimen” debe hacer para convertirse en un “verdadero artista”.
+De ese menjunje nació Manual algorítmico para artistas, un show paródico que hago desde 2021, donde una Inteligencia Artificial dicta —entre digresiones— lo que “Van Klimen” debe hacer para convertirse en un “verdadero artista”.
 
-Por otro lado, el formato acústico, que nació más como una solución ante la imposibilidad de presentarme con los otros formatos, terminó transformándose en algo completamente distinto. Encontré una faceta de trovador, otro vínculo con la guitarra y con la voz. Algo nuevo nació ahí… y no estaba seguro de si eso seguía siendo Van Klimen.
+El formato acústico, en cambio, nació como una solución práctica, pero terminó revelándome algo distinto. Encontré una faceta de trovador, otro vínculo con la guitarra y con la voz. Algo nuevo apareció ahí… y no estaba seguro de si seguía siendo Van Klimen.
 
-Durante un tiempo, ambas versiones convivieron como una especie de Dr. Jekyll y Mr. Hyde musicales. Pero hace poco decidí separarlas y convertir a Van Klimen en una entidad puramente digital y electrónica. Me senté frente a la computadora a explorar sus posibilidades y grabé un disco imposible de tocar en vivo sin pistas: “Los días que transcurren”. Ocho canciones grabadas de forma casera entre 2024 y 2025. Lo mezclé y mastericé yo mismo para profundizar la idea del hazlo tú mismo.
+Durante un tiempo, ambas versiones convivieron como una especie de Dr. Jekyll y Mr. Hyde musicales. Pero hace poco decidí separarlas y convertir a Van Klimen en una entidad puramente digital y electrónica. Me senté frente a la computadora a explorar sus posibilidades y grabé un disco imposible de tocar en vivo sin pistas: *Los días que transcurren*. Ocho canciones caseras registradas entre 2024 y 2025. Lo mezclé y lo mastericé yo mismo para insistir en el espíritu del hazlo tú mismo.
 
- Porque eso es Van Klimen: hacerlo uno mismo. Pero nunca pretendí que sea desde el individualismo aunque el medio es el mensaje y las redes favorecen este tipo de discursos.
+Porque eso es Van Klimen: *hacerlo nosotros mismos* porque no hay otra alternativa y como una cuestión de principios al mismo tiempo. Aunque nunca quise que partiera del individualismo —aunque, *el medio es el mensaje* y las redes tienden a reforzar esa lectura. Por lo tanto, tampoco quería que esta nueva etapa se redujera a una excusa para subir una foto a redes y rogar que alguien escuche mi música en un acto de vanidad. Por eso convoqué a Sofi Q., con su proyecto Arte Lilah, para expandir juntos el universo del disco: shows, videos, identidad visual. Ideas para romper el cerco.
 
-No es individualismo, y tampoco quería que esta nueva etapa se convirtiera en una simple excusa para subir una imagen a redes sociales y rogar que alguien escuche mi música en un acto de vanidad. Por eso convoqué a Sofía Q. para que me acompañe con su proyecto Arte Lilah y expandir juntos el universo del disco, haciéndonos preguntas y buscando formas de romper el cerco. Diagramamos ideas para shows en vivo, videos musicales e identidad visual.
+Pero algo seguía latiendo. Sentía que, aun con toda nuestra creatividad puesta en el juego seguíamos alimentando a la gran máquina: la caja negra de las redes sociales, ese algoritmo que se nutre de nuestras opiniones, identidades, miedos, afectos, sexualidades, políticas y arte para construir perfiles de consumo que solo retroalimentan su propio sistema. Además tampoco ayuda sostener un perfil artístico que oscila entre dos polos cuando el algoritmo pide definiciones constantes.
 
- Pero algo seguía latiendo en mí. Sentía que, aun con toda nuestra creatividad, estábamos alimentando a una gran máquina: la caja negra de las redes sociales, ese algoritmo que se nutre de nuestras opiniones, identidades, miedos, amores, sexualidades, políticas y arte para construir perfiles de consumo que solo retroalimentan su propio sistema.
+Entonces lo supe: estaba cansado.
 
-Entonces me cansé.
+Me abrí a lo que sentía y, en un acto de verborragia, apareció la idea de abandonar a Van Klimen. Pero no quiero borrarlo: quiero entregarlo. Convertirlo en su propio manual: un manual para jugar a ser artista y encontrar algo por fuera del espejo.
 
- Conté lo que sentía y, en un acto de verborragia, surgió la idea de abandonar Van Klimen. Pero no quiero borrarlo: quiero entregarlo. Convertirlo en su propio manual: un manual para jugar a ser artista y encontrar algo por fuera del espejo.
+Como si fuera un Van Klimen de código abierto, creo este manual en una página donde convivirán tutoriales no convencionales de Ableton, guiones de shows delirantes, ideas de vestuario, talleres de composición, digresiones poético-filosóficas, acordes de canciones, pistas sobre el error, guías para escribir letras y otros tantos desvaríos.
 
-Como si fuera un Van Klimen Open Source, creo este manual a través de una página donde habrá:
- tutoriales no convencionales de Ableton, guiones de shows delirantes, ideas de vestuario, talleres de composición, digresiones poético-filosóficas, acordes de canciones, pistas y usos del error, guías para escribir letras y muchos otros delirios.
+Van Klimen será un manual abierto en la red, esperando que de él florezcan otras versiones: síntesis, antítesis o algo completamente distinto.
 
-Van Klimen será un manual abierto en la red, esperando que de él florezcan otras versiones: síntesis, antítesis o algo totalmente distinto.
- Mientras tanto, yo me quedaré viendo qué sucede con todo esto, creando mi nuevo personaje… y quizás, cada tanto, jugando un poquito con Van Klimen tanto en su versión androide, como en su versión trovador y las que devengan en el futuro.
+Mientras tanto, yo me quedaré viendo qué sucede, construyendo mi nuevo personaje… y, quizá, jugando de vez en cuando con las versiones Van Klimen: [***Androide***](/miversion/el_androide), [***Trovador***](/miversion/el_trovador) y las que resta [***por crear***](/vk_opensource).
 
-Iván Melink
+Iván Melink.
 
 
 -----
