@@ -23,4 +23,4 @@ Coproducido y mezclado TTOTTO. Saxofón por Hugo Gónzalez López.
 * **7** Tributando
 * **8** Árcangel
 
-Tapa y diseño artístico realizado en con junto con Sofi Q (Lilah)
+Tapa y diseño artístico realizado en conjunto con Sofi Q (Lilah)
