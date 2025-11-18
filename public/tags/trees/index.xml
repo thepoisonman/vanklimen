@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trees on Van Klimen</title>
-    <link>https://example.org/tags/trees/</link>
+    <link>http://localhost:1313/tags/trees/</link>
     <description>Recent content in Trees on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Sat, 01 Nov 2025 20:28:42 -0600</lastBuildDate>
-    <atom:link href="https://example.org/tags/trees/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/trees/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LOS DÍAS QUE TRANSCURREN</title>
-      <link>https://example.org/miversion/el_androide/discos/ldqt/</link>
+      <link>http://localhost:1313/miversion/el_androide/discos/ldqt/</link>
       <pubDate>Sat, 01 Nov 2025 20:28:42 -0600</pubDate>
-      <guid>https://example.org/miversion/el_androide/discos/ldqt/</guid>
+      <guid>http://localhost:1313/miversion/el_androide/discos/ldqt/</guid>
       <description></description>
     </item>
     <item>
       <title>SUEÑO ANDROIDE</title>
-      <link>https://example.org/miversion/el_androide/discos/sue%C3%B1o-androide/</link>
+      <link>http://localhost:1313/miversion/el_androide/discos/sue%C3%B1o-androide/</link>
       <pubDate>Mon, 28 Nov 2022 20:28:42 -0600</pubDate>
-      <guid>https://example.org/miversion/el_androide/discos/sue%C3%B1o-androide/</guid>
+      <guid>http://localhost:1313/miversion/el_androide/discos/sue%C3%B1o-androide/</guid>
       <description>&lt;iframe data-testid=&#34;embed-iframe&#34; style=&#34;border-radius:12px&#34; src=&#34;https://open.spotify.com/embed/album/6sS5vzJeE5tY0cNrdLL7QF?utm_source=generator&amp;theme=0&#34; width=&#34;100%&#34; height=&#34;352&#34; frameBorder=&#34;0&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>HIPERREAL</title>
-      <link>https://example.org/miversion/el_androide/discos/hiperreal/</link>
+      <link>http://localhost:1313/miversion/el_androide/discos/hiperreal/</link>
       <pubDate>Thu, 13 Feb 2020 20:28:42 -0600</pubDate>
-      <guid>https://example.org/miversion/el_androide/discos/hiperreal/</guid>
+      <guid>http://localhost:1313/miversion/el_androide/discos/hiperreal/</guid>
       <description>&lt;iframe data-testid=&#34;embed-iframe&#34; style=&#34;border-radius:12px&#34; src=&#34;https://open.spotify.com/embed/album/7J2MjRqKEXxtRqAhnCAhcT?utm_source=generator&amp;theme=0&#34; width=&#34;100%&#34; height=&#34;352&#34; frameBorder=&#34;0&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>DISCOS Y SINGLES</title>
-      <link>https://example.org/miversion/el_androide/discos/</link>
+      <link>http://localhost:1313/miversion/el_androide/discos/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/miversion/el_androide/discos/</guid>
+      <guid>http://localhost:1313/miversion/el_androide/discos/</guid>
       <description></description>
     </item>
     <item>
       <title>Van Klimen: El Androide</title>
-      <link>https://example.org/miversion/el_androide/</link>
+      <link>http://localhost:1313/miversion/el_androide/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/miversion/el_androide/</guid>
+      <guid>http://localhost:1313/miversion/el_androide/</guid>
       <description>&lt;p&gt;&lt;strong&gt;EL ANDROIDE:&lt;/strong&gt; La versión digital. Música electrónica e hiperpop con alta dosis de deformidad e intuición. Prácticamente está hecha para no ser tocada en vivo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Van Klimen: El Trovador</title>
-      <link>https://example.org/miversion/el_trovador/</link>
+      <link>http://localhost:1313/miversion/el_trovador/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/miversion/el_trovador/</guid>
+      <guid>http://localhost:1313/miversion/el_trovador/</guid>
       <description>&lt;p&gt;&lt;strong&gt;EL TROVADOR:&lt;/strong&gt; Canciones en su forma primigenia: acompañado con la guitara, la tradición de las músicas tradicionales, la voz y la poesía. Nada más que eso.&lt;/p&gt;</description>
     </item>
     <item>
       <title>VÍDEOS</title>
-      <link>https://example.org/miversion/el_androide/videos/</link>
+      <link>http://localhost:1313/miversion/el_androide/videos/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/miversion/el_androide/videos/</guid>
+      <guid>http://localhost:1313/miversion/el_androide/videos/</guid>
       <description></description>
     </item>
     <item>
       <title>Trees by Joyce Kilmer</title>
-      <link>https://example.org/biblioteca/otro-texto/</link>
+      <link>http://localhost:1313/biblioteca/otro-texto/</link>
       <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/biblioteca/otro-texto/</guid>
+      <guid>http://localhost:1313/biblioteca/otro-texto/</guid>
       <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
     </item>
   </channel>
