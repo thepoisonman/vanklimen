@@ -5,7 +5,7 @@ tags: ["poetry", "trees"]
 draft: false
 ---
 
-**EL ANDROIDE:** La versión digital. Casi no existe en la performance en la vida real (si es que eso tiene sentido). Música electrónica e hiperpop deformado.
+**EL ANDROIDE:** La versión digital. Música electrónica e hiperpop con alta dosis de deformidad e intuición. Prácticamente está hecha para no ser tocada en vivo. 
 
 <!--more-->
 
