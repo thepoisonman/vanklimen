@@ -48,7 +48,7 @@
       <link>http://localhost:1313/miversion/el_androide/</link>
       <pubDate>Wed, 13 Feb 2019 20:28:42 -0600</pubDate>
       <guid>http://localhost:1313/miversion/el_androide/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;EL ANDROIDE:&lt;/strong&gt; La versión digital. Música electrónica e hiperpop con alta dosis de deformidad e intuición. Prácticamente está hecha para no ser tocada en vivo.&lt;/p&gt;</description>
+      <description>&lt;div style=&#34;display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/elandroide.jpg&#34; alt=&#34;EL ANDROIDE&#34; style=&#34;max-width: 150px; height: auto;&#34;/&gt;&#xA;&#xA;    &lt;p style=&#34;margin: 0;&#34;&gt;&lt;strong&gt;EL ANDROIDE:&lt;/strong&gt; La versión digital. Música electrónica e hiperpop con alta dosis de deformidad e intuición. Prácticamente está hecha para no ser tocada en vivo.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Van Klimen: El Trovador</title>

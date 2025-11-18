@@ -1,0 +1,11 @@
+<div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+    {{- $src := .Get "src" -}}
+    {{- $alt := .Get "alt" | default "" -}}
+    {{- $maxWidth := .Get "max-width" | default "150px" -}}
+
+    <img src="{{ $src | safeURL }}" alt="{{ $alt }}" style="max-width: {{ $maxWidth }}; height: auto;"/>
+
+    <p style="margin: 0;">
+        {{- .Inner | markdownify -}}
+    </p>
+</div>
