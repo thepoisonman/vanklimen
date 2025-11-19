@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Van Klimen</title>
-    <link>https://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instrucciones para lidiar con los fracasos -y los éxitos-</title>
-      <link>https://example.org/biblioteca/fracasos/</link>
+      <link>http://localhost:1313/biblioteca/fracasos/</link>
       <pubDate>Mon, 03 Nov 2025 12:44:55 -0300</pubDate>
-      <guid>https://example.org/biblioteca/fracasos/</guid>
+      <guid>http://localhost:1313/biblioteca/fracasos/</guid>
       <description>&lt;p&gt;En el límite de la autoayuda y el poema&lt;/p&gt;</description>
     </item>
     <item>
       <title>LDQT Bitácora</title>
-      <link>https://example.org/biblioteca/vanklimen/</link>
+      <link>http://localhost:1313/biblioteca/vanklimen/</link>
       <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
-      <guid>https://example.org/biblioteca/vanklimen/</guid>
+      <guid>http://localhost:1313/biblioteca/vanklimen/</guid>
       <description>&lt;p&gt;Hacer una explicación de Los días que transcurren&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trees by Joyce Kilmer</title>
-      <link>https://example.org/biblioteca/otro-texto/</link>
+      <link>http://localhost:1313/biblioteca/otro-texto/</link>
       <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/biblioteca/otro-texto/</guid>
+      <guid>http://localhost:1313/biblioteca/otro-texto/</guid>
       <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contacto</title>
-      <link>https://example.org/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
   </channel>
