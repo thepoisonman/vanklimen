@@ -28,12 +28,22 @@
             <!-- Optional: Display a summary or excerpt -->
             <div class="post-summary">
               {{ .Summary }}
-            </div>
-            {{ if .Truncated }}
-             <a class="post-link" href="{{ .RelPermalink }}">Ver más...</a>
+            </div>  
+            <div class="autor-list">
+              {{ with .Params.autores }}
+                 {{ range . }}
+                  {{ $nombreAutor := . }}
+                   {{ with site.GetPage (printf "/autores/%s" ($nombreAutor | urlize)) }}
+                 <a href="{{ .Permalink }}">{{ $nombreAutor }}</a>
+                {{ else }}
+                 <span>{{ $nombreAutor }}</span>
+                 {{ end }}
             {{ end }}
-          </li>
-        {{ end }}
+         {{ end }}
+        </div>         
+        </li>
+
+      {{ end }}
       </ul>
       <!-- End listing posts -->
     </article>

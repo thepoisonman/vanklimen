@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Van Klimen</title>
-    <link>https://example.org/</link>
-    <description>Recent content on Van Klimen</description>
+    <title>Textos on Van Klimen</title>
+    <link>https://example.org/biblioteca/textos/</link>
+    <description>Recent content in Textos on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/biblioteca/textos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instrucciones para lidiar con los fracasos -y los éxitos-</title>
       <link>https://example.org/biblioteca/textos/fracasos/</link>
@@ -28,13 +28,6 @@
       <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
       <guid>https://example.org/biblioteca/textos/otro-texto/</guid>
       <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contacto</title>
-      <link>https://example.org/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/contact/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

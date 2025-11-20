@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HIPERREAL on Van Klimen</title>
-    <link>http://localhost:1313/miversion/el_androide/discos/hiperreal/</link>
+    <link>https://example.org/miversion/el_androide/discos/hiperreal/</link>
     <description>Recent content in HIPERREAL on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/miversion/el_androide/discos/hiperreal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/miversion/el_androide/discos/hiperreal/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

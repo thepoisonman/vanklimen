@@ -221,7 +221,7 @@ footer{
 }
 
 a {
-    color: white; 
+    color: var(--text-color-accent); 
     text-decoration: none;
     }
 
@@ -243,6 +243,10 @@ p {
     line-height: 4.6rem;
     text-transform: uppercase;
     font-family: 'IBM Plex Mono', monospace;
+}
+
+.autor-list {
+  color: var(--text-color-light);
 }
 
 .subtitulo, h3 {

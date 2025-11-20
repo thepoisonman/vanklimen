@@ -12,6 +12,7 @@ sectionPagesMenu = 'main'
 
 [taxonomies]
   tag = "tags"
+  autor = "autores"
 
 [params]
   dateFormat = "02/01"
