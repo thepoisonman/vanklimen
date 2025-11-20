@@ -1,0 +1,15 @@
+<div class="img-mark-stacked" style="display: flex; flex-direction: column; align-items: center; gap: 0.01rem; margin-bottom: 2rem; text-align: center;">
+    {{- $src := .Get "src" -}}
+    {{- $alt := .Get "alt" | default "" -}}
+    {{- $width := .Get "width" | default "100px" -}} {{/* Controls the image width */}}
+
+    {{/* Text container */}}
+    <p style="margin: 0; order: 1;"> {{/* order: 1 makes text appear first (top) */}}
+        {{- .Inner | markdownify -}}
+    </p>
+
+    {{/* Image container and tag */}}
+    <div style="order: 2;"> {{/* order: 2 makes image appear second (bottom) */}}
+      <img src="{{ $src | safeURL }}" alt="{{ $alt }}" style="width: {{ $width }}; height: auto; display: block;"/>
+    </div>
+</div>
