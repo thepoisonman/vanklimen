@@ -1,0 +1,7 @@
+{{- $img := resources.GetMatch .Destination -}}
+{{- if $img -}}
+  {{- $resized := $img.Resize "800x jpg q50" -}}
+  <img src="{{ $resized.RelPermalink | safeURL }}" alt="{{ .Text }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" />
+{{- else -}}
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }} />
+{{- end -}}

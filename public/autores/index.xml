@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Autores on Van Klimen</title>
-    <link>https://example.org/autores/</link>
+    <link>http://localhost:1313/autores/</link>
     <description>Recent content in Autores on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
-    <atom:link href="https://example.org/autores/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/autores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Van Klimen 1.0</title>
-      <link>https://example.org/autores/van-klimen-1.0/</link>
+      <link>http://localhost:1313/autores/van-klimen-1.0/</link>
       <pubDate>Mon, 03 Nov 2025 12:44:55 -0300</pubDate>
-      <guid>https://example.org/autores/van-klimen-1.0/</guid>
+      <guid>http://localhost:1313/autores/van-klimen-1.0/</guid>
       <description>&lt;p&gt;El prototipo&lt;/p&gt;</description>
     </item>
   </channel>

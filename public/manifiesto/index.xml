@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>La entrega on Van Klimen</title>
-    <link>https://example.org/manifiesto/</link>
+    <link>http://localhost:1313/manifiesto/</link>
     <description>Recent content in La entrega on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="https://example.org/manifiesto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/manifiesto/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
