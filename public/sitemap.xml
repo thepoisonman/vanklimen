@@ -2,64 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
+    <lastmod>2025-11-20T09:22:55-03:00</lastmod>
+  </url><url>
+    <loc>https://example.org/vk_opensource/instrucciones/</loc>
     <lastmod>2025-11-20T09:19:05-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vk_opensource/</loc>
-    <lastmod>2025-11-20T09:19:05-03:00</lastmod>
+    <loc>https://example.org/vk_opensource/talleres/</loc>
+    <lastmod>2025-11-20T09:20:53-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/</loc>
+    <loc>https://example.org/vk_opensource/materia_prima/</loc>
+    <lastmod>2025-11-20T09:22:25-03:00</lastmod>
+  </url><url>
+    <loc>https://example.org/vk_opensource/contribuir/</loc>
+    <lastmod>2025-11-20T09:22:55-03:00</lastmod>
+  </url><url>
+    <loc>https://example.org/vk_opensource/</loc>
+    <lastmod>2025-11-20T09:22:55-03:00</lastmod>
+  </url><url>
+    <loc>https://example.org/biblioteca/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vk_opensource/instrucciones/</loc>
-    <lastmod>2025-11-20T09:19:05-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/autores/</loc>
+    <loc>https://example.org/autores/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/textos/fracasos/</loc>
+    <loc>https://example.org/biblioteca/textos/fracasos/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/textos/</loc>
+    <loc>https://example.org/biblioteca/textos/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/autores/van-klimen-1.0/</loc>
+    <loc>https://example.org/autores/van-klimen-1.0/</loc>
     <lastmod>2025-11-03T12:44:55-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/textos/vanklimen/</loc>
+    <loc>https://example.org/biblioteca/textos/vanklimen/</loc>
     <lastmod>2025-11-03T12:04:25-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/el_androide/discos/ldqt/</loc>
+    <loc>https://example.org/miversion/el_androide/discos/ldqt/</loc>
     <lastmod>2025-11-01T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/</loc>
+    <loc>https://example.org/miversion/</loc>
     <lastmod>2025-11-01T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/el_androide/discos/sue%C3%B1o-androide/</loc>
+    <loc>https://example.org/miversion/el_androide/discos/sue%C3%B1o-androide/</loc>
     <lastmod>2022-11-28T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/el_androide/discos/hiperreal/</loc>
+    <loc>https://example.org/miversion/el_androide/discos/hiperreal/</loc>
     <lastmod>2020-02-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/el_androide/discos/</loc>
+    <loc>https://example.org/miversion/el_androide/discos/</loc>
     <lastmod>2019-02-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/el_androide/</loc>
+    <loc>https://example.org/miversion/el_androide/</loc>
     <lastmod>2019-02-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/el_trovador/</loc>
+    <loc>https://example.org/miversion/el_trovador/</loc>
     <lastmod>2019-02-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/miversion/el_androide/videos/</loc>
+    <loc>https://example.org/miversion/el_androide/videos/</loc>
     <lastmod>2019-02-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/textos/otro-texto/</loc>
+    <loc>https://example.org/biblioteca/textos/otro-texto/</loc>
     <lastmod>2019-01-13T20:28:42-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://example.org/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/biblioteca/hipervinculos/</loc>
+    <loc>https://example.org/biblioteca/hipervinculos/</loc>
   </url><url>
-    <loc>http://localhost:1313/manifiesto/</loc>
+    <loc>https://example.org/manifiesto/</loc>
   </url>
 </urlset>

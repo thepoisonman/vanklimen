@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Textos on Van Klimen</title>
-    <link>http://localhost:1313/biblioteca/textos/</link>
+    <link>https://example.org/biblioteca/textos/</link>
     <description>Recent content in Textos on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/biblioteca/textos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/biblioteca/textos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instrucciones para lidiar con los fracasos -y los éxitos-</title>
-      <link>http://localhost:1313/biblioteca/textos/fracasos/</link>
+      <link>https://example.org/biblioteca/textos/fracasos/</link>
       <pubDate>Mon, 03 Nov 2025 12:44:55 -0300</pubDate>
-      <guid>http://localhost:1313/biblioteca/textos/fracasos/</guid>
+      <guid>https://example.org/biblioteca/textos/fracasos/</guid>
       <description>&lt;p&gt;En el límite de la autoayuda y el poema&lt;/p&gt;</description>
     </item>
     <item>
       <title>LDQT Bitácora</title>
-      <link>http://localhost:1313/biblioteca/textos/vanklimen/</link>
+      <link>https://example.org/biblioteca/textos/vanklimen/</link>
       <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
-      <guid>http://localhost:1313/biblioteca/textos/vanklimen/</guid>
+      <guid>https://example.org/biblioteca/textos/vanklimen/</guid>
       <description>&lt;p&gt;Hacer una explicación de Los días que transcurren&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trees by Joyce Kilmer</title>
-      <link>http://localhost:1313/biblioteca/textos/otro-texto/</link>
+      <link>https://example.org/biblioteca/textos/otro-texto/</link>
       <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
-      <guid>http://localhost:1313/biblioteca/textos/otro-texto/</guid>
+      <guid>https://example.org/biblioteca/textos/otro-texto/</guid>
       <description>&lt;p&gt;Acá va un resumen&lt;/p&gt;</description>
     </item>
   </channel>
