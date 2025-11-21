@@ -25,6 +25,9 @@
             <h2>
               <a id="tit-list" class= "tit-list" href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h2>
+            {{ if .Params.descripcion }}
+            <p>{{ .Params.descripcion }}</p>
+            {{ end }}
             <!-- Optional: Display a summary or excerpt -->
             <div class="post-summary">
               {{ .Summary }}

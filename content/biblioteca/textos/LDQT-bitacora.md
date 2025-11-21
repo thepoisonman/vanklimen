@@ -4,9 +4,9 @@ tags = ["poetry", "life"]
 draft = false
 title = "LDQT Bitácora"
 autores = ["Van Klimen 1.0"]
+descripcion = 'Bitácora del proceso de los días que transcurren'
 +++
 
-Hacer una explicación de Los días que transcurren
 
 <!--more-->
 

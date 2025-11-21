@@ -1,10 +1,8 @@
 ---
 title: "Contacto"
-type: "page"
-layout: "contact"
 ---
 
-## Formulario de contacto
+### FORMULARIO DE CONTACTO
 
 Podés enviarme un mail a través de este formulario.
 
@@ -13,7 +11,7 @@ Podés enviarme un mail a través de este formulario.
 
 ---
 
-## Redes
+### REDES
 
 
 - [**Instagram**](https://instagram.com/vanklimen)  

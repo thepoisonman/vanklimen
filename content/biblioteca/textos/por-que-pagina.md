@@ -2,10 +2,10 @@
 title: "¿Por qué hice una página?"
 date: 2019-01-13T20:28:42-06:00
 draft: false
+descripcion: 'Un intento de escape del mecanismo de la atención'
 autores: ["Van Klimen 1.0"]
 ---
 
-Acá va un resumen
 
 <!--more-->
 
