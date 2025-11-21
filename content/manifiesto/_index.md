@@ -6,6 +6,16 @@ menus:
     name: "Manifiesto"
     weight: 2
 ---
+
+{{< p5sketch
+    id="grad1"
+    src="/js/gradiente.js"
+    minLayers="20"
+    maxLayers="70"
+    layerSpeed="5"
+    maxCircleSize="700"
+>}}
+
 Mi nombre es Iván. Construí un personaje y, con el tiempo, me cansé de él… o tal vez él se cansó de mí. Llegó el momento de entregar a Van Klimen.
 
 “Van Klimen” nació alrededor de 2018, cuando empecé a experimentar con música en mi computadora. Surgió como un ente virtual que suplía la falta de otros músicos que me acompañaran. Nada novedoso: muchos artistas vienen haciendo lo mismo en sus home studios, y la pandemia no hizo más que acelerar ese proceso —aceleró muchas cosas, en realidad—.
@@ -33,6 +43,8 @@ Van Klimen será un manual abierto en la red, esperando que de él florezcan otr
 Mientras tanto, yo me quedaré viendo qué sucede, construyendo mi nuevo personaje… y, quizá, jugando de vez en cuando con las versiones Van Klimen: [***Androide***](/miversion/el_androide), [***Trovador***](/miversion/el_trovador) y las que resta [***por crear***](/vk_opensource).
 
 Iván Melink.
+
+
 
 
 -----

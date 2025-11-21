@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Hugo 0.152.2">
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://example.org/css/style.css">
   
@@ -69,7 +70,35 @@
 
     <article>
       <h1 id= "pagetitle" class= "page-title">La entrega</h1>
-      <p>Mi nombre es Iván. Construí un personaje y, con el tiempo, me cansé de él… o tal vez él se cansó de mí. Llegó el momento de entregar a Van Klimen.</p>
+      <div class="p5-wrapper">
+  <div id="p5-container-grad1"></div>
+</div>
+
+<script>
+  window.p5Gradients = window.p5Gradients || {};
+  window.p5Gradients["grad1"] = {
+    containerId: "p5-container-grad1",
+    maxSize: 600   
+  };
+</script>
+
+<script src="/js/gradiente.js"></script>
+
+<style>
+  .p5-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+   
+  .p5-wrapper canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 600px;
+  }
+</style>
+
+<p>Mi nombre es Iván. Construí un personaje y, con el tiempo, me cansé de él… o tal vez él se cansó de mí. Llegó el momento de entregar a Van Klimen.</p>
 <p>“Van Klimen” nació alrededor de 2018, cuando empecé a experimentar con música en mi computadora. Surgió como un ente virtual que suplía la falta de otros músicos que me acompañaran. Nada novedoso: muchos artistas vienen haciendo lo mismo en sus home studios, y la pandemia no hizo más que acelerar ese proceso —aceleró muchas cosas, en realidad—.</p>
 <p>Con Van Klimen grabé dos EPs y varios singles que difícilmente puedan encasillarse en un género, aunque siempre orbitan la experimentación con la canción. En el camino hice shows: algunos intentando llevar al formato banda aquello que había pasado en el estudio; otros con pistas, apostando a la performance, el humor y la parodia; y otros acústicos, forzándome a una presentación más limitada a mis recursos.</p>
 <p>De ese menjunje nació Manual algorítmico para artistas, un show paródico que hago desde 2021, donde una Inteligencia Artificial dicta —entre digresiones— lo que “Van Klimen” debe hacer para convertirse en un “verdadero artista”.</p>

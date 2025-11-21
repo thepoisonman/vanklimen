@@ -1,0 +1,27 @@
+<div class="p5-wrapper">
+  <div id="p5-container-{{ .Get "id" }}"></div>
+</div>
+
+<script>
+  window.p5Gradients = window.p5Gradients || {};
+  window.p5Gradients["{{ .Get "id" }}"] = {
+    containerId: "p5-container-{{ .Get "id" }}",
+    maxSize: 600   // tamaño máximo cuadrado en desktop
+  };
+</script>
+
+<script src="/js/gradiente.js"></script>
+
+<style>
+  .p5-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  /* Móvil: el canvas se hace fluido */
+  .p5-wrapper canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 600px;
+  }
+</style>
