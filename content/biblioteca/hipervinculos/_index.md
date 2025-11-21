@@ -1,7 +1,7 @@
 ---
 title: "Hipervínculos"
 draft: false
-descripcion: '>>Vínculos a escritos, referencias y cosas interesantes por fuera de este sitio'
+descripcion: '>>Vínculos a escritos, audiovisuales, referencias y cosas interesantes por fuera de este sitio.'
 ---
 <!--more-->
 
