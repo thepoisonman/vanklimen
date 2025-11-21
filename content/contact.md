@@ -15,7 +15,6 @@ Podés enviarme un mail a través de este formulario.
 
 ## Redes
 
-Encontrame en todas mis plataformas:
 
 - [**Instagram**](https://instagram.com/vanklimen)  
 - [**X / Twitter**](https://twitter.com/vanklimen) 
