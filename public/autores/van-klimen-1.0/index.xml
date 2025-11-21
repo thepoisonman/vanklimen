@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Van Klimen 1.0 on Van Klimen</title>
-    <link>https://example.org/autores/van-klimen-1.0/</link>
+    <link>http://localhost:1313/autores/van-klimen-1.0/</link>
     <description>Recent content in Van Klimen 1.0 on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
-    <atom:link href="https://example.org/autores/van-klimen-1.0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/autores/van-klimen-1.0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instrucciones para lidiar con los fracasos -y los éxitos-</title>
-      <link>https://example.org/biblioteca/textos/fracasos/</link>
+      <link>http://localhost:1313/biblioteca/textos/fracasos/</link>
       <pubDate>Mon, 03 Nov 2025 12:44:55 -0300</pubDate>
-      <guid>https://example.org/biblioteca/textos/fracasos/</guid>
+      <guid>http://localhost:1313/biblioteca/textos/fracasos/</guid>
       <description></description>
     </item>
     <item>
       <title>LDQT Bitácora</title>
-      <link>https://example.org/biblioteca/textos/ldqt-bitacora/</link>
+      <link>http://localhost:1313/biblioteca/textos/ldqt-bitacora/</link>
       <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
-      <guid>https://example.org/biblioteca/textos/ldqt-bitacora/</guid>
+      <guid>http://localhost:1313/biblioteca/textos/ldqt-bitacora/</guid>
       <description></description>
     </item>
     <item>
       <title>¿Por qué hice una página?</title>
-      <link>https://example.org/biblioteca/textos/por-que-pagina/</link>
+      <link>http://localhost:1313/biblioteca/textos/por-que-pagina/</link>
       <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
-      <guid>https://example.org/biblioteca/textos/por-que-pagina/</guid>
+      <guid>http://localhost:1313/biblioteca/textos/por-que-pagina/</guid>
       <description></description>
     </item>
   </channel>

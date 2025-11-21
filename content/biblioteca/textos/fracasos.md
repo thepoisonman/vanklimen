@@ -3,7 +3,7 @@ date = '2025-11-03T12:44:55-03:00'
 tags = []
 draft = false
 title = 'Instrucciones para lidiar con los fracasos -y los éxitos-'
-descripcion = 'En el límite de la autoayuda y el poema'
+descripcion = '>>En el límite de la autoayuda y el poema'
 autores = ["Van Klimen 1.0"]
 +++
 

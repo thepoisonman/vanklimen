@@ -24,3 +24,6 @@ Coproducido y mezclado TTOTTO. Saxofón por Hugo Gónzalez López.
 * **8** Árcangel
 
 Tapa y diseño artístico realizado en conjunto con Sofi Q (Lilah)
+
+Aqui hay algunos apuntes del disco: [APUNTES LDQT](/biblioteca/textos/ldqt-bitacora/)</br>
+Además, en la sección [MATERIA PRIMA](/vk_opensource/materia_prima/) pueden encontrar los Stems del disco. 
