@@ -10,7 +10,7 @@ descripcion = '>>¿Cómo hago para contribuir y ampliar este universo?'
 
 ### ¿Cómo hago para contribuir y ampliar este universo?
 
-Para contribuir con versiones de Van Klimen puede comunicarse a través de redes sociales o el [formulario de contacto](/contact).
+Si tenés una idea para contribuir con versiones de Van Klimen puede comunicarse a través de la página de [contacto](/contact).
 
 ### ¿Qué tipo de material se acepta?
 
@@ -18,6 +18,6 @@ Cualquier cosa porque realmente no sabemos en qué puede devenir esto. Pero lo i
 
 ### Tengo conocimientos de código, dónde puedo contribuir con el armado de la página.
 
-En el repositorio en [Github](https://github.com/thepoisonman/vanklimen)
+En el repositorio en [Github](https://github.com/thepoisonman/vanklimen) podés encontrar más información.
 
 
