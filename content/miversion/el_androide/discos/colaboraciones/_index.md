@@ -8,6 +8,9 @@ Otras músicas hechas en colaboración o dentro de compilados
 
 <!--more-->
 
+### ATACAMA - CALDO ANDINO
+Junto a Fede Palomba (GTR), Niño Eme y Tnachouuuuu en la colaboración entre CASA y el sello SINFIN
+
 ### LA MÍSTICA - PARA SILBAR EN LA TORMENTA 
 Colaboración entre los sellos SINFIN y CASA U.
 
