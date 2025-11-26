@@ -25,3 +25,7 @@ sectionPagesMenu = 'main'
 [markup.goldmark.parser.attribute]
   block = true
   title = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
