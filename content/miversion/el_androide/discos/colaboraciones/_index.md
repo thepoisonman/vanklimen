@@ -2,9 +2,8 @@
 title: "COLABORACIONES"
 date: 2019-09-13T20:28:42-06:00
 draft: false
+descripcion: '>>Otras músicas hechas en colaboración o que salieron dentro de discos colectivos'
 ---
-
-Otras músicas hechas en colaboración o dentro de compilados
 
 <!--more-->
 
