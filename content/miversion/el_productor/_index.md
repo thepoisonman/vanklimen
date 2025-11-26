@@ -5,7 +5,7 @@ tags: ["poetry", "trees"]
 draft: false
 ---
 
-Canciones en los que no necesariamente se participó como interprete pero si cómo productor
+Canciones y discos producidos
 
 <!--more-->
 
