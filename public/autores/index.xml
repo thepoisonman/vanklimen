@@ -2,25 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Autores on Van Klimen</title>
-    <link>https://vanklimen.com.ar/autores/</link>
+    <link>http://localhost:1313/autores/</link>
     <description>Recent content in Autores on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
-    <atom:link href="https://vanklimen.com.ar/autores/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/autores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Van Klimen 1.0</title>
-      <link>https://vanklimen.com.ar/autores/van-klimen-1.0/</link>
+      <link>http://localhost:1313/autores/van-klimen-1.0/</link>
       <pubDate>Mon, 03 Nov 2025 12:44:55 -0300</pubDate>
-      <guid>https://vanklimen.com.ar/autores/van-klimen-1.0/</guid>
+      <guid>http://localhost:1313/autores/van-klimen-1.0/</guid>
       <description>&lt;p&gt;El prototipo&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sofía Quallito</title>
-      <link>https://vanklimen.com.ar/autores/sof%C3%ADa-quallito/</link>
+      <link>http://localhost:1313/autores/sof%C3%ADa-quallito/</link>
       <pubDate>Fri, 13 Jan 2023 20:28:42 -0600</pubDate>
-      <guid>https://vanklimen.com.ar/autores/sof%C3%ADa-quallito/</guid>
+      <guid>http://localhost:1313/autores/sof%C3%ADa-quallito/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Sofía Quallito</title>
+      <link>http://localhost:1313/autores/sofiq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/autores/sofiq/</guid>
+      <description>&lt;p&gt;Mi nombre es Sofía Quallito, soy artista, realizadora audiovisual y coach de arte. Cree un espacio llamado Lilah dedicado a desarrollar e impulsar proyectos creativos, ofrecer servicios y comunidad para artistas. Mi deseo es contribuir en el proceso de la expansión creativa, facilitando que las obras encuentren su forma y lenguaje para que puedan respirar en el mundo. Porque el arte no es solo lo que se muestra, sino lo que logra abrir en quienes lo atraviesan. &lt;a href=&#34;https://www.instagram.com/sofiaqu_&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34;&gt;@sofiaqu_&lt;/a&gt;&#xA; ✨ &lt;a href=&#34;https://www.instagram.com/arte.lilah&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34;&gt;@arte.lilah&lt;/a&gt;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

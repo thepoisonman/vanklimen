@@ -1,0 +1,90 @@
+<!-- layouts/shortcodes/separator_animation.html -->
+<style>
+/* Estilos CSS */
+.animation-container {
+    text-align: center;
+    padding: 10px 0; 
+    margin: 15px 0;
+    font-size: 1em;
+    min-height: 1.2em; /* Mantiene la altura constante */
+    font-style: italic;
+    /* Asegura que el contenedor tenga una posición relativa/estática para que la animación funcione */
+    position: relative; 
+}
+
+/* Define la animación de desvanecimiento */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.fade-in-out {
+    animation: fadeInOut 4s ease-in-out forwards; 
+}
+</style>
+
+<!-- Usamos un ID único para cada instancia del shortcode, usando .Ordinal de Hugo -->
+<div class="animation-container">
+    <span id="phrase-display-{{ .Ordinal }}" class="animated-text"></span>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Definimos las frases dentro del script, como solicitaste
+    const phrases = [
+        "El misterio como forma de resistencia",
+        "Expandir la imaginación",
+        "Romper con formatos fijos",
+        "Correrse de la cotidianeidad",
+        "Jugar con el artificio hasta transformarlo en experiencia real",
+        "Habitar la zona mutante",
+        "Invitar a percibir de otro modo",
+        "Trascender el personaje",
+        "Un androide sensible",
+        "Arte cinético y collage",
+        "Textura para que lo digital se sienta corporal",
+        "Desorden, absurdo, humor",
+        "Profundo, mirada, alma",
+        "No limitarse a una imagen cristalizada",
+        "Ser parte de una forma más grande que está en constante movimiento y creación",
+        "Hacer como forma de pensar",
+        "Jugar con monstruos, versiones, alter egos, muñecos y bufones",
+        "Ser maleable con la forma",
+        "Jugar, reír, bailar, quedarse quieto y gritar barrabasadas",
+        "Desbordes de colores",
+        "Calmarse con un gran ohm."
+    ];
+
+    // Capturamos el elemento específico usando el ID único de Hugo (.Ordinal)
+    const phraseDisplay = document.getElementById('phrase-display-{{ .Ordinal }}');
+    let currentPhraseIndex = 0;
+    const animationDuration = 4000; // 4 segundos como en tu CSS/JS
+
+    function animatePhrases() {
+        if (!phraseDisplay) return; // Salir si el elemento no se encuentra
+
+        // 1. Elimina la clase de animación anterior
+        phraseDisplay.classList.remove('fade-in-out');
+        
+        // 2. Actualiza el texto
+        phraseDisplay.textContent = phrases[currentPhraseIndex];
+
+        // 3. Fuerza un "reflow" para reiniciar la animación CSS (truco JS/CSS)
+        void phraseDisplay.offsetWidth; 
+        
+        // 4. Aplica la clase para iniciar la animación
+        phraseDisplay.classList.add('fade-in-out');
+
+        // 5. Prepara para la próxima frase
+        currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+    }
+
+    // Inicia la primera animación inmediatamente
+    animatePhrases();
+
+    // Configura el intervalo para cambiar las frases
+    setInterval(animatePhrases, animationDuration);
+});
+</script>
