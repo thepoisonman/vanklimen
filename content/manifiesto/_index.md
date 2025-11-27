@@ -59,7 +59,7 @@ Esta licencia aplica **únicamente al contenido textual, visual, código y recur
 
 ---
 
-**✔️ Usted es libre de (solo para el contenido del sitio):**
+* **Usted es libre de (solo para el contenido del sitio):**
 
 **Compartir**  
 Copiar y redistribuir el material en cualquier medio o formato.
@@ -72,7 +72,7 @@ El licenciante no puede revocar estas libertades en tanto se respeten los térmi
 
 ---
 
-**✔️ Bajo los siguientes términos:**
+*  **Bajo los siguientes términos:**
 
 **Atribución (BY)**  
 Debe dar crédito de forma adecuada, brindar un enlace a la licencia  
@@ -102,7 +102,7 @@ estaré indicando **otra licencia específica** para ese contenido.
 
 ---
 
-**ℹ️ Avisos importantes**
+* **Avisos importantes**
 
 - No está obligado a cumplir la licencia para elementos del material  
   que estén en el dominio público o cuyo uso esté permitido por excepciones legales.
