@@ -50,18 +50,68 @@ Iván Melink.
 -----
 -----
 
+**Licencia Creative Commons** 
+**Atribución – CompartirIgual 4.0 Internacional (CC BY-SA 4.0)**
 
-### LICENCIA DE USO DEL MANUAL ALGORÍTMICO PARA ARTISTAS (CC BY-NC-SA 4.0) ###
+**IMPORTANTE:**
+Esta licencia aplica **únicamente al contenido textual, visual, código y recursos publicados en este sitio web** (vanklimen.com.ar), salvo indicación contraria explícita.  
+**NO aplica a mis grabaciones musicales, composiciones, masters ni obras sonoras**, las cuales mantienen su propia protección de derechos de autor.
 
-Todo el contenido de este sitio web, incluyendo el manifiesto, los textos, el concepto de la identidad de "Van Klimen", y las pistas de audio descargables, está sujeto a la licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
+---
 
-En resumen, esto significa que eres libre de:
+**✔️ Usted es libre de (solo para el contenido del sitio):**
 
-* **Compartir:** Copiar, distribuir y transmitir el trabajo.
-* **Remezclar/Adaptar:** Crear obras derivadas, remezclas y tus propias versiones del algoritmo.
+**Compartir**  
+Copiar y redistribuir el material en cualquier medio o formato.
 
-Bajo las siguientes condiciones:
-* **Atribución:** Debes dar crédito de forma adecuada al autor original (Iván Melink / Van Klimen), proporcionar un enlace a la licencia y especificar si se han realizado cambios.
-* **No Comercial:** No puedes utilizar este material con fines comerciales (es decir, no puedes vender mi música o tu versión de mi música).
-* **Compartir Igual:** Si remezclas, transformas o construyes sobre el material, debes distribuir tus contribuciones bajo la misma licencia que la original.
+**Adaptar**  
+Remezclar, transformar y crear a partir del material  
+para cualquier propósito, incluso comercial.
+
+El licenciante no puede revocar estas libertades en tanto se respeten los términos de la licencia.
+
+---
+
+**✔️ Bajo los siguientes términos:**
+
+**Atribución (BY)**  
+Debe dar crédito de forma adecuada, brindar un enlace a la licencia  
+e indicar si realizó cambios.  
+No puede sugerirse que el autor respalda el uso.
+
+**CompartirIgual (SA)**  
+Si modifica o transforma el material, debe distribuir su contribución  
+bajo **la misma licencia**.
+
+**Sin restricciones adicionales**  
+No puede aplicar medidas tecnológicas o términos legales que restrinjan a otros  
+de ejercer las libertades que la licencia permite.
+
+---
+
+**Sobre mis grabaciones y obras sonoras**
+
+Mis temas, grabaciones, masters, stems, composiciones y cualquier obra musical  
+**NO están cubiertas por esta licencia**.  
+Conservan su **propia protección de derechos de autor**  
+y **no pueden ser reutilizadas, remezcladas, distribuidas o adaptadas**  
+sin autorización expresa.
+
+Si en algún caso publico sample packs o material reutilizable,  
+estaré indicando **otra licencia específica** para ese contenido.
+
+---
+
+**ℹ️ Avisos importantes**
+
+- No está obligado a cumplir la licencia para elementos del material  
+  que estén en el dominio público o cuyo uso esté permitido por excepciones legales.
+- La licencia no otorga todos los permisos posibles:  
+  derechos de privacidad, imagen o morales pueden limitar ciertos usos.
+
+---
+
+**Enlace oficial a la licencia** 
+**Creative Commons — CC BY-SA 4.0:**  
+https://creativecommons.org/licenses/by-sa/4.0/
 
