@@ -1,5 +1,5 @@
 ---
-title: "Después de la forma -y después de Van Klimen-"
+title: "Después de la forma y después de Van Klimen"
 date: 2023-01-13T20:28:42-06:00
 draft: false
 descripcion: '>>El código abierto en el portal de Van Klimen: mutación y trascedencia de las formas algorítmicas'
