@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sofía Quallito on Van Klimen</title>
-    <link>http://localhost:1313/autores/sof%C3%ADa-quallito/</link>
+    <link>https://vanklimen.com.ar/autores/sof%C3%ADa-quallito/</link>
     <description>Recent content in Sofía Quallito on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Fri, 13 Jan 2023 20:28:42 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/autores/sof%C3%ADa-quallito/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vanklimen.com.ar/autores/sof%C3%ADa-quallito/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Después de la forma y después de Van Klimen</title>
-      <link>http://localhost:1313/biblioteca/textos/post-vk-sofiq/</link>
+      <link>https://vanklimen.com.ar/biblioteca/textos/post-vk-sofiq/</link>
       <pubDate>Fri, 13 Jan 2023 20:28:42 -0600</pubDate>
-      <guid>http://localhost:1313/biblioteca/textos/post-vk-sofiq/</guid>
+      <guid>https://vanklimen.com.ar/biblioteca/textos/post-vk-sofiq/</guid>
       <description></description>
     </item>
   </channel>
