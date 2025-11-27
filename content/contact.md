@@ -4,7 +4,7 @@ title: "Contacto"
 
 ### FORMULARIO DE CONTACTO
 
-Podés enviarme un mail a través de este formulario.
+Podés enviar un mail a través de este formulario.
 
 {{< form-contact >}}
 

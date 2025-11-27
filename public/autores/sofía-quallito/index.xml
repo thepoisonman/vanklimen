@@ -1,40 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Textos on Van Klimen</title>
-    <link>https://vanklimen.com.ar/biblioteca/textos/</link>
-    <description>Recent content in Textos on Van Klimen</description>
+    <title>Sofía Quallito on Van Klimen</title>
+    <link>https://vanklimen.com.ar/autores/sof%C3%ADa-quallito/</link>
+    <description>Recent content in Sofía Quallito on Van Klimen</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 03 Nov 2025 12:44:55 -0300</lastBuildDate>
-    <atom:link href="https://vanklimen.com.ar/biblioteca/textos/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Instrucciones para lidiar con los fracasos -y los éxitos-</title>
-      <link>https://vanklimen.com.ar/biblioteca/textos/fracasos/</link>
-      <pubDate>Mon, 03 Nov 2025 12:44:55 -0300</pubDate>
-      <guid>https://vanklimen.com.ar/biblioteca/textos/fracasos/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LDQT Bitácora</title>
-      <link>https://vanklimen.com.ar/biblioteca/textos/ldqt-bitacora/</link>
-      <pubDate>Mon, 03 Nov 2025 12:04:25 -0300</pubDate>
-      <guid>https://vanklimen.com.ar/biblioteca/textos/ldqt-bitacora/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Fri, 13 Jan 2023 20:28:42 -0600</lastBuildDate>
+    <atom:link href="https://vanklimen.com.ar/autores/sof%C3%ADa-quallito/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Después de la forma -y después de Van Klimen-</title>
       <link>https://vanklimen.com.ar/biblioteca/textos/post-vk-sofiq/</link>
       <pubDate>Fri, 13 Jan 2023 20:28:42 -0600</pubDate>
       <guid>https://vanklimen.com.ar/biblioteca/textos/post-vk-sofiq/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;&amp;ldquo;Los días que transcurren&amp;rdquo;&lt;/strong&gt;&lt;/em&gt; nació como un disco, pero muy pronto se convirtió en un &lt;strong&gt;portal&lt;/strong&gt;: el registro vivo de una metamorfosis, una liberación performática. &lt;em&gt;Van Klimen&lt;/em&gt; surgió como un avatar, una forma funcional en un entorno digital. Sin embargo, en la era del algoritmo, donde la identidad corre riesgo de volverse estática, esta forma llegó a su límite y pidió transformarse. Es aquí cuando el proyecto da un giro y declara la guerra a la forma. Van Klimen mutó de personaje a código abierto, exponiendo el mecanismo y desafiando la lógica de la sobreproducción constante.&#xA;Es un &lt;em&gt;manifiesto post-internet&lt;/em&gt; que critica el capitalismo del branding personal, poniendo en cuestionamiento un sistema que nos presiona por tener una imagen pública para existir.En un mundo donde el artista debe ser marca y el contenido su mercancía, este proyecto hace un gesto inusual: &lt;strong&gt;abre la caja negra y da acceso a lo inexplorado.&lt;/strong&gt;&#xA;El arte aquí se convierte en el proceso que responde a la pregunta esencial: &lt;em&gt;¿Qué hace un artista cuando el personaje que creó ya no le alcanza?&lt;/em&gt; &lt;strong&gt;Lo entrega.&lt;/strong&gt;&#xA;Muta en código abierto, en manual compartido, en bitácora editable, en archivo vivo que se entrega para que otros lo continúen: en campo de juego colectivo. El disco se convierte en un portal que invita al “post-espectador” a habitar un mundo donde las cosas son diferentes, y la lógica conocida se puede romper, deformar o expandir. La propuesta nos advierte que &lt;em&gt;“tras el resplandor habitan auténticas formas de sentir”&lt;/em&gt;, y al atravesar el portal hay un universo lleno por explorar: &lt;em&gt;El misterio como forma de resistencia - Expandir la imaginación - Romper con formatos fijos - Correrse de la cotidianeidad - Jugar con el artificio hasta transformarlo en experiencia real - Habitar la zona mutante - Invitar a percibir de otro modo - Trascender el personaje - Un androide sensible - Arte cinético y collage - Textura para que lo digital se sienta corporal - Desorden, absurdo, humor - Profundo, mirada, alma - No limitarse a una imagen cristalizada - Ser parte de una forma más grande que está en constante movimiento y creación - Hacer como forma de pensar - Jugar con monstruos, versiones, alter egos, muñecos y bufones - Ser maleable con la forma - Jugar, reír, bailar, quedarse quieto y gritar barrabasadas - Desbordes de colores - Calmarse con un gran ohm.&lt;/em&gt;&#xA;Mi lugar en el proceso fue acompañar a Iván en esta transformación, a través de sesiones creativas, desarrollo de manual de identidad y creaciones de producción audiovisual. Para mí fue un privilegio poder ser testigo y cómplice de este universo que Iván despliega y propone, de un proceso donde el disco se transforma en movimiento y la identidad se expande hasta trascender al individuo.&#xA;Estoy inmensamente agradecida por este proceso tan rico en aprendizaje, donde descubrimos el valor de crear desde la vida y no desde la ansiedad por mostrarse a uno mismo. &lt;em&gt;El arte como un acto de liberación&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>¿Por qué hice una página?</title>
-      <link>https://vanklimen.com.ar/biblioteca/textos/por-que-pagina/</link>
-      <pubDate>Sun, 13 Jan 2019 20:28:42 -0600</pubDate>
-      <guid>https://vanklimen.com.ar/biblioteca/textos/por-que-pagina/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
