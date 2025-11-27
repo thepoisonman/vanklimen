@@ -18,6 +18,6 @@ Muta en código abierto, en manual compartido, en bitácora editable, en archivo
 Mi lugar en el proceso fue acompañar a Iván en esta transformación, a través de sesiones creativas, desarrollo de manual de identidad y creaciones de producción audiovisual. Para mí fue un privilegio poder ser testigo y cómplice de este universo que Iván despliega y propone, de un proceso donde el disco se transforma en movimiento y la identidad se expande hasta trascender al individuo. </br>
 Estoy inmensamente agradecida por este proceso tan rico en aprendizaje, donde descubrimos el valor de crear desde la vida y no desde la ansiedad por mostrarse a uno mismo. *El arte como un acto de liberación*. </br>
 
-**Acerca de Sofía Quallito:**
+**Acerca de Sofía Quallito:**</br>
 Mi nombre es Sofía Quallito, soy artista, realizadora audiovisual y coach de arte. Cree un espacio llamado Lilah dedicado a desarrollar e impulsar proyectos creativos, ofrecer servicios y comunidad para artistas. Mi deseo es contribuir en el proceso de la expansión creativa, facilitando que las obras encuentren su forma y lenguaje para que puedan respirar en el mundo. Porque el arte no es solo lo que se muestra, sino lo que logra abrir en quienes lo atraviesan. [@sofiaqu_](https://www.instagram.com/sofiaqu_) ✨ [@arte.lilah](https://www.instagram.com/arte.lilah)
 
