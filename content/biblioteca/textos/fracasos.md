@@ -13,7 +13,7 @@ autores = ["Van Klimen 1.0"]
 * **2** Mantengase ordenado pero no se olvide de desplegar su poder eléctrico. 
 * **3** Si trae discusión es para bien. Que mueva algo.
 * **4** Om: Mantengase en estado relajado para cuando las cosas no salgan cómo quiera.
-* **5** Ohm (con h, sí): No deje pasar todo. Evite sobrecargarte. 
+* **5** Ohm (con h, sí): No deje pasar todo. Evite sobrecargarse. 
 * **6** No se olvide que cada obra es sólo una parte del esqueleto. 
 * **7** Lo que cicatriza siempre deja huellas.
 * **8** No espere un espejo, espere un cómplice.
