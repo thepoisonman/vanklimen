@@ -21,7 +21,7 @@ autores: ["Van Klimen 1.0"]
 * Para defender mi visión y entender que puede ser permeable. 
 * Para ser consciente de mi recorrido: de dónde vengo y quiénes me transitaron.
 * Para compartir lo que sé y, sobre todo, de lo que estoy aprendiendo.
-* Para que mis amigxs publiquen sin importarles la mirada del algorritmo. 
+* Para que mis amigxs publiquen sin importarles la mirada del algoritmo. 
 * Para intentar poder publicar algo sin estar pendiente de la hora y de su llegada:
 * Para alejarme de la estrategia.
 * Para que construyamos las estretegias.
