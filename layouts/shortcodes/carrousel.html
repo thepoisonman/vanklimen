@@ -1,0 +1,11 @@
+<!-- layouts/shortcodes/bootstrap_carousel.html -->
+<div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {{ range $index, $image := .Page.Resources.GetByPrefix "carousel" }}
+      <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+        <img src="{{ $image.RelPermalink }}" class="d-block w-100" alt="{{ $image.Name }}">
+      </div>
+    {{ end }}
+  </div>
+  <!-- Add controls/indicators as needed -->
+</div>
