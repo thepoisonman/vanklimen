@@ -3,7 +3,7 @@ date = '2025-11-03T12:04:25-03:00'
 draft = false
 title = "LDQT Bitácora"
 autores = ["Van Klimen 1.0"]
-descripcion = '>>Apuntes sobre Los días que transcurren'
+descripcion = '>>Apuntes sobre *Los días que transcurren*'
 +++
 
 <!--more-->
