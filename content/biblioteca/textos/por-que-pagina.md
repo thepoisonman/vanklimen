@@ -27,7 +27,7 @@ autores: ["Van Klimen 1.0"]
 * Para que construyamos las estretegias.
 * Para que sea un portal.
 * Para que sea una expansión.
-* PAra declararle la guerra a la forma -usando la forma-.
+* Para declararle la guerra a la forma -usando la forma-.
 * Para que sea imperfecta.
 * Para que sea tan inútil que alguien le encuentre una utilidad. 
 
