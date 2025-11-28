@@ -12,18 +12,18 @@ descripcion = '>>Apuntes sobre Los días que transcurren'
 Sin más, una breve síntesis de cada tema.
 
 * **1.** **Los días que transcurren** <br />
-Híbrido acústico, electrónico y paisaje sonoro. Relata medio entre sueños una madrugada en la que explotó un auto frente a mi casa. Terminá con una voz narrante y confesional que introduce el disco.
+Híbrido acústico/electrónico y paisaje sonoro. Relata medio entre sueños una madrugada en la que explotó un auto frente a mi casa. Termina con una voz narrante y confesional que introduce el disco.
 * **2.** **Alba** <br />
-Caminata al amanecer y algo de esperanza que se filtra en el nuevo día. Hecho con Totto como coproductor y Hugo Gónzalez López en saxofón.
+Caminata al amanecer y algo de esperanza que se filtra en el nuevo día. Creo que tengo muchos temas que hablan sobre deambular. Es una de mis actividades favoritas. Este tema fue hecho con Totto como coproductor y Hugo Gónzalez López en saxofón.
 * **3.** **Catalina** <br />
-Este salió de un tirón tanto la música como casi toda la letra. Aunque nombre a alguien la canción es un viaje introspectivo.
+Este salió de un tirón tanto la música como casi toda la letra. Es un viaje introspectivo en el que traté de no censurarme en lo más mínimo tanto de la forma como desde la lírica.
 * **4.** **Tu diversión** <br />
-Un encuentro con algo supremo que el tiempo en algún momento borrará. Es medio *depechemodero*.
+Un encuentro con algo supremo, algo bello, que desde un primer momento se sabe se esfumará. Hay una carrera por vencer al tiempo. Es medio *depechemodero*.
 * **5.** **Cabeza de Platino** <br />
-Siempre quise hace un cover de Palo Pandolfo y bueno una vez me dijo que tenía que hacer electrónica así que acá está el homenaje.
+Un homenaje. Siempre quise hace un cover de Palo Pandolfo y bueno como una vez me dijo que tenía que hacer electrónica cumplí con el cover y con su palabra. 
 * **6.** **Acantilados** <br />
-Coquetea con ser una canción de amor suicida pero creo que en el fondo tenía muchas ganas de tirarme al mar y no me tiré. Lección aprendida.
+Coquetea con ser una canción de amor suicida (¡!) pero creo que en el fondo tenía muchas ganas de tirarme al mar y no me tiré. Lección aprendida.
 * **7.** **Tributando** <br />
-Era divertido hacer una canción en la que el estribillo lo cantará un robot. Terminó siendo Vocoder pero igual creo que se cumple el objetivo. La letra va por ahí también.
+Me era divertido hacer una canción en la que el estribillo lo cantará un robot. Terminó siendo Vocoder pero igual creo que se cumple el objetivo. La letra va por ahí también. Hay una parte en inglés que me resulta medio un chascarrillo.
 * **8.** **Árcangel** <br />
-La propuesta era uno de esos canciones que tienen una frase recurrente y salió "No fue la primera vez en que me caí del cielo, ni va a ser la última, te lo puedo asegurar". Al final del tema hay una transformación de la voz cantante en otro personaje un tanto más terrible, no sé muy bien quién es pero creo que puede ser una versión más oscura del narrador del primer tema.
+La propuesta inicial era crear una de esos canciones que tienen una frase recurrente que se repite durante toda la canción y de ahí salió "No fue la primera vez en que me caí del cielo, ni va a ser la última, te lo puedo asegurar".  Al final del tema hay una ¿transformación? de la voz cantante en otro personaje un tanto más terrible. No sé muy bien quién quiero interpretar en ese momento pero creo que puede ser una versión más oscura del narrador del primer tema.
