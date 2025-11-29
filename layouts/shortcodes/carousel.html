@@ -1,27 +1,70 @@
-{{/* Obtener todas las URLs pasadas como parámetros posicionales */}}
-{{ $imgs := .Params }}
+<style>
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-{{ if eq (len $imgs) 0 }}
-<p>No se encontraron imágenes para el carrusel.</p>
-{{ else }}
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
 
-<div id="carousel-{{ .Get 0 | md5 }}" class="carousel slide" data-bs-ride="carousel">
+.carousel-slide img {
+  width: 100%;
+  flex-shrink: 0;
+}
 
-  <div class="carousel-inner">
-    {{ range $i, $src := $imgs }}
-    <div class="carousel-item {{ if eq $i 0 }}active{{ end }}">
-      <img src="{{ $src }}" class="d-block w-100" alt="carousel-img-{{ $i }}">
-    </div>
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+</style>
+
+<div class="carousel-container" id="carousel-{{ .Ordinal }}">
+  <div class="carousel-slide">
+    {{ range .Params }}
+    <img src="{{ . }}" alt="">
     {{ end }}
   </div>
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ .Get 0 | md5 }}" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ .Get 0 | md5 }}" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </button>
+  <button class="carousel-btn prev">‹</button>
+  <button class="carousel-btn next">›</button>
 </div>
 
-{{ end }}
+<script>
+(function() {
+  const root = document.getElementById("carousel-{{ .Ordinal }}");
+  const slide = root.querySelector(".carousel-slide");
+  const images = slide.querySelectorAll("img");
+  const prev = root.querySelector(".prev");
+  const next = root.querySelector(".next");
+
+  let index = 0;
+
+  function update() {
+    slide.style.transform = "translateX(" + (-index * 100) + "%)";
+  }
+
+  next.onclick = () => {
+    index = (index + 1) % images.length;
+    update();
+  };
+
+  prev.onclick = () => {
+    index = (index - 1 + images.length) % images.length;
+    update();
+  };
+})();
+</script>
