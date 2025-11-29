@@ -233,20 +233,46 @@ Mi nombre es Sofía Quallito, soy artista, realizadora audiovisual y coach de ar
   const next = root.querySelector(".next");
 
   let index = 0;
+  let autoplayInterval = null;
+  const delay = 4000; 
 
   function update() {
     slide.style.transform = "translateX(" + (-index * 100) + "%)";
   }
 
+  function startAutoplay() {
+    autoplayInterval = setInterval(() => {
+      index = (index + 1) % images.length;
+      update();
+    }, delay);
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  
   next.onclick = () => {
+    stopAutoplay();
     index = (index + 1) % images.length;
     update();
+    startAutoplay();
   };
 
   prev.onclick = () => {
+    stopAutoplay();
     index = (index - 1 + images.length) % images.length;
     update();
+    startAutoplay();
   };
+
+  
+  root.addEventListener("mouseenter", stopAutoplay);
+  root.addEventListener("mouseleave", startAutoplay);
+
+  
+  startAutoplay();
+
 })();
 </script>
 
