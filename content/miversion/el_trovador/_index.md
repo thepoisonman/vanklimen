@@ -4,7 +4,7 @@ date: 2019-02-13T20:28:42-06:00
 tags: ["poetry", "trees"]
 draft: false
 ---
-{{< img-with-text src="/images/eltrovador1.jpg" alt="ELTROVADOR" max-width="150px" >}}
+{{< img-with-text src="https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeiabyi4bfzlervcs2x2lqvwrxhogslxxvlvzrxmwsqkp4cjvujg5ma/" alt="ELTROVADOR" max-width="150px" >}}
 **EL TROVADOR:** Canciones en su forma primigenia: acompañado con la guitara, la tradición de las músicas tradicionales, la voz y la poesía. Nada más que eso.
 {{< /img-with-text >}}
 <!--more-->

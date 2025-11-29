@@ -8,7 +8,7 @@ autores: ["Sofía Quallito"]
 
 <!--more-->
 
-![Meet para colaborar](/images/bitacora-portada.jpg)
+![Meet para colaborar](https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeiabyi4bfzlervcs2x2lqvwrxhogslxxvlvzrxmwsqkp4cjvujg5ma/bitacora-portada.jpg)
 
 ***"Los días que transcurren"*** nació como un disco, pero muy pronto se convirtió en un **portal**: el registro vivo de una metamorfosis, una *liberación performática*. </br>
 *Van Klimen* surgió como un avatar, una forma funcional en un entorno digital. Sin embargo, en la era del algoritmo, donde la identidad corre riesgo de volverse estática, esta forma llegó a su límite y pidió transformarse. Es aquí cuando el proyecto da un giro y **declara la guerra a la forma**. Van Klimen mutó de personaje a código abierto, exponiendo el mecanismo y desafiando la lógica de la sobreproducción constante. </br>
@@ -21,7 +21,7 @@ La propuesta nos advierte que *“tras el resplandor habitan auténticas formas 
 Mi lugar en el proceso fue acompañar a Iván en esta transformación, a través de sesiones creativas, desarrollo de manual de identidad y creaciones de producción audiovisual. Para mí fue un privilegio poder ser testigo y cómplice de este universo que Iván despliega y propone, de un proceso donde el disco se transforma en movimiento y la identidad se expande hasta trascender al individuo. </br>
 Estoy inmensamente agradecida por este proceso tan rico en aprendizaje, donde descubrimos el valor de crear desde la vida y no desde la ansiedad por mostrarse a uno mismo. *El arte como un acto de liberación*. </br>
 
-![Identidad VK](/images/bitacora-identidad.jpg) </br>
+![Identidad VK](https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeiabyi4bfzlervcs2x2lqvwrxhogslxxvlvzrxmwsqkp4cjvujg5ma/bitacora-identidad.jpg) </br>
 
 
 **Acerca de Sofía Quallito:**</br>

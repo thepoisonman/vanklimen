@@ -34,6 +34,6 @@ autores: ["Van Klimen 1.0"]
 * Para que se me vaya de las manos.
 
 
-{{<  img-text-stack src="/images/perrito-ni-idea.png" alt="Perrito ni idea" width="35rem" >}}
+{{<  img-text-stack src="https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeiabyi4bfzlervcs2x2lqvwrxhogslxxvlvzrxmwsqkp4cjvujg5ma/perrito-ni-idea.png" alt="Perrito ni idea" width="35rem" >}}
 Bueno, eso...
 {{< /img-text-stack >}}
