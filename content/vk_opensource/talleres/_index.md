@@ -6,4 +6,6 @@ weight = 2
 descripcion = '>>Tutoriales y microtutoriales poco convencionales'
 +++
 
+<!--more-->
+
 En construcción...
