@@ -6,3 +6,5 @@ descripcion: '>>Vínculos a escritos, audiovisuales, referencias y cosas interes
 <!--more-->
 
 >> ['Make Art Anyway'](https://www.protein.xyz/make-art-anyway/) por Serra Utkum Ikiz
+
+>> ['Oblique Strategies'](https://stoney.sb.org/eno/oblique.html)
