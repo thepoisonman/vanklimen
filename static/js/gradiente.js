@@ -12,6 +12,7 @@
     new p5(function (p) {
       let angle = 0;
 
+      
       // tamaño fijo para desktop (cuadrado)
       const maxS = cfg.maxCircleSize ? parseInt(cfg.maxCircleSize) : 600;
 

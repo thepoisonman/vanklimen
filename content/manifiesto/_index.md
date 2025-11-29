@@ -113,5 +113,5 @@ estaré indicando **otra licencia específica** para ese contenido.
 
 **Enlace oficial a la licencia** 
 **Creative Commons — CC BY-SA 4.0:**  
-https://creativecommons.org/licenses/by-sa/4.0/
+[Link a licencia](https://creativecommons.org/licenses/by-sa/4.0)
 
