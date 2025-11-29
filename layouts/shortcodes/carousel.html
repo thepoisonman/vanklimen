@@ -1,17 +1,27 @@
-<div id="carousel-{{ .Ordinal }}" class="carousel slide" data-bs-ride="carousel">
+{{/* Obtener todas las URLs pasadas como parámetros posicionales */}}
+{{ $imgs := .Params }}
+
+{{ if eq (len $imgs) 0 }}
+<p>No se encontraron imágenes para el carrusel.</p>
+{{ else }}
+
+<div id="carousel-{{ .Get 0 | md5 }}" class="carousel slide" data-bs-ride="carousel">
+
   <div class="carousel-inner">
-    {{ range $i, $img := .Params }}
-      <div class="carousel-item {{ if eq $i 0 }}active{{ end }}">
-        <img src="{{ $img }}" class="d-block w-100" alt="carousel image">
-      </div>
+    {{ range $i, $src := $imgs }}
+    <div class="carousel-item {{ if eq $i 0 }}active{{ end }}">
+      <img src="{{ $src }}" class="d-block w-100" alt="carousel-img-{{ $i }}">
+    </div>
     {{ end }}
   </div>
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ .Ordinal }}" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ .Get 0 | md5 }}" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   </button>
 
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ .Ordinal }}" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ .Get 0 | md5 }}" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
 </div>
+
+{{ end }}
