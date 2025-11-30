@@ -10,4 +10,6 @@ descripcion = '>>1era Serie de Instrucciones Cáoticas'
 1. Recree una canción usando otro instrumento y haga el esfuerzo de fingir que es la primera vez.
 2. Anotá lo peor que te haya ocurrido en la semana. Contalo como si no le hubiese pasado a usted.
 3. Tome un loop cualquiera: copielo 4 veces en sucesión y luego edite cada una de las copias con un tratamiento diferente: saturación, reversa, doble velocidad, Pitch Shifter. Exporte el resultado y vuelva a ejecutar alguna de las operaciones anteriores u otra nueva. Puede hacerlo cuantas veces quiera.
-4. Haga una canción utilizando unicamente el material del punto 3: cortando fragmentos y trabajando con diferentes instancias de edición.
+4. Haga una canción utilizando unicamente el material del punto anterior: cortando fragmentos y trabajando con diferentes instancias de edición.</br>
+
+[**EJEMPLO PROYECTO A PARTIR 3 y 4**](https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeihosouzdb5hriwgatbocwly7ff2yxz5pzrry3pizdfb2fsfeio2g4)</br>

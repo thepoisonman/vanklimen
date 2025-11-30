@@ -14,4 +14,11 @@ Esto es un acceso para descargar las pistas de audiode algunos de los discos que
 
 Para descargarlos hacé click en los siguientes links:
 
-[**LDQT TRACKS**](https://archive.org/details/LDQT-STEMS)
+[**LDQT TRACKS**](https://archive.org/details/LDQT-STEMS)</br>
+Las pistas de instrumentos -sin voces- de todo el disco Los días que transcurren para ser usadas de la forma que quieras con la sóla condición de que indiques su fuente.
+
+[**NO INPUT MIXER - TRACKS**](https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeidnfnrzo3ur6om35y3mg6n644hnmlqn6hn4pty5rzbmfksaz2rrdq)</br>
+
+Un pequeño sample pack hecho sólo con la técnica de no-input mixer y algunos efectos en Ableton. Tengo una versión más completa que podes pedirme.
+
+
