@@ -19,6 +19,8 @@ Las pistas de instrumentos -sin voces- de todo el disco Los días que transcurre
 
 [**NO INPUT MIXER - TRACKS**](https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeidnfnrzo3ur6om35y3mg6n644hnmlqn6hn4pty5rzbmfksaz2rrdq)</br>
 
-Un pequeño sample pack hecho sólo con la técnica de no-input mixer y algunos efectos en Ableton. Tengo una versión más completa que podes pedirme.
+Un pequeño sample pack hecho sólo con la técnica de no-input mixer[^1] y algunos efectos en Ableton. Tengo una versión más completa que podes pedirme.
 
+
+[^1]: [No Input Mixer](https://www.youtube.com/watch?v=GENlNJ7kJOo)
 
