@@ -76,7 +76,7 @@ body {
 /* --- Base Styles for all screens (Desktop First) --- */
 
 /* Apply a margin when scrolling to an anchor point, preventing overlap */
-h1, h2, h3, h4, h5, h6, nav {
+h1, h2, h3, nav {
     font-family: 'IBM Plex Mono', monospace; 
     color: var(--text-color-titles);
     scroll-margin-top: 10rem;
