@@ -3,8 +3,7 @@ introTitle: '¡ERROR FATAL!'
 weight: 1
 ---
 {{< alert type="danger" >}}
-LDQT NUEVO ALBUM DISPONIBLE AQUÍ: <a href="https://vanklimen.bandcamp.com/album/los-d-as-que-transcurren"
-   style="color: var(--text-color-light);">
+LDQT NUEVO ALBUM DISPONIBLE AQUÍ: <iframe style="border: 0; width: 400px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3491204125/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://vanklimen.bandcamp.com/album/los-d-as-que-transcurren"></a></iframe>
   LOS DÍAS QUE TRANSCURREN
 </a>
 {{< /alert >}}
