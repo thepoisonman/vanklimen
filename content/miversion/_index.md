@@ -7,6 +7,6 @@ menus:
     weight: 3
 ---
 
-Estas son las dos versiones principales que uso de Van Klimen porque siempre somos una multiplicidad. Pronto serán más...
+En este momento estas son versiones existentes de Van Klimen.
 
 Clickeá en cada uno de los nombres para encontrar más información.
