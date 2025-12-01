@@ -2,6 +2,10 @@
 introTitle: '¡ERROR FATAL!'
 weight: 1
 ---
+{{< alert type="danger" >}}
+LDQT NUEVO ALBUM DISPONIBLE AQUÍ
+{{< /alert >}}
+
 Este sistema intentó cargar el *Manual Algorítmico para Artistas de Van Klimen*, pero durante la inicialización se produjo un error no identificado.
 
 **EL CONTENIDO SERÁ INICIADO DE FORMA FORZADA.**  
