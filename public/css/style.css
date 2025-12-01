@@ -83,12 +83,9 @@ h1, h2, h3, h4, h5, h6, nav {
     flex-wrap: nowrap;
     margin-bottom: 0.5rem;
     font-size: 5rem;
-    font-family: 'Goldman', Impact, sans-serif;
     line-height: 4rem;
     text-wrap: balance;
     font-weight: 700;
-    
-    
 }
 
 h1 {
@@ -262,8 +259,8 @@ p {
 }
 
 .h4 {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 2rem;
+  font-family: 'IBM Plex Mono';
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
