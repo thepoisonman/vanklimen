@@ -27,3 +27,5 @@ Coquetea con ser una canción de amor suicida (¡!) pero creo que en el fondo te
 Me era divertido hacer una canción en la que el estribillo lo cantará un robot. Terminó siendo Vocoder pero igual creo que se cumple el objetivo. La letra va por ahí también. Hay una parte en inglés que me resulta medio un chascarrillo.
 * **8.** **Árcangel** <br />
 La propuesta inicial era crear una de esos canciones que tienen una frase recurrente que se repite durante toda la canción y de ahí salió "No fue la primera vez en que me caí del cielo, ni va a ser la última, te lo puedo asegurar".  Al final del tema hay una ¿transformación? de la voz cantante en otro personaje un tanto más terrible. No sé muy bien quién quiero interpretar en ese momento pero creo que puede ser una versión más oscura del narrador del primer tema.
+
+!['LDQT'](https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeiaev2mrfumikmh6qmo4opj3nnofggaftu5igfszhjvxonhxurqdwq)

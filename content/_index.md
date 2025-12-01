@@ -3,7 +3,7 @@ introTitle: '¡ERROR FATAL!'
 weight: 1
 ---
 {{< alert type="danger" >}}
-LDQT NUEVO ALBUM DISPONIBLE AQUÍ
+LDQT NUEVO ALBUM DISPONIBLE [AQUÍ](https://vanklimen.bandcamp.com/album/los-d-as-que-transcurren)
 {{< /alert >}}
 
 Este sistema intentó cargar el *Manual Algorítmico para Artistas de Van Klimen*, pero durante la inicialización se produjo un error no identificado.

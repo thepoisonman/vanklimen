@@ -9,4 +9,6 @@ draft: false
 
 <!--more-->
 
+Producido, mezclado y masterizado por Dsmond -clothsforitaly-
+
 ![Alt text](Hiperreal-cover.png)

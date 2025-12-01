@@ -22,3 +22,5 @@ autores = ["Van Klimen 1.0"]
 
 
 * **PD:** Nunca de por sentado haber cumplido todos los puntos.
+
+!['LA CAIDA'](https://turquoise-used-weasel-987.mypinata.cloud/ipfs/bafybeifsn4kbeveshueec4llmgsl7gx2jynbmpqq36j2qy7oe7lfrdukwq)
