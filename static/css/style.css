@@ -776,11 +776,16 @@ em, i {
 
 
 .alert {
+  display: flex;
+  align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: .25rem;
+  font-family: "IBM Plex Mono";
+  gap: 20px;
 }
+
 
 .alert-danger {
   color: var(--text-color-dark);

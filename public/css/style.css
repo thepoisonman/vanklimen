@@ -776,10 +776,25 @@ em, i {
 
 
 .alert {
+  display: flex;
+  align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: .25rem;
+  font-family: "IBM Plex Mono";
+  gap: 20px;
+}
+
+
+.alert span {
+  display: flex;               /* permite centrar verticalmente el contenido del texto */
+  align-items: center;
+  height: 120px;               /* EXACTO: la misma altura del iframe */
+}
+
+.alert iframe {
+  display: block;
 }
 
 .alert-danger {
