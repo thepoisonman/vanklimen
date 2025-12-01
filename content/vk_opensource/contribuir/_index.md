@@ -12,11 +12,11 @@ descripcion = '>>¿Cómo hago para contribuir y ampliar este universo?'
 
 Si tenés una idea para contribuir con versiones de Van Klimen puede comunicarse a través de la página de [contacto](/contact).
 
-### ¿Qué tipo de material se acepta?
+### ¿Qué tipo de material se acepta? ###
 
 Cualquier cosa porque realmente no sabemos en qué puede devenir esto. Pero lo importante es que te comuniques por el formulario y redes con tu propuesta y la podamos debatir/construir. **ES IMPORTANTE ACLARAR QUE NADA SE PUBLICA PORQUE SÍ, ESTO SE CONSTRUYE EN CONJUNTO POR ENDE NO ES UNA PLATAFORMA DE REPOSTEO**
 
-### Tengo conocimientos de código, dónde puedo contribuir con el armado de la página.
+### Tengo conocimientos de código, ¿Dónde puedo contribuir con el armado de la página? ###
 
 En el repositorio en [Github](https://github.com/thepoisonman/vanklimen) podés encontrar más información.
 

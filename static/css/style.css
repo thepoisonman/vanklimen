@@ -261,6 +261,12 @@ p {
 
 }
 
+.h4 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 hr {
   opacity: 0;
 }
