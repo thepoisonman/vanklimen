@@ -4,7 +4,7 @@ date: 2025-11-01T20:28:42-06:00
 tags: ["poetry", "trees"]
 draft: false
 ---
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2RQrUeGzQYMYJZiGtv5kNU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3491204125/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://vanklimen.bandcamp.com/album/los-d-as-que-transcurren">Los días que transcurren by Van Klimen</a></iframe>
 
 <!--more-->
 
@@ -13,6 +13,8 @@ draft: false
 ***Tras el replandor habitan auténticas formas de vivir***
 
 Producido, mezclado, interpretado y masterizado por Van Klimen excepto en canciones indicadas.
+
+También disponible en [Spotify](https://open.spotify.com/intl-es/album/2RQrUeGzQYMYJZiGtv5kNU?si=u2yFrL_-Q7iYr4K42EgWKw)
 
 * **1** Los días que transcurren
 * **2** Alba <br />

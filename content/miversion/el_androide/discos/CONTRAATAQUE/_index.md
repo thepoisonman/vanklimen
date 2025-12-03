@@ -4,6 +4,6 @@ date: 2024-07-13T20:28:42-06:00
 draft: false
 ---
 
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5W9NtXm2UloW0pkFXmHLZQ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3336070045/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://vanklimen.bandcamp.com/album/contraataque">Contraataque by van Klimen</a></iframe>
 
 <!--more-->

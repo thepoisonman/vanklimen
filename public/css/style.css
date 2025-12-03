@@ -787,16 +787,6 @@ em, i {
 }
 
 
-.alert span {
-  display: flex;               /* permite centrar verticalmente el contenido del texto */
-  align-items: center;
-  height: 120px;               /* EXACTO: la misma altura del iframe */
-}
-
-.alert iframe {
-  display: block;
-}
-
 .alert-danger {
   color: var(--text-color-dark);
   background-color: var(--third-color);

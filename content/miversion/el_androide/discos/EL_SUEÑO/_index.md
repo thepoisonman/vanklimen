@@ -3,8 +3,8 @@ title: "EL SUEÑO DE ABEL"
 date: 2023-01-13T20:28:42-06:00
 draft: false
 ---
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2792395087/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://vanklimen.bandcamp.com/track/el-sue-o-de-abel">El Sueño de Abel by Van Klimen</a></iframe>
 
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6asYpfvbKxmgssqmvB5kHI?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 <!--more-->
 
