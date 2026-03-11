@@ -1054,15 +1054,11 @@ function layoutPoster(title,subtitle,date,info,seed){
     ctx.restore();
   }
 
-  // Color del texto: siempre opuesto al fondo para garantizar contraste
-  // Con degradé oscuro (bottom/both) el texto crema se ve — sin imagen en paleta clara, usar ink
-  const hasDarkGrad=(gradStyle==='bottom'||gradStyle==='both');
-  const fg = (darkBg || hasDarkGrad || userImage) ? '#f0ece0' : seed.inkColor;
+  const fg='#f0ece0';
   const titleFont=seed.titleFont;
-  // Sombra serigráfica solo cuando hay imagen o fondo oscuro real — nunca en fondo claro
-  const canHaveShadow = darkBg || userImage;
-  const useShadow = canHaveShadow && seed.palette!=='light' && rnd(0,1)>0.45;
-  const shadowColor = useShadow
+  // Efecto serigráfico solo en paletas oscuras/mixtas, y con colores que no desentonan
+  const useShadow=seed.palette!=='light'&&rnd(0,1)>0.35;
+  const shadowColor=useShadow
     ? pick(['rgba(200,0,26,0.55)','rgba(0,40,180,0.5)','rgba(180,80,0,0.5)','rgba(140,0,140,0.45)'])
     : 'none';
   const sdx=rndInt(2,6), sdy=rndInt(1,4);
@@ -1077,12 +1073,12 @@ function layoutPoster(title,subtitle,date,info,seed){
     if(!subtitle) return 0;
     const sfs=fitFontSize(subtitle,seed.subFont,'400',maxW,20,9);
     ctx.font=makeFontSpec('400',sfs,seed.subFont);
-    ctx.fillStyle=fg; ctx.globalAlpha=0.82; ctx.textAlign=align;
+    ctx.fillStyle='rgba(240,236,224,0.75)'; ctx.textAlign=align;
     ctx.fillText(subtitle,x,y);
-    ctx.globalAlpha=1;
     return sfs;
   };
   const drawInfoUp=(topY,maxY)=>{
+    // info de arriba hacia abajo, con guardia de colisión
     const lines=[date,...info.split('\n')].filter(l=>l.trim());
     let iy=topY;
     lines.forEach(line=>{
@@ -1091,13 +1087,13 @@ function layoutPoster(title,subtitle,date,info,seed){
       const fs=fitFontSize(line,fn,'400',W*.88,20,9);
       if(iy+fs>maxY) return;
       ctx.font=makeFontSpec('400',fs,fn);
-      ctx.fillStyle=fg; ctx.globalAlpha=0.9; ctx.textAlign='center';
+      ctx.fillStyle='rgba(240,236,224,0.88)'; ctx.textAlign='center';
       iy+=fs; ctx.fillText(line,W/2,iy); iy+=fs*.2+4;
     });
-    ctx.globalAlpha=1;
     return iy;
   };
   const drawInfoDown=(bottomY,minY)=>{
+    // info de abajo hacia arriba, con guardia de colisión
     const lines=[date,...info.split('\n')].filter(l=>l.trim());
     let iy=bottomY;
     [...lines].reverse().forEach(line=>{
@@ -1106,13 +1102,12 @@ function layoutPoster(title,subtitle,date,info,seed){
       const fs=fitFontSize(line,fn,'400',W*.88,20,9);
       if(iy-fs<minY) return;
       ctx.font=makeFontSpec('400',fs,fn);
-      ctx.fillStyle=fg; ctx.globalAlpha=0.9; ctx.textAlign='center';
+      ctx.fillStyle='rgba(240,236,224,0.88)'; ctx.textAlign='center';
       ctx.fillText(line,W/2,iy); iy-=fs*1.2+3;
     });
-    ctx.globalAlpha=1;
-    ctx.strokeStyle=fg; ctx.globalAlpha=0.35; ctx.lineWidth=1;
+    // Línea separadora
+    ctx.strokeStyle='rgba(240,236,224,0.35)'; ctx.lineWidth=1;
     ctx.beginPath(); ctx.moveTo(W*.1,iy-4); ctx.lineTo(W*.9,iy-4); ctx.stroke();
-    ctx.globalAlpha=1;
   };
 
   const titleAlign=pick(['center','center','left']);
@@ -1159,9 +1154,9 @@ function layoutPoster(title,subtitle,date,info,seed){
       const sfs=fitFontSize(subtitle,seed.subFont,'400',W*.86,18,9);
       belowY+=sfs;
       ctx.font=makeFontSpec('400',sfs,seed.subFont);
-      ctx.fillStyle=fg; ctx.globalAlpha=0.82; ctx.textAlign='center';
+      ctx.fillStyle='rgba(240,236,224,0.72)'; ctx.textAlign='center';
       ctx.fillText(subtitle,W/2,belowY);
-      ctx.globalAlpha=1; belowY+=rndInt(8,14);
+      belowY+=rndInt(8,14);
     }
     drawInfoDown(H-rndInt(14,22), belowY+16);
 
