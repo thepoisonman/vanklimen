@@ -267,7 +267,7 @@ TRAER RABIA</textarea>
     <canvas id="flyerCanvas" width="600" height="800"></canvas>
     <div class="download-bar">
       <button onclick="downloadFlyer('screen')">▼ PNG PANTALLA</button>
-      <button onclick="downloadFlyer('a4')">▼ PNG A4 IMPRESIÓN</button>
+      <button onclick="downloadFlyer('a4')">▼ PNG ALTA RES</button>
       <button onclick="generateFlyer()">↺ REGENERAR</button>
       <button id="undoBtn" onclick="undoFlyer()" disabled>↩ DESHACER</button>
     </div>
@@ -1811,7 +1811,7 @@ document.getElementById('decorDensity').addEventListener('input',()=>{clearTimeo
 // RANDOMIZE
 // ============================================================
 function randomize(){
-  const bands=['MUERTE AL SISTEMA','NADA QUE PERDER','CAOS Y LIBERTAD','NO PASARÁN','RUIDO TOTAL','RESISTENCIA FINAL','ESPIRAL DE ODIO','CARNE PODRIDA','TUMOR SOCIAL','BRIGADA MALDITA','PRESTAMISTA DIABÓLICO','SANGRE EN EL PISO','CORTOCIRCUITO','BASURA NUCLEAR','EL ÚLTIMO TREN','VIDRIO ROTO','CIUDAD QUEMADA','RABIA PURA'];
+  const bands=['MUERTE AL SISTEMA','NADA QUE PERDER','CAOS Y LIBERTAD','NO PASARÁN','RUIDO TOTAL','RESISTENCIA FINAL','ESPIRAL DE ODIO','CARNE PODRIDA','TUMOR SOCIAL','BRIGADA MALDITA','GOLPE DE ESTADO','SANGRE EN EL PISO','CORTOCIRCUITO','BASURA NUCLEAR','EL ÚLTIMO TREN','VIDRIO ROTO','CIUDAD QUEMADA','RABIA PURA'];
   const subs=['SHOW EN VIVO','CONCIERTO','NOCHE DE CAOS','EVENTO SALVAJE','FIESTA UNDERGROUND','TOCA EN VIVO','PRESENTA','GIRA NACIONAL','ULTIMO SHOW','NOCHE MALDITA','DEBUT EN VIVO','REUNION'];
   const days=['VIERNES','SABADO','DOMINGO','LUNES','JUEVES'],nums=['1','2','3','7','8','13','14','15','21','22','28','29'],months=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'],times=['20HS','21HS','22HS','23HS','00HS'];
   const places=['BODEGA DEL CAOS','EL SOTANO','CLUB MALDITO','LA FABRICA MUERTA','GARAGE CENTRAL','EL BUNKER','CASA OKUPA','CENTRO CULTURAL X','EL TUNEL','NAVE INDUSTRIAL','TERRAZA DEL FIN','BAR SIN NOMBRE','PATRON','EL GALPÓN','SALA OSCURA'];
@@ -1836,24 +1836,16 @@ function randomize(){
 // ============================================================
 function downloadFlyer(mode='screen'){
   if(mode==='a4'){
-    const A4W=1240,A4H=1754;
-    const oc=document.createElement('canvas');oc.width=A4W;oc.height=A4H;
+    // Escalar el canvas actual 3× — sin re-renderizar, sin diferencias
+    const scale=3;
+    const hiW=canvas.width*scale, hiH=canvas.height*scale;
+    const oc=document.createElement('canvas'); oc.width=hiW; oc.height=hiH;
     const ox=oc.getContext('2d');
-    // Scale the current canvas content to fill A4, keeping aspect ratio and centering
-    const srcW=canvas.width,srcH=canvas.height;
-    const scale=Math.min(A4W/srcW,A4H/srcH);
-    const dw=Math.round(srcW*scale),dh=Math.round(srcH*scale);
-    const dx=Math.round((A4W-dw)/2),dy=Math.round((A4H-dh)/2);
-    // Fill background matching the paper color
-    const paperBg=currentSeed?currentSeed.paperBg:'#f0ece0';
-    ox.fillStyle=paperBg;
-    ox.fillRect(0,0,A4W,A4H);
-    // Draw scaled flyer centered
     ox.imageSmoothingEnabled=true;
     ox.imageSmoothingQuality='high';
-    ox.drawImage(canvas,dx,dy,dw,dh);
-    const a=document.createElement('a');a.download='flyer-punk-A4.png';a.href=oc.toDataURL('image/png');a.click();
-    showToast('// A4 — 1240×1754px ✓ //');
+    ox.drawImage(canvas,0,0,hiW,hiH);
+    const a=document.createElement('a');a.download='flyer-punk-hires.png';a.href=oc.toDataURL('image/png');a.click();
+    showToast(`// HIRES — ${hiW}×${hiH}px ✓ //`);
   }else{const a=document.createElement('a');a.download='flyer-punk.png';a.href=canvas.toDataURL('image/png');a.click();}
 }
 function _renderFlyerTo(tc,tx){
