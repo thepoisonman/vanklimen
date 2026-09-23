@@ -8,8 +8,6 @@ subtitle = 'Manual Algorítmico para Artistas'
   blog = "/:contentbasename/"
   acerca = "/:contentbasename/"
 
-sectionPagesMenu = 'main'
-
 [taxonomies]
   autor = "autores"
 

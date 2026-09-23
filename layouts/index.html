@@ -1,25 +1,62 @@
 {{ define "main" }}
-  
 
-<div id="hero" class="hero">
-  {{ partial "picture.html" (dict 
-  "path" "/images/Manual-algo.jpg" 
-  "alt" "A description of the image" 
-  "class" "hero-image" 
-  "loading" "eager" 
-  "context" . 
-) }}
-</div>
-
-<div id="intro" class="intro text-center">
-  <h1 id="introtitulo" class="subtitulo">{{ .Params.introTitle }}</h1>
-
-  <div id="disecciontexto" class="texto">
-    {{ .Content }}
+<section class="ep-block">
+  <div class="ep-cover">
+    {{ $coverAlt := printf "Tapa del EP %s" .Params.epTitle }}
+    {{ with resources.Get "images/El-deambular.jpg" }}
+      {{ $cover := .Resize "900x webp q85" }}
+      <img src="{{ $cover.RelPermalink }}" width="{{ $cover.Width }}" height="{{ $cover.Height }}" alt="{{ $coverAlt }}" class="ep-cover-image" loading="eager">
+    {{ end }}
   </div>
 
-  <h1 id="disecciontitulo" class="subtitulo">{{ .Params.disecctionTitle }}</h1>
+  <p class="ep-eyebrow">{{ .Params.epLabel }}</p>
+  <h1 class="ep-title">{{ .Params.epTitle }}</h1>
 
-</div>
+  <div class="ep-links">
+    {{ with .Params.spotifyUrl }}
+      <a class="ep-link" href="{{ . }}" target="_blank" rel="noopener">Escuchar en Spotify</a>
+    {{ end }}
+    {{ with .Params.youtubeUrl }}
+      <a class="ep-link" href="{{ . }}" target="_blank" rel="noopener">Ver en YouTube</a>
+    {{ end }}
+  </div>
+</section>
+
+{{ with site.GetPage "poemas" }}
+  {{ $poemas := .Pages.ByWeight }}
+  {{ if $poemas }}
+<section class="poemas-block">
+  <p class="poemas-eyebrow">Letras</p>
+
+  <div class="poemas-mosaico">
+    {{ range $i, $p := $poemas }}
+      <button type="button" class="poema-tile" data-index="{{ $i }}" aria-haspopup="dialog">
+        <span class="poema-num">{{ printf "%02d" (add $i 1) }}</span>
+        <span class="poema-tile-title">{{ $p.Title }}</span>
+      </button>
+    {{ end }}
+  </div>
+
+  <dialog id="poema-dialog" class="poema-dialog">
+    <button type="button" class="poema-dialog-close" aria-label="Cerrar">✕</button>
+    <button type="button" class="poema-dialog-prev" aria-label="Poema anterior">←</button>
+    <div class="poema-dialog-content">
+      <h3 id="poema-dialog-title"></h3>
+      <div id="poema-dialog-text" class="poema-dialog-text"></div>
+    </div>
+    <button type="button" class="poema-dialog-next" aria-label="Poema siguiente">→</button>
+  </dialog>
+
+  <!-- Contenido real de cada poema (markdown ya renderizado por Hugo), oculto: -->
+  <div id="poemas-fuente" hidden>
+    {{ range $i, $p := $poemas }}
+      <template data-index="{{ $i }}" data-titulo="{{ $p.Title }}">{{ $p.Content }}</template>
+    {{ end }}
+  </div>
+</section>
+  {{ end }}
+{{ end }}
+
+<script defer src="{{ "js/poemas-mosaico.js" | relURL }}"></script>
 
 {{ end }}

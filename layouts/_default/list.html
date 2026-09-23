@@ -36,7 +36,7 @@
               {{ with .Params.autores }}
                  {{ range . }}
                   {{ $nombreAutor := . }}
-                   {{ with site.GetPage (printf "/autores/%s" ($nombreAutor | urlize)) }}
+                   {{ with site.GetPage (printf "/old/autores/%s" ($nombreAutor | urlize)) }}
                  <a href="{{ .Permalink }}">{{ $nombreAutor }}</a>
                 {{ else }}
                  <span>{{ $nombreAutor }}</span>

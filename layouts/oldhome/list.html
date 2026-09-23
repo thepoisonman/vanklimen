@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div id="hero" class="hero">
+  {{ partial "picture.html" (dict
+  "path" "/images/Manual-algo.jpg"
+  "alt" "A description of the image"
+  "class" "hero-image"
+  "loading" "eager"
+  "context" .
+) }}
+</div>
+
+<div id="intro" class="intro text-center">
+  <h1 id="introtitulo" class="subtitulo">{{ .Params.introTitle }}</h1>
+
+  <div id="disecciontexto" class="texto">
+    {{ .Content }}
+  </div>
+
+  <h1 id="disecciontitulo" class="subtitulo">{{ .Params.disecctionTitle }}</h1>
+
+</div>
+
+{{ end }}

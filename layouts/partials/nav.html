@@ -1,8 +1,11 @@
 {{/* layouts/partials/nav.html */}}
 
+{{ $menuName := "main" }}
+{{ if eq .Section "old" }}{{ $menuName = "old" }}{{ end }}
+
 <nav id="main-nav" class="main-nav navigation">
   <ul class="menu-list">
-    {{ range .Site.Menus.main }}
+    {{ range index .Site.Menus $menuName }}
       <li>
         <a href="{{ .URL | absURL }}">{{ .Name }}</a>
       </li>

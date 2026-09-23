@@ -2,7 +2,7 @@
 title: "Mis Versiones"
 draft: false
 menus:
-  main:
+  old:
     name: "Mis versiones"
     weight: 3
 ---

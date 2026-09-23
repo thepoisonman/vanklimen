@@ -1,13 +1,14 @@
+{{ if eq .Section "old" }}
 <header class="site-header">
     <div class="logo-title-container">
         <!-- Site Logo -->
         <a href="{{ .Site.BaseURL }}" class="site-logo">
-            {{ partial "picture.html" (dict 
-                "path" "images/logo.png" 
-                "alt" "A description of the image" 
-                "class" "logo-image" 
-                "loading" "eager" 
-                "context" . 
+            {{ partial "picture.html" (dict
+                "path" "images/logo.png"
+                "alt" "A description of the image"
+                "class" "logo-image"
+                "loading" "eager"
+                "context" .
                 ) }}
         </a>
     </div>
@@ -22,3 +23,8 @@
     <!-- The menu partial remains separate -->
     {{ partial "nav.html" . }}
 </header>
+{{ else }}
+<header class="site-header new-header">
+    <a href="{{ .Site.BaseURL }}" class="site-title-link">Van Klimen</a>
+</header>
+{{ end }}

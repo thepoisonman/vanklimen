@@ -10,7 +10,7 @@ descripcion = '>>¿Cómo hago para contribuir y ampliar este universo?'
 
 #### ¿Cómo hago para contribuir y ampliar este universo?
 
-Si tenés una idea para contribuir con versiones de Van Klimen puede comunicarse a través de la página de [contacto](/contact).
+Si tenés una idea para contribuir con versiones de Van Klimen puede comunicarse a través de la página de [contacto](/old/contact).
 
 #### ¿Qué tipo de material se acepta? ###
 

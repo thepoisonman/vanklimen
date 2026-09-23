@@ -137,7 +137,10 @@ footer{
   font-family: 'Work Sans';
   font-size: 1rem;
   padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
   margin: 0;
 }
 
@@ -791,4 +794,274 @@ em, i {
   color: var(--text-color-dark);
   background-color: var(--third-color);
   border-color: var(--third-color);
+}
+
+/* --- Nueva identidad de marca: negro con grano, sin acentos ni tipografía 8bit --- */
+/* El sitio archivado (.legacy-theme, todo lo que vive bajo /old/) no se toca:
+   conserva sus colores y tipografía originales. */
+body.new-theme {
+  --text-color-dark: #ffffff;
+  --text-color-titles: #ffffff;
+  --text-color-accent: #ffffff;
+  --text-color-light: #ffffff;
+  --background-color: #000000;
+  --primary-color: #000000;
+  background-color: #000000;
+  position: relative;
+  isolation: isolate;
+}
+
+body.new-theme .site-header {
+  justify-content: center;
+  box-shadow: none;
+}
+
+.site-title-link {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--text-color-dark);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 1.5rem 0;
+}
+
+body.new-theme .site-footer {
+  border-top: none;
+}
+
+body.new-theme h1,
+body.new-theme h2,
+body.new-theme h3,
+body.new-theme nav,
+body.new-theme .menu-list li a,
+body.new-theme .page-title,
+body.new-theme .subtitulo,
+body.new-theme .h4 {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: none;
+}
+
+/* --- Portada nueva: EP "El deambular" --- */
+.ep-block {
+  width: 100%;
+  max-width: 40rem;
+  margin: 4rem auto 3rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ep-cover {
+  width: 24rem;
+  aspect-ratio: 1 / 1;
+  max-width: 85vw;
+  border: 1px solid var(--text-color-dark);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.ep-cover-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ep-eyebrow,
+.poemas-eyebrow {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-color-dark);
+  opacity: 0.6;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
+.ep-title {
+  margin: 0 0 2rem;
+  font-size: 2.75rem;
+  line-height: 1.1;
+}
+
+.ep-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.ep-link {
+  color: var(--text-color-dark);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px solid var(--text-color-dark);
+  padding: 0.75rem 1.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.ep-link:hover {
+  opacity: 0.6;
+}
+
+/* --- Portada nueva: mosaico de poemas --- */
+.poemas-block {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.poemas-mosaico {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 0.75rem;
+}
+
+.poema-tile {
+  aspect-ratio: 1 / 1;
+  background: none;
+  border: 1px solid var(--text-color-dark);
+  color: var(--text-color-dark);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.poema-tile:hover,
+.poema-tile:focus-visible {
+  background-color: var(--text-color-dark);
+  color: #000000;
+}
+
+.poema-num {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.poema-tile-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+.poema-dialog {
+  max-width: 32rem;
+  width: 90vw;
+  max-height: 85vh;
+  border: 1px solid white;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3rem 3rem;
+  position: relative;
+}
+
+/* El navegador oculta <dialog> por defecto salvo que tenga [open];
+   sin esta regla el flex de abajo se aplicaría siempre y el recuadro
+   quedaría visible flotando en la página antes de abrir un poema. */
+.poema-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.poema-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.poema-dialog-content {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.poema-dialog-content h3 {
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* El texto del poema puede ser tan largo como haga falta: scrollea
+   adentro del recuadro en vez de desbordar la página. */
+.poema-dialog-text {
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.poema-dialog-text p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 1.25rem;
+  white-space: pre-line;
+}
+
+.poema-dialog-text p:last-child {
+  margin-bottom: 0;
+}
+
+.poema-dialog-close,
+.poema-dialog-prev,
+.poema-dialog-next {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.poema-dialog-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.9rem;
+}
+
+.poema-dialog-prev,
+.poema-dialog-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.poema-dialog-prev {
+  left: 0.5rem;
+}
+
+.poema-dialog-next {
+  right: 0.5rem;
+}
+
+body.new-theme .menu-list li a:hover {
+  color: var(--text-color-dark);
+  opacity: 0.7;
+}
+
+/* Textura de grano: ruido SVG autocontenido, sin imágenes externas */
+body.new-theme::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  background-repeat: repeat;
+  background-size: 140px 140px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }

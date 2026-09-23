@@ -3,7 +3,7 @@ title: "VK Open Source"
 weight: 10
 draft: false
 menus:
-  main:
+  old:
     name: "VK Open Source"
     weight: 5
 ---

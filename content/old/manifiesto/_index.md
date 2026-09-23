@@ -2,7 +2,7 @@
 title: "La entrega"
 draft: false
 menus:
-  main:
+  old:
     name: "Manifiesto"
     weight: 2
 ---
@@ -40,7 +40,7 @@ Como si fuera un Van Klimen de código abierto, creo este manual en una página 
 
 Van Klimen será un manual abierto en la red, esperando que de él florezcan otras versiones: síntesis, antítesis o algo completamente distinto.
 
-Mientras tanto, yo me quedaré viendo qué sucede, construyendo mi nuevo personaje… y, quizá, jugando de vez en cuando con las versiones Van Klimen: [***Androide***](/miversion/el_androide), [***Trovador***](/miversion/el_trovador) y las que resta [***por crear***](/vk_opensource).
+Mientras tanto, yo me quedaré viendo qué sucede, construyendo mi nuevo personaje… y, quizá, jugando de vez en cuando con las versiones Van Klimen: [***Androide***](/old/miversion/el_androide), [***Trovador***](/old/miversion/el_trovador) y las que resta [***por crear***](/old/vk_opensource).
 
 Iván Melink.
 
