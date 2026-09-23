@@ -824,6 +824,15 @@ body.new-theme {
   box-sizing: border-box;
 }
 
+/* .container usa justify-self/align-self para centrarse, pero esas
+   propiedades no hacen nada ahí (su padre, body, no es flex/grid): el
+   contenedor quedaba pegado a la izquierda con ~20% de hueco a la
+   derecha, corrido respecto del header/footer (que sí son full width).
+   Lo corregimos solo para la portada nueva. */
+body.new-theme .container {
+  margin: 0 auto;
+}
+
 body.new-theme .site-header {
   justify-content: center;
   box-shadow: none;
