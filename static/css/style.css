@@ -12,7 +12,7 @@
 
 html, body {
     max-width: 100%;
-    
+    overflow-x: hidden;
 }
 
 
@@ -35,10 +35,10 @@ ul li{
 
 #main {
   margin-top: 1em;
-  margin-bottom: 0.125rem; 
+  margin-bottom: 0.125rem;
   color: var(--text-color-dark);
-  font-size: 2.25rem; 
-  width: 100vw;
+  font-size: 2.25rem;
+  width: 100%;
   font-family: 'Work Sans', sans-serif;
 
 }
@@ -870,7 +870,7 @@ body.new-theme .h4 {
 .ep-cover {
   width: 24rem;
   aspect-ratio: 1 / 1;
-  max-width: 85vw;
+  max-width: 100%;
   border: 1px solid var(--text-color-dark);
   overflow: hidden;
   margin-bottom: 2rem;
@@ -1086,11 +1086,22 @@ body.new-theme::after {
      que evitamos que tape contenido al hacer scroll. */
   body.new-theme .site-header {
     position: static;
+    width: 100%;
+    box-sizing: border-box;
     padding: 0.5rem 0;
   }
 
   body.new-theme {
     padding-top: 0;
+  }
+
+  /* En mobile el footer viejo usa "space-around" (deja aire a los
+     costados); en la portada nueva, con solo dos items, eso se ve como
+     si no llegara a los bordes. Los pegamos a los extremos. */
+  body.new-theme .site-footer {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
   }
 
   .ep-block {
