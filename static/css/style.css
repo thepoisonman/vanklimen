@@ -942,7 +942,7 @@ body.new-theme .h4 {
 
 .poemas-mosaico {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
 }
 
@@ -958,6 +958,9 @@ body.new-theme .h4 {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem;
+  /* Sin esto, un título largo empuja la altura del botón más allá del
+     cuadrado que marca aspect-ratio, y los tiles dejan de ser iguales. */
+  overflow: hidden;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -976,6 +979,12 @@ body.new-theme .h4 {
 .poema-tile-title {
   font-family: 'Work Sans', sans-serif;
   font-size: 0.9rem;
+  line-height: 1.2;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .poema-dialog {
@@ -1136,9 +1145,5 @@ body.new-theme::after {
 
   .ep-link {
     width: 100%;
-  }
-
-  .poemas-mosaico {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
