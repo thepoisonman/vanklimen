@@ -39,6 +39,7 @@ ul li{
   color: var(--text-color-dark);
   font-size: 2.25rem;
   width: 100%;
+  box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
 
 }
