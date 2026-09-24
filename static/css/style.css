@@ -846,6 +846,10 @@ body.new-theme .site-header {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.05em;
+  /* letter-spacing agrega espacio también después de la última letra:
+     ese espacio invisible corre el texto hacia la izquierda dentro del
+     header centrado. Lo compensamos restando esa misma distancia. */
+  margin-right: -0.05em;
   padding: 1.5rem 0;
 }
 
