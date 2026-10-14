@@ -189,6 +189,13 @@
     flex-shrink:0;
   }
   .btn-delete:hover{background:rgba(201,79,79,.15);}
+  .col-accion{
+    position:sticky;
+    right:0;
+    background:var(--panel);
+    width:1%;
+    white-space:nowrap;
+  }
   table{
     width:100%;
     border-collapse:collapse;
@@ -602,10 +609,10 @@ function renderInforme(data) {
   html += "</table></div></div>";
 
   html += "<div class='card'><h3 style='margin-top:0;'>Detalle de compradores</h3><div class='table-wrap'><table>";
-  html += "<tr><th>Comprador</th><th>Ítem</th><th>Cant.</th><th>Pago</th><th>Total $</th><th class='no-print'></th></tr>";
+  html += "<tr><th>Comprador</th><th>Ítem</th><th>Cant.</th><th>Pago</th><th>Total $</th><th class='no-print col-accion'></th></tr>";
   data.ventas.forEach(v => {
     html += "<tr data-id='" + v.id + "'><td>" + v.comprador + "</td><td>" + v.item + "</td><td>" + v.cantidad + "</td><td>" + v.metodoPago + "</td><td>$" + formatoMoneda(v.total) + "</td>" +
-      "<td class='no-print'><button type='button' class='btn-delete' title='Eliminar venta' onclick='eliminarVentaInforme(\"" + v.id + "\")'>🗑️</button></td></tr>";
+      "<td class='no-print col-accion'><button type='button' class='btn-delete' title='Eliminar venta' onclick='eliminarVentaInforme(\"" + v.id + "\")'>🗑️</button></td></tr>";
   });
   html += "</table></div></div>";
 
