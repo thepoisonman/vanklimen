@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comanda del Evento</title>
+<style>
+  :root{
+    --bg:#121212;
+    --panel:#1e1e1e;
+    --panel2:#262626;
+    --text:#f0f0f0;
+    --muted:#a0a0a0;
+    --accent:#c9a94f;
+    --accent2:#8f7430;
+    --green:#3fa34d;
+    --blue:#3f82c9;
+    --border:#333;
+    --danger:#c94f4f;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    min-height:100vh;
+  }
+  header{
+    padding:16px 16px 0 16px;
+    text-align:center;
+  }
+  header h1{
+    margin:0 0 4px 0;
+    font-size:1.3rem;
+    letter-spacing:.5px;
+  }
+  header p{
+    margin:0;
+    color:var(--muted);
+    font-size:.85rem;
+  }
+  nav{
+    display:flex;
+    gap:6px;
+    padding:16px;
+    max-width:600px;
+    margin:0 auto;
+  }
+  nav button{
+    flex:1;
+    padding:10px 6px;
+    border-radius:10px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    color:var(--text);
+    font-size:.85rem;
+    cursor:pointer;
+  }
+  nav button.active{
+    background:var(--accent);
+    color:#1a1a1a;
+    font-weight:600;
+    border-color:var(--accent);
+  }
+  main{
+    max-width:600px;
+    margin:0 auto;
+    padding:0 16px 40px 16px;
+  }
+  .tab{display:none;}
+  .tab.active{display:block;}
+  .card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:16px;
+    margin-bottom:16px;
+  }
+  label{
+    display:block;
+    font-size:.8rem;
+    color:var(--muted);
+    margin-bottom:6px;
+    margin-top:14px;
+  }
+  label:first-child{margin-top:0;}
+  select, input[type=text], input[type=number], input[type=password]{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:var(--panel2);
+    color:var(--text);
+    font-size:1rem;
+  }
+  .precio-actual{
+    margin-top:6px;
+    font-size:.85rem;
+    color:var(--accent);
+  }
+  .pago-toggle{
+    display:flex;
+    gap:8px;
+  }
+  .pago-toggle button{
+    flex:1;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid var(--border);
+    background:var(--panel2);
+    color:var(--text);
+    font-size:.95rem;
+    cursor:pointer;
+  }
+  .pago-toggle button.selected{
+    background:var(--green);
+    border-color:var(--green);
+    color:#fff;
+    font-weight:600;
+  }
+  .pago-toggle button.selected.transferencia{
+    background:var(--blue);
+    border-color:var(--blue);
+  }
+  .btn-primary{
+    width:100%;
+    margin-top:18px;
+    padding:13px;
+    border-radius:10px;
+    border:none;
+    background:var(--accent);
+    color:#1a1a1a;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+  }
+  .btn-secondary{
+    width:100%;
+    margin-top:10px;
+    padding:11px;
+    border-radius:10px;
+    border:1px solid var(--border);
+    background:var(--panel2);
+    color:var(--text);
+    font-size:.9rem;
+    cursor:pointer;
+  }
+  .error{
+    color:var(--danger);
+    font-size:.8rem;
+    margin-top:8px;
+    min-height:1em;
+  }
+  .success{
+    color:var(--green);
+    font-size:.85rem;
+    margin-top:10px;
+    min-height:1em;
+  }
+  .recientes{
+    margin-top:10px;
+  }
+  .recientes h3{
+    font-size:.85rem;
+    color:var(--muted);
+    margin:0 0 8px 0;
+    font-weight:600;
+  }
+  .venta-item{
+    display:flex;
+    justify-content:space-between;
+    font-size:.85rem;
+    padding:8px 0;
+    border-bottom:1px solid var(--border);
+  }
+  .venta-item:last-child{border-bottom:none;}
+  .venta-item .meta{color:var(--muted);font-size:.78rem;}
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:.82rem;
+    margin-top:8px;
+  }
+  th, td{
+    text-align:left;
+    padding:6px 4px;
+    border-bottom:1px solid var(--border);
+  }
+  th{color:var(--muted);font-weight:600;}
+  .totales{
+    display:flex;
+    gap:10px;
+    margin-top:14px;
+    flex-wrap:wrap;
+  }
+  .total-chip{
+    flex:1;
+    min-width:110px;
+    background:var(--panel2);
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+  }
+  .total-chip .label{font-size:.72rem;color:var(--muted);}
+  .total-chip .value{font-size:1.05rem;font-weight:700;margin-top:4px;}
+  .locked-msg{color:var(--muted);font-size:.85rem;}
+  .table-wrap{overflow-x:auto;}
+  @media print{
+    nav, .no-print{display:none !important;}
+    body{background:#fff;color:#000;}
+    .card{border:1px solid #999;background:#fff;}
+    th, td{border-color:#999;}
+    .tab:not(.active){display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🥂 Comanda del Evento</h1>
+  <p>Registro de ventas en vivo</p>
+</header>
+
+<nav>
+  <button id="nav-venta" class="active" onclick="mostrarTab('venta')">Registrar</button>
+  <button id="nav-precios" onclick="mostrarTab('precios')">Precios</button>
+  <button id="nav-informe" onclick="mostrarTab('informe')">Informe</button>
+</nav>
+
+<main>
+
+  <!-- TAB: REGISTRAR VENTA -->
+  <section id="tab-venta" class="tab active">
+    <div class="card">
+      <label for="sel-item">Ítem</label>
+      <select id="sel-item" onchange="actualizarPrecioMostrado()"></select>
+      <div class="precio-actual" id="precio-actual"></div>
+
+      <label for="in-cantidad">Cantidad</label>
+      <input type="number" id="in-cantidad" min="1" step="1" value="1">
+
+      <label for="in-comprador">¿Quién compró?</label>
+      <input type="text" id="in-comprador" placeholder="Nombre o apodo">
+
+      <label>Medio de pago</label>
+      <div class="pago-toggle">
+        <button type="button" id="btn-efectivo" onclick="elegirPago('efectivo')">💵 Efectivo</button>
+        <button type="button" id="btn-transferencia" onclick="elegirPago('transferencia')">📲 Transferencia</button>
+      </div>
+
+      <div class="error" id="venta-error"></div>
+      <button class="btn-primary" onclick="registrarVenta()">Registrar venta</button>
+      <div class="success" id="venta-success"></div>
+    </div>
+
+    <div class="card recientes">
+      <h3>Últimas ventas cargadas</h3>
+      <div id="lista-recientes"><p class="locked-msg">Todavía no hay ventas cargadas.</p></div>
+    </div>
+  </section>
+
+  <!-- TAB: PRECIOS -->
+  <section id="tab-precios" class="tab">
+    <div class="card" id="precios-login">
+      <label for="in-password">Contraseña</label>
+      <input type="password" id="in-password" placeholder="••••••••">
+      <div class="error" id="precios-error"></div>
+      <button class="btn-primary" onclick="verificarPassword()">Ingresar</button>
+    </div>
+
+    <div class="card" id="precios-form" style="display:none;">
+      <h3 style="margin-top:0;">Editar precios</h3>
+      <div id="precios-inputs"></div>
+      <div class="success" id="precios-success"></div>
+      <button class="btn-primary" onclick="guardarPrecios()">Guardar precios</button>
+    </div>
+  </section>
+
+  <!-- TAB: INFORME -->
+  <section id="tab-informe" class="tab">
+    <div class="card no-print">
+      <button class="btn-primary" onclick="generarInforme()">Generar informe</button>
+      <button class="btn-secondary" id="btn-csv" style="display:none;" onclick="descargarCSV()">⬇️ Descargar CSV</button>
+      <button class="btn-secondary" id="btn-print" style="display:none;" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+    </div>
+
+    <div id="informe-contenido"></div>
+  </section>
+
+</main>
+
+<!-- Firebase SDK (compat, vía CDN) -->
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+
+<script>
+/* =========================================================
+   CONFIGURACIÓN DE FIREBASE (proyecto: milonga-miercoles)
+   ========================================================= */
+const firebaseConfig = {
+  apiKey: "AIzaSyDlAd02BQikuZvWT3mg9T3xlcZkIRoV8nk",
+  authDomain: "milonga-miercoles.firebaseapp.com",
+  projectId: "milonga-miercoles",
+  storageBucket: "milonga-miercoles.firebasestorage.app",
+  messagingSenderId: "821577493704",
+  appId: "1:821577493704:web:467f58ad084256104309fd",
+  measurementId: "G-GD4X9LQQNJ"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+/* =========================================================
+   DATOS DE LA APP
+   ========================================================= */
+const ITEMS = [
+  { key: "anticipada",       nombre: "Anticipada" },
+  { key: "entradaPuerta",    nombre: "Entrada Puerta" },
+  { key: "copaVino",         nombre: "Copa de Vino" },
+  { key: "botellaVino",      nombre: "Botella de Vino" },
+  { key: "empanadaCarne",    nombre: "Empanada Carne" },
+  { key: "empanadaVerdura",  nombre: "Empanada Verdura" },
+  { key: "vasoSprite",       nombre: "Vaso Sprite" },
+  { key: "vasoJugo",         nombre: "Vaso Jugo" }
+];
+
+const PRECIOS_DEFAULT = {
+  anticipada: 8000,
+  entradaPuerta: 10000,
+  copaVino: 4000,
+  botellaVino: 10000,
+  empanadaCarne: 3000,
+  empanadaVerdura: 3000,
+  vasoSprite: 2000,
+  vasoJugo: 2000
+};
+
+// Contraseña hardcodeada para editar precios. No se muestra en la interfaz,
+// pero al ser una app 100% cliente sigue siendo visible en el código fuente / devtools.
+const PASSWORD_PRECIOS = "milongamiercoles";
+
+let precios = { ...PRECIOS_DEFAULT };
+let pagoSeleccionado = null;
+let preciosDesbloqueados = false;
+
+/* =========================================================
+   NAVEGACIÓN ENTRE PESTAÑAS
+   ========================================================= */
+function mostrarTab(nombre) {
+  ["venta", "precios", "informe"].forEach(t => {
+    document.getElementById("tab-" + t).classList.toggle("active", t === nombre);
+    document.getElementById("nav-" + t).classList.toggle("active", t === nombre);
+  });
+}
+
+/* =========================================================
+   CARGA / CREACIÓN DE PRECIOS
+   ========================================================= */
+const precioDocRef = db.collection("config").doc("precios");
+
+async function cargarPrecios() {
+  const snap = await precioDocRef.get();
+  if (snap.exists) {
+    precios = { ...PRECIOS_DEFAULT, ...snap.data() };
+  } else {
+    await precioDocRef.set(PRECIOS_DEFAULT);
+    precios = { ...PRECIOS_DEFAULT };
+  }
+  poblarSelectItems();
+  actualizarPrecioMostrado();
+}
+
+function poblarSelectItems() {
+  const sel = document.getElementById("sel-item");
+  sel.innerHTML = "";
+  ITEMS.forEach(it => {
+    const opt = document.createElement("option");
+    opt.value = it.key;
+    opt.textContent = it.nombre;
+    sel.appendChild(opt);
+  });
+}
+
+function actualizarPrecioMostrado() {
+  const key = document.getElementById("sel-item").value;
+  const p = precios[key] ?? 0;
+  document.getElementById("precio-actual").textContent =
+    "Precio unitario: $" + formatoMoneda(p);
+}
+
+/* =========================================================
+   REGISTRAR VENTA
+   ========================================================= */
+function elegirPago(tipo) {
+  pagoSeleccionado = tipo;
+  document.getElementById("btn-efectivo").classList.toggle("selected", tipo === "efectivo");
+  document.getElementById("btn-transferencia").classList.toggle("selected", tipo === "transferencia");
+}
+
+async function registrarVenta() {
+  const errorEl = document.getElementById("venta-error");
+  const successEl = document.getElementById("venta-success");
+  errorEl.textContent = "";
+  successEl.textContent = "";
+
+  const key = document.getElementById("sel-item").value;
+  const itemInfo = ITEMS.find(i => i.key === key);
+  const cantidad = parseInt(document.getElementById("in-cantidad").value, 10);
+  const comprador = document.getElementById("in-comprador").value.trim();
+
+  if (!cantidad || cantidad <= 0) {
+    errorEl.textContent = "Ingresá una cantidad válida.";
+    return;
+  }
+  if (!comprador) {
+    errorEl.textContent = "Ingresá quién compró.";
+    return;
+  }
+  if (!pagoSeleccionado) {
+    errorEl.textContent = "Elegí el medio de pago.";
+    return;
+  }
+
+  const precioUnitario = precios[key] ?? 0;
+  const total = precioUnitario * cantidad;
+
+  try {
+    await db.collection("ventas").add({
+      item: itemInfo.nombre,
+      itemKey: key,
+      precioUnitario,
+      cantidad,
+      total,
+      comprador,
+      metodoPago: pagoSeleccionado,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    });
+
+    successEl.textContent = "✅ Venta registrada: " + itemInfo.nombre + " x" + cantidad + " — $" + formatoMoneda(total);
+    agregarAListaReciente({ item: itemInfo.nombre, cantidad, comprador, metodoPago: pagoSeleccionado, total });
+
+    // reset parcial del formulario
+    document.getElementById("in-cantidad").value = 1;
+    document.getElementById("in-comprador").value = "";
+    pagoSeleccionado = null;
+    document.getElementById("btn-efectivo").classList.remove("selected");
+    document.getElementById("btn-transferencia").classList.remove("selected");
+  } catch (e) {
+    errorEl.textContent = "Error al guardar: " + e.message;
+  }
+}
+
+function agregarAListaReciente(venta) {
+  const cont = document.getElementById("lista-recientes");
+  if (cont.querySelector(".locked-msg")) cont.innerHTML = "";
+
+  const div = document.createElement("div");
+  div.className = "venta-item";
+  const pagoIcono = venta.metodoPago === "efectivo" ? "💵" : "📲";
+  div.innerHTML =
+    "<span>" + venta.item + " x" + venta.cantidad + " — " + venta.comprador + "</span>" +
+    "<span class='meta'>" + pagoIcono + " $" + formatoMoneda(venta.total) + "</span>";
+  cont.prepend(div);
+
+  // mantener máximo 10 visibles
+  while (cont.children.length > 10) cont.removeChild(cont.lastChild);
+}
+
+/* =========================================================
+   PRECIOS (protegido por contraseña)
+   ========================================================= */
+function verificarPassword() {
+  const val = document.getElementById("in-password").value;
+  const errorEl = document.getElementById("precios-error");
+  if (val === PASSWORD_PRECIOS) {
+    preciosDesbloqueados = true;
+    document.getElementById("precios-login").style.display = "none";
+    document.getElementById("precios-form").style.display = "block";
+    document.getElementById("in-password").value = "";
+    errorEl.textContent = "";
+    renderPreciosInputs();
+  } else {
+    errorEl.textContent = "Contraseña incorrecta.";
+  }
+}
+
+function renderPreciosInputs() {
+  const cont = document.getElementById("precios-inputs");
+  cont.innerHTML = "";
+  ITEMS.forEach(it => {
+    const label = document.createElement("label");
+    label.textContent = it.nombre;
+    const input = document.createElement("input");
+    input.type = "number";
+    input.min = "0";
+    input.step = "1";
+    input.id = "precio-" + it.key;
+    input.value = precios[it.key] ?? 0;
+    cont.appendChild(label);
+    cont.appendChild(input);
+  });
+}
+
+async function guardarPrecios() {
+  const nuevosPrecios = {};
+  ITEMS.forEach(it => {
+    const val = parseInt(document.getElementById("precio-" + it.key).value, 10);
+    nuevosPrecios[it.key] = isNaN(val) ? 0 : val;
+  });
+
+  try {
+    await precioDocRef.set(nuevosPrecios);
+    precios = nuevosPrecios;
+    actualizarPrecioMostrado();
+    const successEl = document.getElementById("precios-success");
+    successEl.textContent = "✅ Precios actualizados.";
+    setTimeout(() => successEl.textContent = "", 3000);
+  } catch (e) {
+    document.getElementById("precios-success").textContent = "Error: " + e.message;
+  }
+}
+
+/* =========================================================
+   INFORME DE VENTAS
+   ========================================================= */
+let ultimoInforme = null;
+
+async function generarInforme() {
+  const cont = document.getElementById("informe-contenido");
+  cont.innerHTML = "<p class='locked-msg'>Cargando...</p>";
+
+  const snap = await db.collection("ventas").orderBy("timestamp", "asc").get();
+  const ventas = snap.docs.map(d => d.data());
+
+  const resumenPorItem = {};
+  ITEMS.forEach(it => resumenPorItem[it.key] = { nombre: it.nombre, cantidad: 0, total: 0 });
+
+  let totalEfectivo = 0;
+  let totalTransferencia = 0;
+
+  ventas.forEach(v => {
+    if (resumenPorItem[v.itemKey]) {
+      resumenPorItem[v.itemKey].cantidad += v.cantidad;
+      resumenPorItem[v.itemKey].total += v.total;
+    }
+    if (v.metodoPago === "efectivo") totalEfectivo += v.total;
+    else if (v.metodoPago === "transferencia") totalTransferencia += v.total;
+  });
+
+  const totalGeneral = totalEfectivo + totalTransferencia;
+
+  ultimoInforme = { ventas, resumenPorItem, totalEfectivo, totalTransferencia, totalGeneral };
+
+  renderInforme(ultimoInforme);
+  document.getElementById("btn-csv").style.display = "block";
+  document.getElementById("btn-print").style.display = "block";
+}
+
+function renderInforme(data) {
+  const cont = document.getElementById("informe-contenido");
+
+  let html = "";
+
+  html += "<div class='card'><div class='totales'>";
+  html += totalChip("Efectivo", data.totalEfectivo);
+  html += totalChip("Transferencia", data.totalTransferencia);
+  html += totalChip("Total general", data.totalGeneral);
+  html += "</div></div>";
+
+  html += "<div class='card'><h3 style='margin-top:0;'>Ventas por ítem</h3><div class='table-wrap'><table>";
+  html += "<tr><th>Ítem</th><th>Cantidad</th><th>Total $</th></tr>";
+  Object.values(data.resumenPorItem).forEach(r => {
+    html += "<tr><td>" + r.nombre + "</td><td>" + r.cantidad + "</td><td>$" + formatoMoneda(r.total) + "</td></tr>";
+  });
+  html += "</table></div></div>";
+
+  html += "<div class='card'><h3 style='margin-top:0;'>Detalle de compradores</h3><div class='table-wrap'><table>";
+  html += "<tr><th>Comprador</th><th>Ítem</th><th>Cant.</th><th>Pago</th><th>Total $</th></tr>";
+  data.ventas.forEach(v => {
+    html += "<tr><td>" + v.comprador + "</td><td>" + v.item + "</td><td>" + v.cantidad + "</td><td>" + v.metodoPago + "</td><td>$" + formatoMoneda(v.total) + "</td></tr>";
+  });
+  html += "</table></div></div>";
+
+  cont.innerHTML = html;
+}
+
+function totalChip(label, valor) {
+  return "<div class='total-chip'><div class='label'>" + label + "</div><div class='value'>$" + formatoMoneda(valor) + "</div></div>";
+}
+
+function descargarCSV() {
+  if (!ultimoInforme) return;
+  const data = ultimoInforme;
+  let csv = "";
+
+  csv += "RESUMEN POR ITEM\n";
+  csv += "Item,Cantidad,Total\n";
+  Object.values(data.resumenPorItem).forEach(r => {
+    csv += [r.nombre, r.cantidad, r.total].join(",") + "\n";
+  });
+
+  csv += "\nTOTALES POR MEDIO DE PAGO\n";
+  csv += "Efectivo," + data.totalEfectivo + "\n";
+  csv += "Transferencia," + data.totalTransferencia + "\n";
+  csv += "Total general," + data.totalGeneral + "\n";
+
+  csv += "\nDETALLE DE COMPRADORES\n";
+  csv += "Comprador,Item,Cantidad,Medio de pago,Total\n";
+  data.ventas.forEach(v => {
+    csv += [csvEscape(v.comprador), csvEscape(v.item), v.cantidad, v.metodoPago, v.total].join(",") + "\n";
+  });
+
+  const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "informe_ventas_" + new Date().toISOString().slice(0,10) + ".csv";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function csvEscape(str) {
+  if (str == null) return "";
+  const s = String(str);
+  if (s.includes(",") || s.includes('"') || s.includes("\n")) {
+    return '"' + s.replace(/"/g, '""') + '"';
+  }
+  return s;
+}
+
+/* =========================================================
+   UTILIDADES
+   ========================================================= */
+function formatoMoneda(n) {
+  return Number(n || 0).toLocaleString("es-AR");
+}
+
+/* =========================================================
+   INICIO
+   ========================================================= */
+cargarPrecios();
+</script>
+
+</body>
+</html>

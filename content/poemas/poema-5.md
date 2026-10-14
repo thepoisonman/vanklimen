@@ -40,7 +40,7 @@ que se baila sin saberlo bailar
 que se canta sin poderlo cantar
 
 Le decía que se olvide,
-le decía ya no importa
+le decía "ya no importa",
 Solamente alcemos las copas
 
 por las sed...

@@ -1,0 +1,1061 @@
+:root { 
+    --primary-color: #020001;
+    --secondary-color: #042bd4;
+    --third-color: #e93131;
+    --background-color: #020001;
+    --text-color-dark: white ; 
+    --text-color-titles: color-mix(in srgb, var(--text-color-light) 100%, white 20% );
+    --text-color-accent: #eb73AF;
+    --text-color-light: #88ff55;
+    --text-color-hover: color-mix(in srgb, var(--secondary-color) 60%, transparent 30%);
+}
+
+html, body {
+    max-width: 100%;
+    
+}
+
+
+html {
+    font-size: 16px; 
+}
+
+ul li{
+  list-style: none;
+}
+
+.container {
+  max-width: 80%; 
+  padding-left: 0.9375rem; 
+  padding-right: 0.9375rem;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+#main {
+  margin-top: 1em;
+  margin-bottom: 0.125rem; 
+  color: var(--text-color-dark);
+  font-size: 2.25rem; 
+  width: 100vw;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+
+img {
+
+  max-width: 100%; 
+  height: auto; 
+}
+
+.hero-image {
+    border-radius: 0.625rem;
+    display: block; 
+    width: 100%;
+    height: auto;
+}
+
+
+body {
+    font-family: 'Work Sans', sans-serif; /* Fallback included */
+    background-color: var(--background-color);
+    line-height: 1.6;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    
+}
+
+
+.logo-title-container {
+    flex-wrap: wrap;
+}
+ 
+/* --- Base Styles for all screens (Desktop First) --- */
+
+/* Apply a margin when scrolling to an anchor point, preventing overlap */
+h1, h2, h3, nav {
+    font-family: 'IBM Plex Mono', monospace; 
+    color: var(--text-color-titles);
+    scroll-margin-top: 10rem;
+    flex-wrap: nowrap;
+    margin-bottom: 0.5rem;
+    font-size: 5rem;
+    line-height: 4rem;
+    text-wrap: balance;
+    font-weight: 700;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 6rem;
+    font-weight: 700;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  border-radius: 0; /* Converted from 0px */
+  box-shadow: 0.125rem 0.125rem 0.125rem white;
+  font-size: 1.875rem; 
+  max-width: 100%;
+}
+
+footer {
+    /* Add box-sizing to prevent padding from causing horizontal scrolling */
+    box-sizing: border-box; 
+}
+
+footer{
+   box-sizing: inherit;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top:1px solid white;
+  padding: 0.5rem 0.4rem;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  margin: 0 auto;
+  box-sizing: inherit;
+}
+
+.footer-title{
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  font-family: 'Work Sans';
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.site-logo img {
+    height: 3rem; 
+    padding: 0.625rem 0.9375rem; 
+}
+
+.main-nav {
+    background: none;
+    border-color: white;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+.menu-list {
+    color: var(--text-color-titles);
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: 1.25rem; 
+    text-transform: uppercase;
+    gap: 1.25rem; 
+    flex-wrap: wrap;
+}
+
+
+
+.menu-list li a {
+    padding: 0.625rem 0.9375rem; 
+    color: var(--text-color-dark);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.menu-list li a:hover {
+    color: var(--third-color);
+}
+
+.menu-toggle-button {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 1.4rem;
+    height: 2rem;
+    position: relative;
+    index: 1000;
+}
+
+
+
+/* --- the lines just the visualization of the menu --- */
+.bar {
+    display: block;
+    width: 4.45rem; 
+    height: 0.24rem; 
+    background-color: white;
+    border-radius: 0.3125rem; 
+    margin: 0.5rem auto;
+    transition: 0.3s;
+}
+
+a {
+    color: var(--text-color-accent); 
+    text-decoration: none;
+    }
+
+p {
+    color: var(--text-color-black);
+    text-shadow: none;
+    text-align: justify;
+    font-size: 2rem; 
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-style: regular;
+}
+
+.page-title {
+    color: var(--text-color-titles);
+    align-self: center;
+    font-size: 4rem;
+    padding-bottom: 0.5rem;
+    line-height: 4.6rem;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.autor-list {
+  color: var(--text-color-light);
+}
+
+.subtitulo, h3 {
+    font-size: 4rem; /* Converted from 32px */
+    color: var(--text-color-titles);
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding-top: 0; /* Converted from 0px */
+    line-height: 4rem;
+    padding: 0rem 0rem;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+.h4 {
+  font-family: 'IBM Plex Mono';
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+hr {
+  opacity: 0;
+}
+
+.strong {
+    color: var(--text-color-accent);
+}
+
+.texto {
+    color: var(--text-color-dark);
+    padding: 0.625rem;  
+    font-size: 2rem; 
+    text-shadow: none;
+    text-align: justify;
+    padding: 0.1rem;
+    font-family: 'Work Sans';
+}
+
+
+/* list section */
+
+.tit-list {
+    list-style: none;
+    list-style-type: none;
+    color: var(--text-color-titles);
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 0.5em;
+    margin-bottom: 5rem;
+    font-family: 'IBM Plex Mono';
+}
+
+.post-list {
+  list-style: none;
+  list-style-type: none;
+  color: var(--text-color-titles);
+  list-style-type: none;
+  font-size: 1rem; 
+  padding-left: 0; /* Optional, depending on your layout */
+}
+
+.post-item {
+    color: var(--text-color-dark);
+    font-size: 1rem;
+}
+
+.post-meta {
+    color: var(--text-color-light);
+    padding-left: 0.625rem;
+    font-size: 1.4em;
+}
+
+.post-link {
+    color: var(--text-color-light);
+    font-family: 'Work Sans';
+}
+
+
+
+/* --- Media Query for Mobile (less than ~768px wide) --- */
+@media (max-width: 768px) { 
+
+  html { 
+    font-size: 12px;
+
+    }
+  body {
+    font-size: 0.875rem; 
+  }
+
+  /* Adjusting padding for main content areas on small screens */
+  main {
+    padding: 0.625rem;
+  }
+
+    .site-header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is always on top */
+    padding: 0.125rem 0.125rem; 
+    background-color: var(--primary-color); 
+}
+
+    .site-footer {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 105%;
+    padding: 0.125rem 0.125rem;
+    }
+    .menu-toggle-button {
+        display: block;
+        order: 2;
+        margin: 0rem;
+        height: 3rem;
+        width: 5rem;
+    }
+
+
+    .logo-title-container {
+        order: 1;
+        padding-top: 0.5rem;
+    }
+ 
+    body {
+        padding-top: 2.25rem; 
+        width: 100%;
+        scroll-margin-top: 10rem;
+    }
+
+    .site-logo{
+    display: block;
+    padding-right: 0; 
+    justify-self:center;
+    align-self: center;
+    }
+    .site-logo img{
+        height: 2.9rem;
+        padding-top: 1rem;
+    }
+    .main-nav {
+    display: none;
+    position: absolute; /* Relative to the nearest positioned ancestor (in this case, the header) */
+    top: 100%; /* Positions the menu exactly 100% of the header's height from the top */
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 9999; /* Ensure the menu is above the page content but below the header */
+    justify-content: space-evenly;
+    /* You can set a max-height and overflow-y: auto here if the menu links are long */
+    }
+
+    .main-nav.active {
+        display: block;
+        color: var(--text-color-titles);
+        background-color: var(--primary-color);
+        opacity: 90%;
+        border-color: black;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    /* Style the list of links */
+    .menu-list {
+        color: var(--text-color-titles);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        font-size: 1.25rem; /* Larger font size for mobile */
+        text-align: left; /* Aligns text to the left */
+        text-transform: none; /* No uppercase for mobile */
+    }
+
+    /* Style the individual links */
+    .menu-list li a {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 1.5rem 2rem; /* Ample padding for a larger touch target */
+        display: block; /* Make the entire list item clickable */
+        text-align: left;
+        border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.2); /* Converted from 1px */
+        color: white;
+    }
+    
+    .menu-list li a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-list li:last-child a {
+        border-bottom: none;
+    }
+
+    .site-title-text {
+        padding-right: 0; 
+        font-size: 2.5rem; 
+        justify-self: center;
+        align-self: center;
+    }
+
+    .hero {
+        padding-top: 2rem;
+        width: 100%;
+        height: auto;
+    
+    }
+
+    .bar {
+        align-self: center;
+    }
+}
+
+/* --- IBM Plex Mono Fonts --- */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-ExtraLight.ttf') format('truetype');
+  font-weight: 200; /* Extra Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-Italic.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-Light.ttf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* Semi Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-Thin.ttf') format('truetype');
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBMPlexMono-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+
+/* --- Work Sans Fonts --- */
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Black.ttf') format('truetype');
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800; /* Extra Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-ExtraLight.ttf') format('truetype');
+  font-weight: 200; /* Extra Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Italic.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Light.ttf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* Semi Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Thin.ttf') format('truetype');
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/fonts/WorkSans-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+
+/* This rule ensures that bold text in the body uses the defined 700 weight file */
+strong, b {
+    font-weight: 700;
+    color: var(--text-color-accent);
+}
+
+/* This rule ensures that italic text in the body uses the defined italic file */
+em, i {
+    font-style: italic;
+}
+
+/* Contenedor del formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px;
+  color: var(--text-color-dark);
+}
+
+/* Grupo etiqueta + input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+.form-label {
+  font-family: "IBM Plex Mono";
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: var(--text-color-dark); /* Texto blanco por tu paleta */
+}
+
+/* Inputs y textarea */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--secondary-color); /* Azul */
+  border-radius: 6px;
+  background: var(--background-color); /* Negro */
+  color: var(--text-color-dark); /* Blanco */
+  font-size: 1rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+/* Hover + focus */
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--third-color); /* Rojo */
+  outline: none;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--third-color) 40%, transparent);
+}
+
+/* Botón */
+.form-button {
+  font-family: "Work Sans";
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--secondary-color); /* Azul */
+  color: var(--text-color-dark); /* Blanco */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform .15s ease, opacity .2s ease;
+}
+
+/* Hover del botón */
+.form-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Active del botón */
+.form-button:active {
+  transform: translateY(0px);
+  opacity: 0.7;
+}
+
+
+.alert {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  font-family: "IBM Plex Mono";
+  gap: 20px;
+}
+
+
+.alert-danger {
+  color: var(--text-color-dark);
+  background-color: var(--third-color);
+  border-color: var(--third-color);
+}
+
+/* --- Nueva identidad de marca: negro con grano, sin acentos ni tipografía 8bit --- */
+/* El sitio archivado (.legacy-theme, todo lo que vive bajo /old/) no se toca:
+   conserva sus colores y tipografía originales. */
+body.new-theme {
+  --text-color-dark: #ffffff;
+  --text-color-titles: #ffffff;
+  --text-color-accent: #ffffff;
+  --text-color-light: #ffffff;
+  --background-color: #000000;
+  --primary-color: #000000;
+  background-color: #000000;
+  position: relative;
+  isolation: isolate;
+}
+
+body.new-theme .site-header {
+  justify-content: center;
+  box-shadow: none;
+}
+
+.site-title-link {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--text-color-dark);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 1.5rem 0;
+}
+
+body.new-theme .site-footer {
+  border-top: none;
+}
+
+body.new-theme h1,
+body.new-theme h2,
+body.new-theme h3,
+body.new-theme nav,
+body.new-theme .menu-list li a,
+body.new-theme .page-title,
+body.new-theme .subtitulo,
+body.new-theme .h4 {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: none;
+}
+
+/* --- Portada nueva: EP "El deambular" --- */
+.ep-block {
+  width: 100%;
+  max-width: 40rem;
+  margin: 4rem auto 3rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ep-cover {
+  width: 14rem;
+  aspect-ratio: 1 / 1;
+  max-width: 60vw;
+  border: 1px solid var(--text-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.ep-cover-label {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.ep-eyebrow,
+.poemas-eyebrow {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-color-dark);
+  opacity: 0.6;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
+.ep-title {
+  margin: 0 0 2rem;
+  font-size: 2.75rem;
+  line-height: 1.1;
+}
+
+.ep-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.ep-link {
+  color: var(--text-color-dark);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px solid var(--text-color-dark);
+  padding: 0.75rem 1.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.ep-link:hover {
+  opacity: 0.6;
+}
+
+/* --- Portada nueva: mosaico de poemas --- */
+.poemas-block {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.poemas-mosaico {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 0.75rem;
+}
+
+.poema-tile {
+  aspect-ratio: 1 / 1;
+  background: none;
+  border: 1px solid var(--text-color-dark);
+  color: var(--text-color-dark);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.poema-tile:hover,
+.poema-tile:focus-visible {
+  background-color: var(--text-color-dark);
+  color: #000000;
+}
+
+.poema-num {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.poema-tile-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+.poema-dialog {
+  max-width: 32rem;
+  width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3rem 3rem;
+  position: relative;
+}
+
+.poema-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.poema-dialog-content {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.poema-dialog-content h3 {
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* El texto del poema puede ser tan largo como haga falta: scrollea
+   adentro del recuadro en vez de desbordar la página. */
+.poema-dialog-text {
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.poema-dialog-text p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 1.25rem;
+}
+
+.poema-dialog-text p:last-child {
+  margin-bottom: 0;
+}
+
+.poema-dialog-close,
+.poema-dialog-prev,
+.poema-dialog-next {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.poema-dialog-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.9rem;
+}
+
+.poema-dialog-prev,
+.poema-dialog-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.poema-dialog-prev {
+  left: 0.5rem;
+}
+
+.poema-dialog-next {
+  right: 0.5rem;
+}
+
+body.new-theme .menu-list li a:hover {
+  color: var(--text-color-dark);
+  opacity: 0.7;
+}
+
+/* Textura de grano: ruido SVG autocontenido, sin imágenes externas */
+body.new-theme::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  background-repeat: repeat;
+  background-size: 140px 140px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
