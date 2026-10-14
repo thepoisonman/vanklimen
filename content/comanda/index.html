@@ -176,6 +176,19 @@
   }
   .venta-item:last-child{border-bottom:none;}
   .venta-item .meta{color:var(--muted);font-size:.78rem;}
+  .venta-item{align-items:center;gap:8px;}
+  .venta-item>span:first-child{flex:1;}
+  .btn-delete{
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:1rem;
+    line-height:1;
+    padding:4px 6px;
+    border-radius:6px;
+    flex-shrink:0;
+  }
+  .btn-delete:hover{background:rgba(201,79,79,.15);}
   table{
     width:100%;
     border-collapse:collapse;
@@ -426,7 +439,7 @@ async function registrarVenta() {
   const total = precioUnitario * cantidad;
 
   try {
-    await db.collection("ventas").add({
+    const docRef = await db.collection("ventas").add({
       item: itemInfo.nombre,
       itemKey: key,
       precioUnitario,
@@ -438,7 +451,7 @@ async function registrarVenta() {
     });
 
     successEl.textContent = "✅ Venta registrada: " + itemInfo.nombre + " x" + cantidad + " — $" + formatoMoneda(total);
-    agregarAListaReciente({ item: itemInfo.nombre, cantidad, comprador, metodoPago: pagoSeleccionado, total });
+    agregarAListaReciente({ item: itemInfo.nombre, cantidad, comprador, metodoPago: pagoSeleccionado, total }, docRef.id);
 
     // reset parcial del formulario
     document.getElementById("in-cantidad").value = 1;
@@ -451,7 +464,7 @@ async function registrarVenta() {
   }
 }
 
-function agregarAListaReciente(venta) {
+function agregarAListaReciente(venta, id) {
   const cont = document.getElementById("lista-recientes");
   if (cont.querySelector(".locked-msg")) cont.innerHTML = "";
 
@@ -460,11 +473,24 @@ function agregarAListaReciente(venta) {
   const pagoIcono = venta.metodoPago === "efectivo" ? "💵" : "📲";
   div.innerHTML =
     "<span>" + venta.item + " x" + venta.cantidad + " — " + venta.comprador + "</span>" +
-    "<span class='meta'>" + pagoIcono + " $" + formatoMoneda(venta.total) + "</span>";
+    "<span class='meta'>" + pagoIcono + " $" + formatoMoneda(venta.total) + "</span>" +
+    "<button type='button' class='btn-delete' title='Eliminar venta'>🗑️</button>";
+  div.querySelector(".btn-delete").addEventListener("click", () => eliminarVentaReciente(id, div, venta));
   cont.prepend(div);
 
   // mantener máximo 10 visibles
   while (cont.children.length > 10) cont.removeChild(cont.lastChild);
+}
+
+async function eliminarVentaReciente(id, divEl, venta) {
+  const ok = confirm("¿Eliminar la venta de " + venta.comprador + " (" + venta.item + " x" + venta.cantidad + ")? Esta acción no se puede deshacer.");
+  if (!ok) return;
+  try {
+    await db.collection("ventas").doc(id).delete();
+    divEl.remove();
+  } catch (e) {
+    alert("Error al eliminar: " + e.message);
+  }
 }
 
 /* =========================================================
@@ -531,7 +557,7 @@ async function generarInforme() {
   cont.innerHTML = "<p class='locked-msg'>Cargando...</p>";
 
   const snap = await db.collection("ventas").orderBy("timestamp", "asc").get();
-  const ventas = snap.docs.map(d => d.data());
+  const ventas = snap.docs.map(d => ({ id: d.id, ...d.data() }));
 
   const resumenPorItem = {};
   ITEMS.forEach(it => resumenPorItem[it.key] = { nombre: it.nombre, cantidad: 0, total: 0 });
@@ -576,13 +602,27 @@ function renderInforme(data) {
   html += "</table></div></div>";
 
   html += "<div class='card'><h3 style='margin-top:0;'>Detalle de compradores</h3><div class='table-wrap'><table>";
-  html += "<tr><th>Comprador</th><th>Ítem</th><th>Cant.</th><th>Pago</th><th>Total $</th></tr>";
+  html += "<tr><th>Comprador</th><th>Ítem</th><th>Cant.</th><th>Pago</th><th>Total $</th><th class='no-print'></th></tr>";
   data.ventas.forEach(v => {
-    html += "<tr><td>" + v.comprador + "</td><td>" + v.item + "</td><td>" + v.cantidad + "</td><td>" + v.metodoPago + "</td><td>$" + formatoMoneda(v.total) + "</td></tr>";
+    html += "<tr data-id='" + v.id + "'><td>" + v.comprador + "</td><td>" + v.item + "</td><td>" + v.cantidad + "</td><td>" + v.metodoPago + "</td><td>$" + formatoMoneda(v.total) + "</td>" +
+      "<td class='no-print'><button type='button' class='btn-delete' title='Eliminar venta' onclick='eliminarVentaInforme(\"" + v.id + "\")'>🗑️</button></td></tr>";
   });
   html += "</table></div></div>";
 
   cont.innerHTML = html;
+}
+
+async function eliminarVentaInforme(id) {
+  const venta = (ultimoInforme?.ventas || []).find(v => v.id === id);
+  if (!venta) return;
+  const ok = confirm("¿Eliminar la venta de " + venta.comprador + " (" + venta.item + " x" + venta.cantidad + ")? Esta acción no se puede deshacer.");
+  if (!ok) return;
+  try {
+    await db.collection("ventas").doc(id).delete();
+    await generarInforme();
+  } catch (e) {
+    alert("Error al eliminar: " + e.message);
+  }
 }
 
 function totalChip(label, valor) {
