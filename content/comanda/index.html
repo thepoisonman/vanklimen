@@ -19,12 +19,22 @@
     --danger:#c94f4f;
   }
   *{box-sizing:border-box;}
+  html, body{
+    overflow-x:hidden;
+    max-width:100%;
+  }
   body{
     margin:0;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     background:var(--bg);
     color:var(--text);
     min-height:100vh;
+  }
+  @media (max-width:360px){
+    nav{padding:10px;gap:4px;}
+    main{padding:0 10px 32px 10px;}
+    .card{padding:12px;}
+    .pago-toggle button{font-size:.82rem;padding:10px 4px;}
   }
   header{
     padding:16px 16px 0 16px;
@@ -169,33 +179,28 @@
   }
   .venta-item{
     display:flex;
+    flex-wrap:wrap;
+    align-items:center;
     justify-content:space-between;
+    gap:4px 8px;
     font-size:.85rem;
     padding:8px 0;
     border-bottom:1px solid var(--border);
   }
   .venta-item:last-child{border-bottom:none;}
   .venta-item .meta{color:var(--muted);font-size:.78rem;}
-  .venta-item{align-items:center;gap:8px;}
-  .venta-item>span:first-child{flex:1;}
+  .venta-item>span:first-child{flex:1 1 160px;min-width:0;overflow-wrap:anywhere;}
   .btn-delete{
     background:none;
     border:none;
     cursor:pointer;
-    font-size:1rem;
+    font-size:1.1rem;
     line-height:1;
-    padding:4px 6px;
+    padding:6px 8px;
     border-radius:6px;
     flex-shrink:0;
   }
   .btn-delete:hover{background:rgba(201,79,79,.15);}
-  .col-accion{
-    position:sticky;
-    right:0;
-    background:var(--panel);
-    width:1%;
-    white-space:nowrap;
-  }
   table{
     width:100%;
     border-collapse:collapse;
@@ -592,31 +597,68 @@ async function generarInforme() {
 
 function renderInforme(data) {
   const cont = document.getElementById("informe-contenido");
+  cont.innerHTML = "";
 
-  let html = "";
+  const totalesCard = document.createElement("div");
+  totalesCard.className = "card";
+  totalesCard.innerHTML = "<div class='totales'>" +
+    totalChip("Efectivo", data.totalEfectivo) +
+    totalChip("Transferencia", data.totalTransferencia) +
+    totalChip("Total general", data.totalGeneral) +
+    "</div>";
+  cont.appendChild(totalesCard);
 
-  html += "<div class='card'><div class='totales'>";
-  html += totalChip("Efectivo", data.totalEfectivo);
-  html += totalChip("Transferencia", data.totalTransferencia);
-  html += totalChip("Total general", data.totalGeneral);
-  html += "</div></div>";
-
-  html += "<div class='card'><h3 style='margin-top:0;'>Ventas por ítem</h3><div class='table-wrap'><table>";
-  html += "<tr><th>Ítem</th><th>Cantidad</th><th>Total $</th></tr>";
+  let resumenHtml = "<h3 style='margin-top:0;'>Ventas por ítem</h3><div class='table-wrap'><table>";
+  resumenHtml += "<tr><th>Ítem</th><th>Cantidad</th><th>Total $</th></tr>";
   Object.values(data.resumenPorItem).forEach(r => {
-    html += "<tr><td>" + r.nombre + "</td><td>" + r.cantidad + "</td><td>$" + formatoMoneda(r.total) + "</td></tr>";
+    resumenHtml += "<tr><td>" + r.nombre + "</td><td>" + r.cantidad + "</td><td>$" + formatoMoneda(r.total) + "</td></tr>";
   });
-  html += "</table></div></div>";
+  resumenHtml += "</table></div>";
+  const resumenCard = document.createElement("div");
+  resumenCard.className = "card";
+  resumenCard.innerHTML = resumenHtml;
+  cont.appendChild(resumenCard);
 
-  html += "<div class='card'><h3 style='margin-top:0;'>Detalle de compradores</h3><div class='table-wrap'><table>";
-  html += "<tr><th>Comprador</th><th>Ítem</th><th>Cant.</th><th>Pago</th><th>Total $</th><th class='no-print col-accion'></th></tr>";
-  data.ventas.forEach(v => {
-    html += "<tr data-id='" + v.id + "'><td>" + v.comprador + "</td><td>" + v.item + "</td><td>" + v.cantidad + "</td><td>" + v.metodoPago + "</td><td>$" + formatoMoneda(v.total) + "</td>" +
-      "<td class='no-print col-accion'><button type='button' class='btn-delete' title='Eliminar venta' onclick='eliminarVentaInforme(\"" + v.id + "\")'>🗑️</button></td></tr>";
-  });
-  html += "</table></div></div>";
+  // Lista apilada (no tabla) para que el botón de eliminar siempre sea visible en mobile
+  const detalleCard = document.createElement("div");
+  detalleCard.className = "card";
+  const h3 = document.createElement("h3");
+  h3.style.marginTop = "0";
+  h3.textContent = "Detalle de compradores";
+  detalleCard.appendChild(h3);
 
-  cont.innerHTML = html;
+  if (data.ventas.length === 0) {
+    const p = document.createElement("p");
+    p.className = "locked-msg";
+    p.textContent = "Todavía no hay ventas cargadas.";
+    detalleCard.appendChild(p);
+  } else {
+    data.ventas.forEach(v => {
+      const row = document.createElement("div");
+      row.className = "venta-item";
+
+      const info = document.createElement("span");
+      info.textContent = v.item + " x" + v.cantidad + " — " + v.comprador;
+
+      const meta = document.createElement("span");
+      meta.className = "meta";
+      const pagoIcono = v.metodoPago === "efectivo" ? "💵" : "📲";
+      meta.textContent = pagoIcono + " $" + formatoMoneda(v.total);
+
+      const delBtn = document.createElement("button");
+      delBtn.type = "button";
+      delBtn.className = "btn-delete no-print";
+      delBtn.title = "Eliminar venta";
+      delBtn.textContent = "🗑️";
+      delBtn.addEventListener("click", () => eliminarVentaInforme(v.id));
+
+      row.appendChild(info);
+      row.appendChild(meta);
+      row.appendChild(delBtn);
+      detalleCard.appendChild(row);
+    });
+  }
+  cont.appendChild(detalleCard);
 }
 
 async function eliminarVentaInforme(id) {
