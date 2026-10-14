@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comanda del Evento</title>
+<title>A la Miércoles Milonga!</title>
 <style>
   :root{
     --bg:#121212;
@@ -171,8 +171,8 @@
   .recientes{
     margin-top:10px;
   }
-  .recientes h3{
-    font-size:.85rem;
+  .card h3{
+    font-size:.9rem;
     color:var(--muted);
     margin:0 0 8px 0;
     font-weight:600;
@@ -243,7 +243,7 @@
 <body>
 
 <header>
-  <h1>🥂 Comanda del Evento</h1>
+  <h1>🥂 A la Miércoles Milonga!</h1>
   <p>Registro de ventas en vivo</p>
 </header>
 
@@ -348,6 +348,12 @@ const ITEMS = [
   { key: "empanadaVerdura",  nombre: "Empanada Verdura" },
   { key: "vasoSprite",       nombre: "Vaso Sprite" },
   { key: "vasoJugo",         nombre: "Vaso Jugo" }
+];
+
+const CATEGORIAS = [
+  { nombre: "Entradas", keys: ["anticipada", "entradaPuerta"] },
+  { nombre: "Comida",   keys: ["empanadaCarne", "empanadaVerdura"] },
+  { nombre: "Barra",    keys: ["copaVino", "botellaVino", "vasoSprite", "vasoJugo"] }
 ];
 
 const PRECIOS_DEFAULT = {
@@ -588,7 +594,16 @@ async function generarInforme() {
 
   const totalGeneral = totalEfectivo + totalTransferencia;
 
-  ultimoInforme = { ventas, resumenPorItem, totalEfectivo, totalTransferencia, totalGeneral };
+  const resumenPorCategoria = CATEGORIAS.map(cat => {
+    let cantidad = 0, total = 0;
+    cat.keys.forEach(k => {
+      cantidad += resumenPorItem[k].cantidad;
+      total += resumenPorItem[k].total;
+    });
+    return { nombre: cat.nombre, cantidad, total };
+  });
+
+  ultimoInforme = { ventas, resumenPorItem, resumenPorCategoria, totalEfectivo, totalTransferencia, totalGeneral };
 
   renderInforme(ultimoInforme);
   document.getElementById("btn-csv").style.display = "block";
@@ -607,6 +622,17 @@ function renderInforme(data) {
     totalChip("Total general", data.totalGeneral) +
     "</div>";
   cont.appendChild(totalesCard);
+
+  let categoriaHtml = "<h3 style='margin-top:0;'>Subtotales por categoría</h3><div class='table-wrap'><table>";
+  categoriaHtml += "<tr><th>Categoría</th><th>Cantidad</th><th>Total $</th></tr>";
+  data.resumenPorCategoria.forEach(c => {
+    categoriaHtml += "<tr><td>" + c.nombre + "</td><td>" + c.cantidad + "</td><td>$" + formatoMoneda(c.total) + "</td></tr>";
+  });
+  categoriaHtml += "</table></div>";
+  const categoriaCard = document.createElement("div");
+  categoriaCard.className = "card";
+  categoriaCard.innerHTML = categoriaHtml;
+  cont.appendChild(categoriaCard);
 
   let resumenHtml = "<h3 style='margin-top:0;'>Ventas por ítem</h3><div class='table-wrap'><table>";
   resumenHtml += "<tr><th>Ítem</th><th>Cantidad</th><th>Total $</th></tr>";
@@ -683,7 +709,13 @@ function descargarCSV() {
   const data = ultimoInforme;
   let csv = "";
 
-  csv += "RESUMEN POR ITEM\n";
+  csv += "SUBTOTALES POR CATEGORIA\n";
+  csv += "Categoria,Cantidad,Total\n";
+  data.resumenPorCategoria.forEach(c => {
+    csv += [c.nombre, c.cantidad, c.total].join(",") + "\n";
+  });
+
+  csv += "\nRESUMEN POR ITEM\n";
   csv += "Item,Cantidad,Total\n";
   Object.values(data.resumenPorItem).forEach(r => {
     csv += [r.nombre, r.cantidad, r.total].join(",") + "\n";
